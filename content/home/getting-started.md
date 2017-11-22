@@ -1,12 +1,16 @@
 ---
-title: Getting Started
+title: 快速开始
 ---
 
 Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable.
 
+Less 是 CSS 的预处理器，它扩展了 CSS 语言，并添加了许多特性，比如允许使用变量、混合（mixins）、函数等，这些技术使得 CSS 更易于维护、扩展和定制主题。
+
 Less runs inside Node, in the browser and inside Rhino. There are also many 3rd party tools that allow you to compile your files and watch for changes. The quickest place for first experiments with Less is our [online editor](http://lesscss.org/less-preview/).
 
-For example:
+Less 可以运行在 Node 、客户端浏览器或者 Rhino 上，目前已经有许多第三方工具可以自动监视监视文件的变化并自动编译。你可以在 [在线编辑器](http://lesscss.org/less-preview/) 上快速体验 Less。
+
+例子：
 
 ```less
 @base: #f938ab;
@@ -25,7 +29,7 @@ For example:
 }
 ```
 
-compiles to
+编译后：
 
 ```css
 .box {
