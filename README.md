@@ -4,6 +4,10 @@
 
 > Official website and documentation for Less/Less.js
 
+## 说明
+
+这是我学习 Less 时从 Less Doc 的官方仓库 fork 下来的，并且对文档进行了翻译。
+
 ## Quickstart
 
 Assemble and Grunt are used to build the docs. To get started:
