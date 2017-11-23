@@ -136,12 +136,15 @@
 <li><a href="#features-overview-feature-9-">9. &#x4F5C;&#x7528;&#x57DF;</a></li>
 <li><a href="#features-overview-feature-10-">10. &#x6CE8;&#x91CA;</a></li>
 <li><a href="#features-overview-feature-11-">11. &#x5BFC;&#x5165;</a></li></ul></li>
-<li><a href="#variables-feature">&#x53D8;&#x91CF;</a><ul class="nav"><li><a href="#variables-feature-overview">Overview</a></li>
-<li><a href="#variables-feature-variable-interpolation">Variable Interpolation</a></li>
-<li><a href="#variables-feature-urls">URLs</a></li>
-<li><a href="#variables-feature-variable-names">Variable Names</a></li>
-<li><a href="#variables-feature-lazy-evaluation">Lazy Evaluation</a></li>
-<li><a href="#variables-feature-default-variables">Default Variables</a></li></ul></li>
+<li><a href="#variables-feature">&#x53D8;&#x91CF;</a><ul class="nav"><li><a href="#variables-feature-1-">1. &#x9884;&#x89C8;</a></li>
+<li><a href="#variables-feature-2-">2. &#x53D8;&#x91CF;&#x63D2;&#x503C;</a></li>
+<li><a href="#variables-feature-3-">3. &#x7528;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x540D;</a></li>
+<li><a href="#variables-feature-4-url-">4. &#x7528;&#x4E8E; URL &#x5730;&#x5740;</a></li>
+<li><a href="#variables-feature-5-import-">5. &#x7528;&#x4E8E;Import &#x8868;&#x8FBE;&#x5F0F;</a></li>
+<li><a href="#variables-feature-6-">6. &#x7528;&#x4E8E;&#x5C5E;&#x6027;</a></li>
+<li><a href="#variables-feature-7-">7. &#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;</a></li>
+<li><a href="#variables-feature-8-lazy-evaluation-">8. &#x5EF6;&#x540E;&#x8BA1;&#x7B97;&#xFF08;Lazy Evaluation&#xFF09;</a></li>
+<li><a href="#variables-feature-8-">8. &#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</a></li></ul></li>
 <li><a href="#extend-feature">Extend</a><ul class="nav"><li><a href="#extend-feature-extend-syntax">Extend Syntax</a></li>
 <li><a href="#extend-feature-extend-attached-to-selector">Extend Attached to Selector</a></li>
 <li><a href="#extend-feature-extend-inside-ruleset">Extend Inside Ruleset</a></li>
@@ -534,10 +537,12 @@ style comment! */</span>
 
 <blockquote>
 <p>Control commonly used values in a single location.</p>
+<p>&#x5C06;&#x5E38;&#x7528;&#x7684;&#x503C;&#x5B9A;&#x4E49;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x3002;</p>
 </blockquote>
-<h3 class="docs-heading">Overview<span class="anchor-target" id="variables-feature-overview"></span>
-<a href="#variables-feature-overview" name="variables-feature-overview" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">1. &#x9884;&#x89C8;<span class="anchor-target" id="variables-feature-1-"></span>
+<a href="#variables-feature-1-" name="variables-feature-1-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>It&apos;s not uncommon to see the same value repeated dozens <em>if not hundreds of times</em> across your stylesheets:</p>
+<p>&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x5728;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#x89C1;&#x5230;&#x540C;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x503C;&#x51FA;&#x73B0;&#x591A;&#x6B21;&#xFF08;&#x751A;&#x81F3;&#x51FA;&#x73B0;&#x4E0A;&#x767E;&#x6B21;&#xFF09;&#x3002;</p>
 <pre><code class="lang-css"><span class="hljs-tag">a</span>,
 <span class="hljs-class">.link</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-hexcolor">#428bca</span>;
@@ -548,6 +553,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Variables make your code easier to maintain by giving you a way to control those values from a single location:</p>
+<p>&#x53D8;&#x91CF;&#x5728;&#x7EDF;&#x4E00;&#x7684;&#x5730;&#x65B9;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#xFF0C;&#x4F7F;&#x5F97;&#x4EE3;&#x7801;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x7BA1;&#x7406;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-comment">// Variables</span>
 <span class="hljs-variable">@link-color:</span>        <span class="hljs-hexcolor">#428bca</span>; <span class="hljs-comment">// sea blue</span>
 <span class="hljs-variable">@link-color-hover:</span>  <span class="hljs-function">darken</span>(<span class="hljs-variable">@link-color</span>, <span class="hljs-number">10%</span>);
@@ -565,11 +571,12 @@ style comment! */</span>
   <span class="hljs-attribute">background</span>: <span class="hljs-variable">@link-color</span>;
 }
 </code></pre>
-<h3 class="docs-heading">Variable Interpolation<span class="anchor-target" id="variables-feature-variable-interpolation"></span>
-<a href="#variables-feature-variable-interpolation" name="variables-feature-variable-interpolation" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">2. &#x53D8;&#x91CF;&#x63D2;&#x503C;<span class="anchor-target" id="variables-feature-2-"></span>
+<a href="#variables-feature-2-" name="variables-feature-2-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>The examples above focused on using variables to control <em>values in CSS rules</em>, but they can also be used in other places as well, such as selector names, property names, URLs and <code>@import</code> statements.</p>
-<h4 class="docs-heading">Selectors<span class="anchor-target" id="variables-feature-selectors"></span>
-<a href="#variables-feature-selectors" name="variables-feature-selectors" class="anchor glyphicon glyphicon-link"></a></h4>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x7740;&#x91CD;&#x4E8E;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x63A7;&#x5236; CSS &#x6837;&#x5F0F;&#x89C4;&#x5219;&#x4E2D;&#x7684;&#x503C;&#xFF0C;&#x53D8;&#x91CF;&#x4E5F;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x5E94;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x9009;&#x62E9;&#x5668;&#x7684;&#x540D;&#x79F0;&#x3001;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x3001;URL&#x3001;<code>@import</code>&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<h3 class="docs-heading">3. &#x7528;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x540D;<span class="anchor-target" id="variables-feature-3-"></span>
+<a href="#variables-feature-3-" name="variables-feature-3-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Version: 1.4.0</p>
 <pre><code class="lang-less"><span class="hljs-comment">// Variables</span>
 <span class="hljs-variable">@my-selector:</span> banner;
@@ -581,15 +588,15 @@ style comment! */</span>
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
 }
 </code></pre>
-<p>Compiles to:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-class">.banner</span> {
   <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
 }
 </code></pre>
-<h3 class="docs-heading">URLs<span class="anchor-target" id="variables-feature-urls"></span>
-<a href="#variables-feature-urls" name="variables-feature-urls" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">4. &#x7528;&#x4E8E; URL &#x5730;&#x5740;<span class="anchor-target" id="variables-feature-4-url-"></span>
+<a href="#variables-feature-4-url-" name="variables-feature-4-url-" class="anchor glyphicon glyphicon-link"></a></h3>
 <pre><code class="lang-less"><span class="hljs-comment">// Variables</span>
 <span class="hljs-variable">@images:</span> <span class="hljs-string">&quot;../img&quot;</span>;
 
@@ -599,20 +606,21 @@ style comment! */</span>
   <span class="hljs-attribute">background</span>: url(<span class="hljs-string">&quot;@{images}/white-sand.png&quot;</span>);
 }
 </code></pre>
-<h4 class="docs-heading">Import Statements<span class="anchor-target" id="variables-feature-import-statements"></span>
-<a href="#variables-feature-import-statements" name="variables-feature-import-statements" class="anchor glyphicon glyphicon-link"></a></h4>
+<h3 class="docs-heading">5. &#x7528;&#x4E8E;Import &#x8868;&#x8FBE;&#x5F0F;<span class="anchor-target" id="variables-feature-5-import-"></span>
+<a href="#variables-feature-5-import-" name="variables-feature-5-import-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Version: 1.4.0</p>
-<p>Syntax: <code>@import &quot;@{themes}/tidal-wave.less&quot;;</code></p>
+<p>&#x8BED;&#x6CD5;: <code>@import &quot;@{themes}/tidal-wave.less&quot;;</code></p>
 <p>Note that before v2.0.0, only variables which have been declared in the root or current scope were considered and that only the current file and calling files were considered when looking for a variable.</p>
-<p>Example:</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728; v2.0.0 &#x4E4B;&#x524D;&#x53EA;&#x8003;&#x8651;&#x5728;&#x6839;&#x6216;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x5F53;&#x5728;&#x67E5;&#x627E;&#x53D8;&#x91CF;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x8003;&#x8651;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x548C;&#x8C03;&#x7528;&#x6587;&#x4EF6;&#x67E5;&#x627E;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
 <pre><code class="lang-less"><span class="hljs-comment">// Variables</span>
 <span class="hljs-variable">@themes:</span> <span class="hljs-string">&quot;../../src/themes&quot;</span>;
 
 <span class="hljs-comment">// Usage</span>
 <span class="hljs-at_rule">@import</span> <span class="hljs-string">&quot;@{themes}/tidal-wave.less&quot;</span>;
 </code></pre>
-<h4 class="docs-heading">Properties<span class="anchor-target" id="variables-feature-properties"></span>
-<a href="#variables-feature-properties" name="variables-feature-properties" class="anchor glyphicon glyphicon-link"></a></h4>
+<h3 class="docs-heading">6. &#x7528;&#x4E8E;&#x5C5E;&#x6027;<span class="anchor-target" id="variables-feature-6-"></span>
+<a href="#variables-feature-6-" name="variables-feature-6-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Version: 1.6.0</p>
 <pre><code class="lang-less"><span class="hljs-variable">@property:</span> color;
 
@@ -621,29 +629,32 @@ style comment! */</span>
   <span class="hljs-attribute">background-@{property}</span>: <span class="hljs-hexcolor">#999</span>;
 }
 </code></pre>
-<p>Compiles to:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-class">.widget</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-hexcolor">#0ee</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-hexcolor">#999</span>;
 }
 </code></pre>
-<h3 class="docs-heading">Variable Names<span class="anchor-target" id="variables-feature-variable-names"></span>
-<a href="#variables-feature-variable-names" name="variables-feature-variable-names" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">7. &#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;<span class="anchor-target" id="variables-feature-7-"></span>
+<a href="#variables-feature-7-" name="variables-feature-7-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>It is also possible to define variables with a variable name:</p>
+<p>&#x53D8;&#x91CF;&#x4E5F;&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@fnord:</span>  <span class="hljs-string">&quot;I am fnord.&quot;</span>;
 <span class="hljs-variable">@var:</span>    <span class="hljs-string">&quot;fnord&quot;</span>;
 <span class="hljs-attribute">content</span>: <span class="hljs-variable">@@var</span>;
 </code></pre>
-<p>Which compiles to:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code>content: &quot;I am fnord.&quot;;
 </code></pre><p><span class="anchor-target" id="variables-feature-lazy-loading"></span>
 <!-- ^ please keep old anchor to not break zillion outer links --></p>
-<h3 class="docs-heading">Lazy Evaluation<span class="anchor-target" id="variables-feature-lazy-evaluation"></span>
-<a href="#variables-feature-lazy-evaluation" name="variables-feature-lazy-evaluation" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">8. &#x5EF6;&#x540E;&#x8BA1;&#x7B97;&#xFF08;Lazy Evaluation&#xFF09;<span class="anchor-target" id="variables-feature-8-lazy-evaluation-"></span>
+<a href="#variables-feature-8-lazy-evaluation-" name="variables-feature-8-lazy-evaluation-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Variables are lazy evaluated and do not have to be declared before being used.</p>
+<p>&#x53D8;&#x91CF;&#x662F;&#x5EF6;&#x540E;&#x8BA1;&#x7B97;&#xFF08;Lazy Evaluation&#xFF09;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7528;&#x5F3A;&#x5236;&#x5728;&#x4F7F;&#x7528;&#x5B83;&#x4E4B;&#x524D;&#x58F0;&#x660E;&#x3002;</p>
 </blockquote>
 <p>Valid Less snippet:</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x662F;&#x5408;&#x6CD5;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.lazy-eval</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-variable">@var</span>;
 }
@@ -652,6 +663,7 @@ style comment! */</span>
 <span class="hljs-variable">@a:</span> <span class="hljs-number">9%</span>;
 </code></pre>
 <p>this is valid Less too:</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E5F;&#x662F;&#x5408;&#x6CD5;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.lazy-eval</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-variable">@var</span>;
   <span class="hljs-variable">@a:</span> <span class="hljs-number">9%</span>;
@@ -660,13 +672,14 @@ style comment! */</span>
 <span class="hljs-variable">@var:</span> <span class="hljs-variable">@a</span>;
 <span class="hljs-variable">@a:</span> <span class="hljs-number">100%</span>;
 </code></pre>
-<p>both compile into:</p>
+<p>&#x4ED6;&#x4EEC;&#x90FD;&#x7F16;&#x8BD1;&#x6210;:</p>
 <pre><code class="lang-css"><span class="hljs-class">.lazy-eval</span> {
   <span class="hljs-attribute">width</span>: <span class="hljs-number">9%</span>;
 }
 </code></pre>
 <p>When defining a variable twice, the last definition of the variable is used, searching from the current scope upwards. This is similar to CSS itself where the last property inside a definition is used to determine the value.</p>
-<p>For instance:</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x88AB;&#x5B9A;&#x4E49;&#x4E24;&#x6B21;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x53D8;&#x91CF;&#x7684;&#x67E5;&#x627E;&#x662F;&#x4ECE;&#x5F53;&#x524D;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5F80;&#x4E0A;&#x67E5;&#x627E;&#x7684;&#xFF0C;&#x6700;&#x540E;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x88AB;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x7C7B;&#x4F3C;&#x4E8E; CSS &#x672C;&#x8EAB;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x5B9A;&#x4E49;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#x5C06;&#x88AB;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
 <pre><code class="lang-less"><span class="hljs-variable">@var:</span> <span class="hljs-number">0</span>;
 <span class="hljs-class">.class</span> {
   <span class="hljs-variable">@var:</span> <span class="hljs-number">1</span>;
@@ -678,7 +691,7 @@ style comment! */</span>
   <span class="hljs-attribute">one</span>: <span class="hljs-variable">@var</span>;
 }
 </code></pre>
-<p>Compiles to:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-class">.class</span> {
   <span class="hljs-attribute">one</span>: <span class="hljs-number">1</span>;
 }
@@ -686,10 +699,11 @@ style comment! */</span>
   <span class="hljs-attribute">three</span>: <span class="hljs-number">3</span>;
 }
 </code></pre>
-<h3 class="docs-heading">Default Variables<span class="anchor-target" id="variables-feature-default-variables"></span>
-<a href="#variables-feature-default-variables" name="variables-feature-default-variables" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">8. &#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;<span class="anchor-target" id="variables-feature-8-"></span>
+<a href="#variables-feature-8-" name="variables-feature-8-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>We sometimes get requests for default variables - an ability to set a variable only if it is not already set. This feature is not required because you can easily override a variable by putting the definition afterwards.</p>
-<p>For instance:</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x5F53;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x5B9A;&#x4E49;&#x5B9A;&#x4E49;&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
 <pre><code class="lang-less"><span class="hljs-comment">// library</span>
 <span class="hljs-variable">@base-color:</span> green;
 <span class="hljs-variable">@dark-color:</span> <span class="hljs-function">darken</span>(<span class="hljs-variable">@base-color</span>, <span class="hljs-number">10%</span>);
@@ -699,6 +713,7 @@ style comment! */</span>
 <span class="hljs-variable">@base-color:</span> red;
 </code></pre>
 <p>This works fine because of <a href="#variables-feature-lazy-loading">Lazy Loading</a> - base-color is overridden and dark-color is a dark red.</p>
+<p>&#x56E0;&#x4E3A; <a href="#variables-feature-lazy-loading">Lazy Loading</a>&#xFF0C;&#x4F7F;&#x5F97;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x6C42;&#x3002; base-color &#x88AB;&#x8986;&#x76D6;&#xFF0C;dark-color &#x7684;&#x503C;&#x4E3A; &#x6DF1;&#x7EA2;&#x8272;</p>
 
 
       <br>
