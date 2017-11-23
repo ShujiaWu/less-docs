@@ -228,7 +228,7 @@ When defining a variable twice, the last definition of the variable is used, sea
 
 We sometimes get requests for default variables - an ability to set a variable only if it is not already set. This feature is not required because you can easily override a variable by putting the definition afterwards.
 
-有时候我们想要获得一个变量的默认值（当一个变量没有被设置的时候，才会去设置变量）。这种特性不是必须的，因为我们很容易定义定义来覆盖这个变量。
+有时候我们想要获得一个变量的默认值（当一个变量没有被设置的时候，才会去设置变量）。这种特性不是必须的，因为我们很容易重新定义来覆盖这个变量。
 
 例如:
 
