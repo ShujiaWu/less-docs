@@ -9,7 +9,7 @@
 <meta name="author" content="The Core Less Team">
 
 <title>
-  Language Features | Less.js
+  &#x8BED;&#x8A00;&#x7279;&#x6027; | Less.js
 </title>
 
 <!-- Main styles -->
@@ -104,8 +104,8 @@
     
 <div class="docs-header" id="content">
   <div class="container">
-    <h1>Language Features</h1>
-    <p>Features of the Less language</p>
+    <h1>&#x8BED;&#x8A00;&#x7279;&#x6027;</h1>
+    <p>Less &#x7684;&#x8BED;&#x8A00;&#x7279;&#x6027;</p>
     
   </div>
 </div>
@@ -125,18 +125,18 @@
           <div class="sidebar hidden-print" role="complementary">
             <div id="navigation">
   
-<ul class="nav sidenav"><li><a href="#features-overview-feature">Overview</a><ul class="nav"><li><a href="#features-overview-feature-variables">Variables</a></li>
-<li><a href="#features-overview-feature-mixins">Mixins</a></li>
-<li><a href="#features-overview-feature-nested-rules">Nested Rules</a></li>
-<li><a href="#features-overview-feature-nested-directives-and-bubbling">Nested Directives and Bubbling</a></li>
-<li><a href="#features-overview-feature-operations">Operations</a></li>
-<li><a href="#features-overview-feature-escaping">Escaping</a></li>
-<li><a href="#features-overview-feature-functions">Functions</a></li>
-<li><a href="#features-overview-feature-namespaces-and-accessors">Namespaces and Accessors</a></li>
-<li><a href="#features-overview-feature-scope">Scope</a></li>
-<li><a href="#features-overview-feature-comments">Comments</a></li>
-<li><a href="#features-overview-feature-importing">Importing</a></li></ul></li>
-<li><a href="#variables-feature">Variables</a><ul class="nav"><li><a href="#variables-feature-overview">Overview</a></li>
+<ul class="nav sidenav"><li><a href="#features-overview-feature">&#x5FEB;&#x901F;&#x9884;&#x89C8;</a><ul class="nav"><li><a href="#features-overview-feature-1-">1. &#x53D8;&#x91CF;</a></li>
+<li><a href="#features-overview-feature-2-mixins-">2. &#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a></li>
+<li><a href="#features-overview-feature-3-">3. &#x5D4C;&#x5957;&#x89C4;&#x5219;</a></li>
+<li><a href="#features-overview-feature-4-">4. &#x5D4C;&#x5957;&#x6307;&#x4EE4;&#x548C;&#x5192;&#x6CE1;</a></li>
+<li><a href="#features-overview-feature-5-">5. &#x8FD0;&#x7B97;</a></li>
+<li><a href="#features-overview-feature-6-">6. &#x8F6C;&#x4E49;</a></li>
+<li><a href="#features-overview-feature-7-">7. &#x51FD;&#x6570;</a></li>
+<li><a href="#features-overview-feature-8-namespaces-and-accessors">8. Namespaces and Accessors</a></li>
+<li><a href="#features-overview-feature-9-">9. &#x4F5C;&#x7528;&#x57DF;</a></li>
+<li><a href="#features-overview-feature-10-">10. &#x6CE8;&#x91CA;</a></li>
+<li><a href="#features-overview-feature-11-">11. &#x5BFC;&#x5165;</a></li></ul></li>
+<li><a href="#variables-feature">&#x53D8;&#x91CF;</a><ul class="nav"><li><a href="#variables-feature-overview">Overview</a></li>
 <li><a href="#variables-feature-variable-interpolation">Variable Interpolation</a></li>
 <li><a href="#variables-feature-urls">URLs</a></li>
 <li><a href="#variables-feature-variable-names">Variable Names</a></li>
@@ -153,19 +153,19 @@
 <li><a href="#extend-feature-scoping-extend-inside-media">Scoping / Extend Inside @media</a></li>
 <li><a href="#extend-feature-duplication-detection">Duplication Detection</a></li>
 <li><a href="#extend-feature-use-cases-for-extend">Use Cases for Extend</a></li></ul></li>
-<li><a href="#mixins-feature">Mixins</a><ul class="nav"><li><a href="#mixins-feature-not-outputting-the-mixin">Not Outputting the Mixin</a></li>
+<li><a href="#mixins-feature">&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a><ul class="nav"><li><a href="#mixins-feature-not-outputting-the-mixin">Not Outputting the Mixin</a></li>
 <li><a href="#mixins-feature-selectors-in-mixins">Selectors in Mixins</a></li>
 <li><a href="#mixins-feature-namespaces">Namespaces</a></li>
 <li><a href="#mixins-feature-guarded-namespaces">Guarded Namespaces</a></li>
 <li><a href="#mixins-feature-the-important-keyword">The !important keyword</a></li></ul></li>
-<li><a href="#mixins-parametric-feature">Parametric Mixins</a><ul class="nav"><li><a href="#mixins-parametric-feature-mixins-with-multiple-parameters">Mixins with Multiple Parameters</a></li>
+<li><a href="#mixins-parametric-feature">&#x5E26;&#x53C2;&#x6570;&#x7684;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a><ul class="nav"><li><a href="#mixins-parametric-feature-mixins-with-multiple-parameters">Mixins with Multiple Parameters</a></li>
 <li><a href="#mixins-parametric-feature-named-parameters">Named Parameters</a></li>
 <li><a href="#mixins-parametric-feature-the-arguments-variable">The @arguments Variable</a></li>
 <li><a href="#mixins-parametric-feature-advanced-arguments-and-the-rest-variable">Advanced Arguments and the @rest Variable</a></li>
 <li><a href="#mixins-parametric-feature-pattern-matching">Pattern-matching</a></li></ul></li>
-<li><a href="#mixins-as-functions-feature">Mixins as Functions</a></li>
-<li><a href="#detached-rulesets-feature">Passing Rulesets to Mixins</a><ul class="nav"><li><a href="#detached-rulesets-feature-scoping">Scoping</a></li></ul></li>
-<li><a href="#import-directives-feature">Import Directives</a><ul class="nav"><li><a href="#import-directives-feature-file-extensions">File Extensions</a></li></ul></li>
+<li><a href="#mixins-as-functions-feature">&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x7684;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a></li>
+<li><a href="#detached-rulesets-feature">&#x5C06;&#x89C4;&#x5219;&#x96C6;&#x4F20;&#x9012;&#x7ED9;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a><ul class="nav"><li><a href="#detached-rulesets-feature-scoping">Scoping</a></li></ul></li>
+<li><a href="#import-directives-feature">&#x5BFC;&#x5165;&#x6307;&#x4EE4;</a><ul class="nav"><li><a href="#import-directives-feature-file-extensions">File Extensions</a></li></ul></li>
 <li><a href="#import-options">Import Options</a><ul class="nav"><li><a href="#import-options-reference">reference</a></li>
 <li><a href="#import-options-reference-example">reference example</a></li>
 <li><a href="#import-options-inline">inline</a></li>
@@ -174,15 +174,15 @@
 <li><a href="#import-options-once">once</a></li>
 <li><a href="#import-options-multiple">multiple</a></li>
 <li><a href="#import-options-optional">optional</a></li></ul></li>
-<li><a href="#mixin-guards-feature">Mixin Guards</a><ul class="nav"><li><a href="#mixin-guards-feature-guard-comparison-operators">Guard Comparison Operators</a></li>
+<li><a href="#mixin-guards-feature">&#x6DF7;&#x5408;&#xFF08;Mixin&#xFF09; &#x5B88;&#x536B;</a><ul class="nav"><li><a href="#mixin-guards-feature-guard-comparison-operators">Guard Comparison Operators</a></li>
 <li><a href="#mixin-guards-feature-guard-logical-operators">Guard Logical Operators</a></li>
 <li><a href="#mixin-guards-feature-type-checking-functions">Type Checking Functions</a></li>
 <li><a href="#mixin-guards-feature-conditional-mixins">Conditional Mixins</a></li></ul></li>
-<li><a href="#css-guards-feature">CSS Guards</a></li>
-<li><a href="#loops-feature">Loops</a></li>
-<li><a href="#merge-feature">Merge</a><ul class="nav"><li><a href="#merge-feature-comma">Comma</a></li>
+<li><a href="#css-guards-feature">CSS &#x5B88;&#x536B;</a></li>
+<li><a href="#loops-feature">&#x5FAA;&#x73AF;</a></li>
+<li><a href="#merge-feature">&#x5408;&#x5E76;</a><ul class="nav"><li><a href="#merge-feature-comma">Comma</a></li>
 <li><a href="#merge-feature-space">Space</a></li></ul></li>
-<li><a href="#parent-selectors-feature">Parent Selectors</a><ul class="nav"><li><a href="#parent-selectors-feature-multiple-">Multiple &amp;</a></li>
+<li><a href="#parent-selectors-feature">&#x7236;&#x9009;&#x62E9;&#x5668;</a><ul class="nav"><li><a href="#parent-selectors-feature-multiple-">Multiple &amp;</a></li>
 <li><a href="#parent-selectors-feature-changing-selector-order">Changing Selector Order</a></li>
 <li><a href="#parent-selectors-feature-combinatorial-explosion">Combinatorial Explosion</a></li></ul></li></ul></div>
           </div>
@@ -193,10 +193,10 @@
   
 
 
-  <!-- Overview -->
+  <!-- 快速预览 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Overview<span class="anchor-target" id="features-overview-feature"></span>
+      <h1 class="docs-heading">&#x5FEB;&#x901F;&#x9884;&#x89C8;<span class="anchor-target" id="features-overview-feature"></span>
 <a href="#features-overview-feature" name="features-overview-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -218,10 +218,12 @@
 
 <blockquote>
 <p>As an extension to CSS, Less is not only backwards compatible with CSS, but the extra features it adds use existing CSS syntax. This makes learning Less a breeze, and if in doubt, lets you fall back to vanilla CSS.</p>
+<p>Less &#x4F5C;&#x4E3A; CSS &#x7684;&#x6269;&#x5C55;&#xFF0C;&#x4E0D;&#x4EC5;&#x80FD;&#x591F;&#x517C;&#x5BB9; CSS &#x8BED;&#x6CD5; &#xFF0C;&#x800C;&#x4E14;&#x65B0;&#x589E;&#x7684;&#x6269;&#x5C55;&#x7279;&#x6027;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x539F;&#x6709;&#x7684;&#x8BED;&#x6CD5;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x5B66;&#x4E60; Less &#x66F4;&#x4E3A;&#x7B80;&#x5355;&#xFF0C;&#x800C;&#x4E14;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x56DE;&#x9000;&#x5230;&#x666E;&#x901A;&#x7684; CSS&#x3002;</p>
 </blockquote>
-<h3 class="docs-heading">Variables<span class="anchor-target" id="features-overview-feature-variables"></span>
-<a href="#features-overview-feature-variables" name="features-overview-feature-variables" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">1. &#x53D8;&#x91CF;<span class="anchor-target" id="features-overview-feature-1-"></span>
+<a href="#features-overview-feature-1-" name="features-overview-feature-1-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>These are pretty self-explanatory:</p>
+<p>&#x8FD9;&#x662F;&#x975E;&#x5E38;&#x597D;&#x7406;&#x89E3;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@nice-blue:</span> <span class="hljs-hexcolor">#5B83AD</span>;
 <span class="hljs-variable">@light-blue:</span> <span class="hljs-variable">@nice-blue</span> + <span class="hljs-hexcolor">#111</span>;
 
@@ -229,21 +231,24 @@
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">@light-blue</span>;
 }
 </code></pre>
-<p>Outputs:</p>
+<p>&#x8F93;&#x51FA;:</p>
 <pre><code class="lang-css"><span class="hljs-id">#header</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-hexcolor">#6c94be</span>;
 }
 </code></pre>
 <p>Note that variables are actually &quot;constants&quot; in that they can only be defined once.</p>
-<h3 class="docs-heading">Mixins<span class="anchor-target" id="features-overview-feature-mixins"></span>
-<a href="#features-overview-feature-mixins" name="features-overview-feature-mixins" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x53D8;&#x91CF;&#x5B9E;&#x9645;&#x4E0A;&#x5E94;&#x8BE5;&#x8BF4;&#x662F;&#x201C;&#x5E38;&#x91CF;&#x201D;&#x66F4;&#x5408;&#x9002;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EA;&#x80FD;&#x88AB;&#x5B9A;&#x4E49;&#x4E00;&#x6B21;&#x3002;</p>
+<h3 class="docs-heading">2. &#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;<span class="anchor-target" id="features-overview-feature-2-mixins-"></span>
+<a href="#features-overview-feature-2-mixins-" name="features-overview-feature-2-mixins-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Mixins are a way of including (&quot;mixing in&quot;) a bunch of properties from one rule-set into another rule-set. So say we have the following class:</p>
+<p>&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x5C06;&#x4E00;&#x7CFB;&#x5217;&#x5C5E;&#x6027;&#x4ECE;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x96C6;&#x5305;&#x542B;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x96C6;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x6709;&#x4E0B;&#x9762;&#x4E00;&#x4E2A;&#x7C7B;&#x6837;&#x5F0F;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-class">.bordered</span> {
   <span class="hljs-attribute">border-top</span>: dotted <span class="hljs-number">1px</span> black;
   <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">2px</span> black;
 }
 </code></pre>
 <p>And we want to use these properties inside other rule-sets. Well, we just have to drop in the name of the class where we want the properties, like so:</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x5728;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x96C6;&#x4E2D;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x6837;&#x5F0F;&#x96C6;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x5728;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x52A0;&#x5165;&#x7684;&#x5730;&#x65B9;&#x5199;&#x4E0A;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x540D;&#x5373;&#x53EF;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-id">#menu</span> <span class="hljs-tag">a</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-hexcolor">#111</span>;
   <span class="hljs-class">.bordered</span>;
@@ -255,14 +260,16 @@
 }
 </code></pre>
 <p>The properties of the <code>.bordered</code> class will now appear in both <code>#menu a</code> and <code>.post a</code>. (Note that you can also use <code>#ids</code> as mixins.)</p>
-<p><strong>Learn more</strong></p>
+<p><code>.bordered</code> &#x4E2D;&#x7684;&#x6837;&#x5F0F;&#x5C31;&#x51FA;&#x73B0;&#x5728; <code>#menu a</code> &#x548C; <code>.post a</code>&#x3002;&#xFF08;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6DF7;&#x5408;&#x4E2D;&#x4F7F;&#x7528; <code>id&#x9009;&#x62E9;&#x5668;</code>&#xFF09;</p>
+<p><strong>&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;</strong></p>
 <ul>
-<li><a href="#mixins-feature">More about mixins</a></li>
-<li><a href="#mixins-parametric-feature">Parametric Mixins</a></li>
+<li><a href="#mixins-feature">&#x5173;&#x4E8E;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;&#x7684;&#x66F4;&#x591A;&#x4FE1;&#x606F;</a></li>
+<li><a href="#mixins-parametric-feature">&#x5E26;&#x53C2;&#x6570;&#x7684;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a></li>
 </ul>
-<h3 class="docs-heading">Nested Rules<span class="anchor-target" id="features-overview-feature-nested-rules"></span>
-<a href="#features-overview-feature-nested-rules" name="features-overview-feature-nested-rules" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">3. &#x5D4C;&#x5957;&#x89C4;&#x5219;<span class="anchor-target" id="features-overview-feature-3-"></span>
+<a href="#features-overview-feature-3-" name="features-overview-feature-3-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Less gives you the ability to use nesting instead of, or in combination with cascading. Let&apos;s say we have the following CSS:</p>
+<p>Less &#x8BA9;&#x4F60;&#x5728; CSS &#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x6216;&#x8005;&#x7EC4;&#x5408;&#x7EA7;&#x8054;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x7684; CSS&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-id">#header</span> {
   <span class="hljs-attribute">color</span>: black;
 }
@@ -274,6 +281,7 @@
 }
 </code></pre>
 <p>In Less, we can also write it this way:</p>
+<p>&#x5728; Less &#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x5199;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-id">#header</span> {
   <span class="hljs-attribute">color</span>: black;
   <span class="hljs-class">.navigation</span> {
@@ -285,7 +293,9 @@
 }
 </code></pre>
 <p>The resulting code is more concise, and mimics the structure of your HTML.</p>
+<p>&#x8FD9;&#x6837;&#x5199;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x52A0;&#x7B80;&#x6D01;&#xFF0C;&#x6709;&#x70B9;&#x7C7B;&#x4F3C;&#x4E8E; HTML &#x7684;&#x7ED3;&#x6784;&#x3002;</p>
 <p>You can also bundle pseudo-selectors with your mixins using this method. Here&apos;s the classic clearfix hack, rewritten as a mixin (<code>&amp;</code> represents the current selector parent):</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6346;&#x7ED1;&#x4F7F;&#x7528;&#x4F2A;&#x9009;&#x62E9;&#x5668;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x91CD;&#x5199;&#x540E;&#x7684;&#x7ECF;&#x5178;&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;hack &#xFF08;<code>&amp;</code>&#x8868;&#x793A;&#x7684;&#x662F;&#x5F53;&#x524D;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF09;</p>
 <pre><code class="lang-less"><span class="hljs-class">.clearfix</span> {
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">zoom</span>: <span class="hljs-number">1</span>;
@@ -300,14 +310,16 @@
   }
 }
 </code></pre>
-<p><strong>See also</strong></p>
+<p><strong>&#x53C2;&#x89C1;</strong></p>
 <ul>
-<li><a href="#parent-selectors-feature">Parent Selectors</a></li>
+<li><a href="#parent-selectors-feature">&#x7236;&#x9009;&#x62E9;&#x5668;</a></li>
 </ul>
-<h3 class="docs-heading">Nested Directives and Bubbling<span class="anchor-target" id="features-overview-feature-nested-directives-and-bubbling"></span>
-<a href="#features-overview-feature-nested-directives-and-bubbling" name="features-overview-feature-nested-directives-and-bubbling" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">4. &#x5D4C;&#x5957;&#x6307;&#x4EE4;&#x548C;&#x5192;&#x6CE1;<span class="anchor-target" id="features-overview-feature-4-"></span>
+<a href="#features-overview-feature-4-" name="features-overview-feature-4-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Directives such as <code>media</code> or <code>keyframe</code> can be nested in the same way as selectors. Directive is placed on top and relative order against other elements inside the same ruleset remains unchanged. This is called bubbling.</p>
+<p><code>media</code> &#x6216; <code>keyframe</code> &#x7B49;&#x6307;&#x4EE4;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5D4C;&#x5957;&#x3002;&#x76F8;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x89C4;&#x5219;&#x96C6;&#xFF0C;&#x9664;&#x6307;&#x4EE4;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x5143;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x56FA;&#x5B9A;&#x4E0D;&#x53D8;&#x7684;&#xFF0C;&#x800C;&#x6307;&#x4EE4;&#x4F1A;&#x88AB;&#x653E;&#x5230;&#x76F8;&#x5E94;&#x89C4;&#x5219;&#x96C6;&#x7684;&#x524D;&#x9762;&#xFF0C;&#x8FD9;&#x4E2A;&#x88AB;&#x79F0;&#x4E3A;&#x5192;&#x6CE1;&#x3002;</p>
 <p>Conditional directives e.g. <code>@Media</code>, <code>@supports</code> and <code>@document</code> have also selectors copied into their bodies:</p>
+<p>&#x6761;&#x4EF6;&#x6307;&#x4EE4;&#x4F8B;&#x5982; <code>@Media</code>, <code>@supports</code> &#x548C; <code>@document</code> &#x4F1A;&#x5BF9;&#x9009;&#x62E9;&#x5668;&#x8FDB;&#x884C;&#x590D;&#x5236;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.screen-color</span> {
   <span class="hljs-at_rule">@media</span> screen {
     <span class="hljs-attribute">color</span>: green;
@@ -320,7 +332,7 @@
   }
 }
 </code></pre>
-<p>outputs:</p>
+<p>&#x8F93;&#x51FA;:</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@media</span> screen {
   <span class="hljs-class">.screen-color</span> {
     <span class="hljs-attribute">color</span>: green;
@@ -338,6 +350,7 @@
 }
 </code></pre>
 <p>Remaining non-conditional directives, for example <code>font-face</code> or <code>keyframes</code>, are bubbled up too. Their bodies do not change:</p>
+<p>&#x5269;&#x4E0B;&#x7684;&#x975E;&#x6761;&#x4EF6;&#x6307;&#x4EE4;&#xFF0C;&#x4F8B;&#x5982; <code>font-face</code> or <code>keyframes</code>&#xFF0C;&#x540C;&#x6837;&#x4F1A;&#x5192;&#x6CE1;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x4EEC;&#x4E0D;&#x4F1A;&#x590D;&#x5236;&#x9009;&#x62E9;&#x5668;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-id">#a</span> {
   <span class="hljs-attribute">color</span>: blue;
   <span class="hljs-at_rule">@font-face</span> {
@@ -346,7 +359,7 @@
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">2</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>;
 }
 </code></pre>
-<p>outputs:</p>
+<p>&#x8F93;&#x51FA;:</p>
 <pre><code class="lang-less"><span class="hljs-id">#a</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
@@ -357,46 +370,54 @@
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">2</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span> <span class="hljs-number">2</span>;
 }
 </code></pre>
-<h3 class="docs-heading">Operations<span class="anchor-target" id="features-overview-feature-operations"></span>
-<a href="#features-overview-feature-operations" name="features-overview-feature-operations" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">5. &#x8FD0;&#x7B97;<span class="anchor-target" id="features-overview-feature-5-"></span>
+<a href="#features-overview-feature-5-" name="features-overview-feature-5-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Arithmetical operations <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> can operate on any number, color or variable. If it is possible, mathematical operations take units into account and convert numbers before adding, subtracting or comparing them. The result has leftmost explicitly stated unit type. If the conversion is impossible or not meaningful, units are ignored. Example of impossible conversion: px to cm or rad to %.</p>
-<pre><code class="lang-less"><span class="hljs-comment">// numbers are converted into the same units</span>
+<p>&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26; <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> &#x80FD;&#x591F;&#x8FD0;&#x7528;&#x5728;&#x4EFB;&#x610F;&#x7684;&#x6570;&#x5B57;&#x3001;&#x989C;&#x8272;&#x6216;&#x8005;&#x53D8;&#x91CF;&#x4E0A;&#x3002;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;&#x8FD8;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x5355;&#x4F4D;&#xFF0C;&#x4ED6;&#x4EEC;&#x5728;&#x505A;&#x8FD0;&#x7B97;&#x4E4B;&#x524D;&#x4F1A;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x3002;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x5305;&#x542B;&#x6B63;&#x786E;&#x7684;&#x5355;&#x4F4D;&#x3002;&#x5982;&#x679C;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x5355;&#x4F4D;&#x4E0D;&#x6B63;&#x786E;&#x6216;&#x8005;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#xFF0C;&#x90A3;&#x4E48;&#x5355;&#x4F4D;&#x5C06;&#x4F1A;&#x88AB;&#x5FFD;&#x7565;&#x3002;&#x53EF;&#x4EE5;&#x88AB;&#x7406;&#x89E3;&#x8F6C;&#x6362;&#x7684;&#x5355;&#x4F4D;&#x6709;&#xFF1A;px =&gt; cm &#x6216;&#x8005; rad =&gt; %&#x3002;</p>
+<pre><code class="lang-less"><span class="hljs-comment">// &#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x5C06;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x76F8;&#x540C;&#x7684;&#x5355;&#x4F4D;</span>
 <span class="hljs-variable">@conversion-1:</span> <span class="hljs-number">5cm</span> + <span class="hljs-number">10mm</span>; <span class="hljs-comment">// result is 6cm</span>
 <span class="hljs-variable">@conversion-2:</span> <span class="hljs-number">2</span> - <span class="hljs-number">3cm</span> - <span class="hljs-number">5mm</span>; <span class="hljs-comment">// result is -1.5cm</span>
 
-<span class="hljs-comment">// conversion is impossible</span>
+<span class="hljs-comment">// &#x4EE5;&#x4E0B;&#x5355;&#x4F4D;&#x8F6C;&#x6362;&#x662F;&#x53EF;&#x884C;&#x7684;</span>
 <span class="hljs-variable">@incompatible-units:</span> <span class="hljs-number">2</span> + <span class="hljs-number">5px</span> - <span class="hljs-number">3cm</span>; <span class="hljs-comment">// result is 4px</span>
 
-<span class="hljs-comment">// example with variables</span>
+<span class="hljs-comment">// &#x5305;&#x542B;&#x53D8;&#x91CF;&#x7684;&#x7B97;&#x672F;&#x8FD0;&#x7B97;</span>
 <span class="hljs-variable">@base:</span> <span class="hljs-number">5%</span>;
 <span class="hljs-variable">@filler:</span> <span class="hljs-variable">@base</span> * <span class="hljs-number">2</span>; <span class="hljs-comment">// result is 10%</span>
 <span class="hljs-variable">@other:</span> <span class="hljs-variable">@base</span> + <span class="hljs-variable">@filler</span>; <span class="hljs-comment">// result is 15%</span>
 </code></pre>
 <p>Multiplication and division do not convert numbers. It would not be meaningful in most cases - a length multiplied by a length gives an area and css does not support specifying areas. Less will operate on numbers as they are and assign explicitly stated unit type to the result.</p>
+<p>&#x4E58;&#x6CD5;&#x8FD0;&#x7B97;&#x548C;&#x9664;&#x6CD5;&#x8FD0;&#x7B97;&#x662F;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x7B97;&#x672F;&#x8F6C;&#x6362;&#x7684;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;&#xFF0C; &#x5728;&#x6570;&#x5B66;&#x4E0A;&#xFF0C;&#x957F;&#x5EA6;&#x4E58;&#x4EE5;&#x957F;&#x5EA6;&#x5C06;&#x7B49;&#x5230;&#x4E00;&#x4E2A;&#x9762;&#x79EF;&#xFF0C;&#x7136;&#x800C; CSS &#x662F;&#x4E0D;&#x652F;&#x6301;&#x9762;&#x79EF;&#x7684;&#x3002;Less &#x53EA;&#x4F1A;&#x5728;&#x660E;&#x786E;&#x89C4;&#x5B9A;&#x7684;&#x5355;&#x4F4D;&#x7C7B;&#x578B;&#x4E0A;&#x505A;&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@base:</span> <span class="hljs-number">2cm</span> * <span class="hljs-number">3mm</span>; <span class="hljs-comment">// result is 6cm</span>
 </code></pre>
 <p>Colors are split into their red, green, blue and alpha dimensions. The operation is applied to each color dimension separately. E.g., if the user added two colors, then the green dimension of the result is equal to sum of green dimensions of input colors. If the user multiplied a color by a number, each color dimension will get multiplied.</p>
+<p>&#x989C;&#x8272;&#x5C06;&#x4F1A;&#x88AB;&#x62C6;&#x5206;&#x6210;&#x7EA2;&#x3001;&#x7EFF;&#x3001;&#x84DD;&#x3001;&#x900F;&#x660E;&#x5EA6;&#x56DB;&#x4E2A;&#x7EF4;&#x5EA6;&#x3002;&#x989C;&#x8272;&#x8FD0;&#x7B97;&#x662F;&#x5206;&#x522B;&#x5BF9;&#x989C;&#x8272;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x4E24;&#x4E2A;&#x989C;&#x8272;&#x8FDB;&#x884C;&#x76F8;&#x52A0;&#xFF0C;&#x90A3;&#x4E48;&#x7EFF;&#x8272;&#x7EF4;&#x5EA6;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E24;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x7EFF;&#x8272;&#x7EF4;&#x5EA6;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x76F8;&#x52A0;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5C06;&#x989C;&#x8272;&#x503C;&#x4E58;&#x4EE5;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x7EF4;&#x5EA6;&#x7684;&#x503C;&#x90FD;&#x4F1A;&#x4E58;&#x4EE5;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x3002;</p>
 <p>Note: arithmetic operation on alpha is not defined, because math operation on colors do not have standard agreed upon meaning. Do not rely on current implemention as it <a href="https://github.com/less/less.js/issues/2694">may change</a> in later versions.</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x989C;&#x8272;&#x503C;&#x900F;&#x660E;&#x5EA6;&#x7EF4;&#x5EA6;&#x5728;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x4E0A;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x88AB;&#x5B9A;&#x4E49;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x989C;&#x8272;&#x4E0A;&#x7684;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x6CA1;&#x6709;&#x6807;&#x51C6;&#x7684;&#x7EA6;&#x5B9A;&#x3002;&#x4E0D;&#x8981;&#x4F9D;&#x8D56;&#x5F53;&#x524D;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x6216;&#x8BB8;&#x4F1A;&#x53D1;&#x751F;<a href="https://github.com/less/less.js/issues/2694">&#x6539;&#x53D8;</a></p>
 <p>An operation on colors always produces valid color. If some color dimension of the result ends up being bigger than <code>ff</code> or smaller than <code>00</code>, the dimension is rounded to either <code>ff</code> or <code>00</code>. If alpha ends up being bigger than <code>1.0</code> or smaller than <code>0.0</code>, the alpha is rounded to either <code>1.0</code> or <code>0.0</code>.</p>
+<p>&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x8FD0;&#x7B97;&#x90FD;&#x5C06;&#x4EA7;&#x751F;&#x5408;&#x6CD5;&#x7684;&#x989C;&#x8272;&#x503C;&#x3002;&#x5982;&#x679C;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#x7684;&#x503C;&#x8D85;&#x8FC7; <code>ff</code> &#x6216;&#x8005;&#x5C0F;&#x4E8E; <code>00</code>, &#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>ff</code> &#x6216;&#x8005; <code>00</code>&#x3002;&#x5982;&#x679C;&#x900F;&#x660E;&#x5EA6;&#x8D85;&#x8FC7; <code>1.0</code> &#x6216;&#x8005;&#x5C0F;&#x4E8E; <code>0.0</code>,&#x540C;&#x6837;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; <code>1.0</code> &#x6216; <code>0.0</code>&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@color:</span> <span class="hljs-hexcolor">#224488</span> / <span class="hljs-number">2</span>; <span class="hljs-comment">//results in #112244</span>
 <span class="hljs-attribute">background-color</span>: <span class="hljs-hexcolor">#112244</span> + <span class="hljs-hexcolor">#111</span>; <span class="hljs-comment">// result is #223355</span>
 </code></pre>
-<h3 class="docs-heading">Escaping<span class="anchor-target" id="features-overview-feature-escaping"></span>
-<a href="#features-overview-feature-escaping" name="features-overview-feature-escaping" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">6. &#x8F6C;&#x4E49;<span class="anchor-target" id="features-overview-feature-6-"></span>
+<a href="#features-overview-feature-6-" name="features-overview-feature-6-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Escaping allows you to use any arbitrary string as property or variable value. Anything inside <code>~&quot;anything&quot;</code> or <code>~&apos;anything&apos;</code> is used as is with no changes except <a href="#variables-feature-variable-interpolation">interpolation</a>.</p>
+<p>&#x8F6C;&#x4E49;&#x5141;&#x8BB8;&#x4F60;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4F5C;&#x4E3A;&#x5C5E;&#x6027;&#x6216;&#x8005;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;<code>~&quot;anything&quot;</code> &#x6216; <code>~&apos;anything&apos;</code> &#x5E38;&#x5F53;&#x505A;&#x539F;&#x59CB;&#x503C;&#x4F7F;&#x7528;&#xFF0C;&#x9664;&#x4E86;<a href="#variables-feature-variable-interpolation">&#x63D2;&#x503C;</a>&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-class">.weird-element</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">~&quot;^//* some horrible but needed css hack&quot;</span>;
 }
 </code></pre>
-<p>results in:</p>
+<p>&#x7ED3;&#x679C;:</p>
 <pre><code class="lang-less"><span class="hljs-class">.weird-element</span> {
   <span class="hljs-attribute">content</span>: ^<span class="hljs-comment">//* some horrible but needed css hack;</span>
 }
 </code></pre>
-<h3 class="docs-heading">Functions<span class="anchor-target" id="features-overview-feature-functions"></span>
-<a href="#features-overview-feature-functions" name="features-overview-feature-functions" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">7. &#x51FD;&#x6570;<span class="anchor-target" id="features-overview-feature-7-"></span>
+<a href="#features-overview-feature-7-" name="features-overview-feature-7-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Less provides a variety of functions which transform colors, manipulate strings and do maths. They are documented fully in the function reference.</p>
+<p>Less &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7528;&#x4E8E;&#x989C;&#x8272;&#x8F6C;&#x6362;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x3001;&#x6570;&#x5B66;&#x8FD0;&#x7B97;&#x7684;&#x51FD;&#x6570;&#x3002;&#x5728;&#x51FD;&#x6570;&#x53C2;&#x8003;&#x4E2D;&#x53EF;&#x4EE5;&#x67E5;&#x9605;&#x8BE6;&#x7EC6;&#x7684;&#x6587;&#x6863;&#x3002;</p>
 <p>Using them is pretty straightforward. The following example uses percentage to convert 0.5 to 50%, increases the saturation of a base color by 5% and then sets the background color to one that is lightened by 25% and spun by 8 degrees:</p>
+<p>&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x5C06; 0.5 &#x8F6C;&#x6362;&#x6210; 50% &#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x9971;&#x548C;&#x5EA6;&#x589E;&#x52A0; 5%&#xFF0C;&#x5C06;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x4EAE;&#x5EA6;&#x63D0;&#x9AD8; 25%&#xFF0C;&#x5C06;&#x8272;&#x76F8;&#x65CB;&#x8F6C; 8 &#x5EA6;&#x5E76;&#x8BBE;&#x7F6E;&#x4E3A;&#x80CC;&#x666F;&#x989C;&#x8272;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@base:</span> <span class="hljs-hexcolor">#f04615</span>;
 <span class="hljs-variable">@width:</span> <span class="hljs-number">0.5</span>;
 
@@ -406,10 +427,12 @@
   <span class="hljs-attribute">background-color</span>: <span class="hljs-function">spin</span>(<span class="hljs-function">lighten</span>(<span class="hljs-variable">@base</span>, <span class="hljs-number">25%</span>), <span class="hljs-number">8</span>);
 }
 </code></pre>
-<h3 class="docs-heading">Namespaces and Accessors<span class="anchor-target" id="features-overview-feature-namespaces-and-accessors"></span>
-<a href="#features-overview-feature-namespaces-and-accessors" name="features-overview-feature-namespaces-and-accessors" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">8. Namespaces and Accessors<span class="anchor-target" id="features-overview-feature-8-namespaces-and-accessors"></span>
+<a href="#features-overview-feature-8-namespaces-and-accessors" name="features-overview-feature-8-namespaces-and-accessors" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>(Not to be confused with <a href="http://www.w3.org/TR/css3-namespace/">CSS <code>@namespace</code></a> or <a href="http://www.w3.org/TR/css3-selectors/#typenmsp">namespace selectors</a>).</p>
+<p>(&#x4E0D;&#x8981;&#x8DDF; <a href="http://www.w3.org/TR/css3-namespace/">CSS <code>@namespace</code></a> &#x6216; <a href="http://www.w3.org/TR/css3-selectors/#typenmsp">namespace selectors</a> &#x6DF7;&#x6DC6;).</p>
 <p>Sometimes, you may want to group your mixins, for organizational purposes, or just to offer some encapsulation. You can do this pretty intuitively in Less, say you want to bundle some mixins and variables under <code>#bundle</code>, for later reuse or distributing:</p>
+<p>&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4E3A;&#x4E86;&#x7EC4;&#x7EC7;&#x76EE;&#x7684;&#x6216;&#x8005;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x5C01;&#x88C5;&#xFF0C;&#x60F3;&#x5C06;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09; &#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x3002;&#x5728; Less &#x4E2D;&#x8FD9;&#x4E2D;&#x505A;&#x6CD5;&#x975E;&#x5E38;&#x76F4;&#x89C2;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x4E3A;&#x4E86;&#x4EE5;&#x540E;&#x91CD;&#x7528;&#x6216;&#x8005;&#x53D1;&#x5E03;&#x60F3;&#x5C06;&#x4E00;&#x4E9B;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x6216;&#x8005;&#x53D8;&#x91CF;&#x6346;&#x7ED1;&#x5230; <code>#bundle</code> &#x4E2D;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-id">#bundle</span> {
   <span class="hljs-class">.button</span> {
     <span class="hljs-attribute">display</span>: block;
@@ -424,15 +447,18 @@
 }
 </code></pre>
 <p>Now if we want to mixin the <code>.button</code> class in our <code>#header a</code>, we can do:</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5C06; <code>.button</code> &#x7C7B;&#x9009;&#x62E9;&#x5668;&#x7684;&#x6837;&#x5F0F;&#x6DF7;&#x5408;&#x5230; <code>#header a</code> &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x505A;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-id">#header</span> <span class="hljs-tag">a</span> {
   <span class="hljs-attribute">color</span>: orange;
   <span class="hljs-id">#bundle</span> &gt; <span class="hljs-class">.button</span>;
 }
 </code></pre>
 <p>Note that variables declared within a namespace will be scoped to that namespace only and will not be available outside of the scope via the same syntax that you would use to reference a mixin (<code>#Namespace &gt; .mixin-name</code>). So, for example, you can&apos;t do the following: (<code>#Namespace &gt; @this-will-not-work</code>).</p>
-<h3 class="docs-heading">Scope<span class="anchor-target" id="features-overview-feature-scope"></span>
-<a href="#features-overview-feature-scope" name="features-overview-feature-scope" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x4F5C;&#x7528;&#x4E8E;&#x8BE5;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x4F60;&#x4E0D;&#x80FD;&#x5728;&#x4F5C;&#x7528;&#x57DF;&#x4E4B;&#x5916;&#x50CF;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x8BED;&#x6CD5; (<code>#Namespace &gt; .mixin-name</code>) &#x4E00;&#x6837;&#x4F7F;&#x7528;&#x8FB9;&#x7528;&#x3002;&#x4F8B;&#x5982;&#xFF1A;&#x8FD9;&#x6837;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x7684; (<code>#Namespace &gt; @this-will-not-work</code>)&#x3002;</p>
+<h3 class="docs-heading">9. &#x4F5C;&#x7528;&#x57DF;<span class="anchor-target" id="features-overview-feature-9-"></span>
+<a href="#features-overview-feature-9-" name="features-overview-feature-9-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Scope in Less is very similar to that of programming languages. Variables and mixins are first looked for locally, and if they aren&apos;t found, the compiler will look in the parent scope, and so on.</p>
+<p>Less &#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x5176;&#x4ED6;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x3002;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x3001;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x65F6;&#xFF0C;&#x4F1A;&#x9996;&#x5148;&#x5728;&#x672C;&#x5730;&#xFF08;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#xFF09;&#x5BFB;&#x627E;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x5728;&#x4ED6;&#x7684;&#x7236;&#x4F5C;&#x7528;&#x57DF;&#x7EE7;&#x7EED;&#x5BFB;&#x627E;&#xFF0C;&#x76F4;&#x5230;&#x627E;&#x5230;&#x4E3A;&#x6B62;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@var:</span> red;
 
 <span class="hljs-id">#page</span> {
@@ -443,6 +469,7 @@
 }
 </code></pre>
 <p>Variables and mixins do not have to be declared before being used so the following Less code is identical to the previous example:</p>
+<p>&#x53D8;&#x91CF;&#x548C;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x7684;&#x58F0;&#x660E;&#x4E0D;&#x9700;&#x8981;&#x5F3A;&#x5236;&#x653E;&#x5728;&#x5B83;&#x4EEC;&#x7684;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@var:</span> red;
 
 <span class="hljs-id">#page</span> {
@@ -452,13 +479,14 @@
   <span class="hljs-variable">@var:</span> white;
 }
 </code></pre>
-<p><strong>See also</strong></p>
+<p><strong>&#x53C2;&#x89C1;</strong></p>
 <ul>
 <li><a href="#variables-feature-lazy-loading">Lazy Loading</a></li>
 </ul>
-<h3 class="docs-heading">Comments<span class="anchor-target" id="features-overview-feature-comments"></span>
-<a href="#features-overview-feature-comments" name="features-overview-feature-comments" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">10. &#x6CE8;&#x91CA;<span class="anchor-target" id="features-overview-feature-10-"></span>
+<a href="#features-overview-feature-10-" name="features-overview-feature-10-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Both block-style and inline comments may be used:</p>
+<p>Less &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5757;&#x7EA7;&#x6CE8;&#x91CA;&#x548C;&#x884C;&#x5185;&#x6CE8;&#x91CA;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-comment">/* One hell of a block
 style comment! */</span>
 <span class="hljs-variable">@var:</span> red;
@@ -466,9 +494,10 @@ style comment! */</span>
 <span class="hljs-comment">// Get in line!</span>
 <span class="hljs-variable">@var:</span> white;
 </code></pre>
-<h3 class="docs-heading">Importing<span class="anchor-target" id="features-overview-feature-importing"></span>
-<a href="#features-overview-feature-importing" name="features-overview-feature-importing" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">11. &#x5BFC;&#x5165;<span class="anchor-target" id="features-overview-feature-11-"></span>
+<a href="#features-overview-feature-11-" name="features-overview-feature-11-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Importing works pretty much as expected. You can import a <code>.less</code> file, and all the variables in it will be available. The extension is optionally specified for <code>.less</code> files.</p>
+<p>&#x548C;&#x4F60;&#x9884;&#x671F;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x4E00;&#x4E2A; <code>.less</code> &#x6587;&#x4EF6;&#xFF0C; &#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x5BFC;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x4EE5; <code>.less</code> &#x4E3A;&#x6269;&#x5C55;&#x540D;&#x540D;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x8BE5;&#x6269;&#x5C55;&#x540D;</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@import</span> <span class="hljs-string">&quot;library&quot;</span>; <span class="hljs-comment">// library.less</span>
 <span class="hljs-at_rule">@import</span> <span class="hljs-string">&quot;typo.css&quot;</span>;
 </code></pre>
@@ -480,10 +509,10 @@ style comment! */</span>
 
   </div>
 
-  <!-- Variables -->
+  <!-- 变量 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Variables<span class="anchor-target" id="variables-feature"></span>
+      <h1 class="docs-heading">&#x53D8;&#x91CF;<span class="anchor-target" id="variables-feature"></span>
 <a href="#variables-feature" name="variables-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -1161,10 +1190,10 @@ style comment! */</span>
 
   </div>
 
-  <!-- Mixins -->
+  <!-- 混合（Mixins） -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Mixins<span class="anchor-target" id="mixins-feature"></span>
+      <h1 class="docs-heading">&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;<span class="anchor-target" id="mixins-feature"></span>
 <a href="#mixins-feature" name="mixins-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -1340,10 +1369,10 @@ style comment! */</span>
 
   </div>
 
-  <!-- Parametric Mixins -->
+  <!-- 带参数的混合（Mixins） -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Parametric Mixins<span class="anchor-target" id="mixins-parametric-feature"></span>
+      <h1 class="docs-heading">&#x5E26;&#x53C2;&#x6570;&#x7684;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;<span class="anchor-target" id="mixins-parametric-feature"></span>
 <a href="#mixins-parametric-feature" name="mixins-parametric-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -1569,10 +1598,10 @@ but if we call it with <em>two</em> arguments, we will get the second definition
 
   </div>
 
-  <!-- Mixins as Functions -->
+  <!-- 作为函数使用的混合（Mixins） -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Mixins as Functions<span class="anchor-target" id="mixins-as-functions-feature"></span>
+      <h1 class="docs-heading">&#x4F5C;&#x4E3A;&#x51FD;&#x6570;&#x4F7F;&#x7528;&#x7684;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;<span class="anchor-target" id="mixins-as-functions-feature"></span>
 <a href="#mixins-as-functions-feature" name="mixins-as-functions-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -1674,10 +1703,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Passing Rulesets to Mixins -->
+  <!-- 将规则集传递给混合（Mixins） -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Passing Rulesets to Mixins<span class="anchor-target" id="detached-rulesets-feature"></span>
+      <h1 class="docs-heading">&#x5C06;&#x89C4;&#x5219;&#x96C6;&#x4F20;&#x9012;&#x7ED9;&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;<span class="anchor-target" id="detached-rulesets-feature"></span>
 <a href="#detached-rulesets-feature" name="detached-rulesets-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -1896,10 +1925,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Import Directives -->
+  <!-- 导入指令 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Import Directives<span class="anchor-target" id="import-directives-feature"></span>
+      <h1 class="docs-heading">&#x5BFC;&#x5165;&#x6307;&#x4EE4;<span class="anchor-target" id="import-directives-feature"></span>
 <a href="#import-directives-feature" name="import-directives-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -2061,10 +2090,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Mixin Guards -->
+  <!-- 混合（Mixin） 守卫 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Mixin Guards<span class="anchor-target" id="mixin-guards-feature"></span>
+      <h1 class="docs-heading">&#x6DF7;&#x5408;&#xFF08;Mixin&#xFF09; &#x5B88;&#x536B;<span class="anchor-target" id="mixin-guards-feature"></span>
 <a href="#mixin-guards-feature" name="mixin-guards-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -2181,10 +2210,10 @@ overridden:</p>
 
   </div>
 
-  <!-- CSS Guards -->
+  <!-- CSS 守卫 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">CSS Guards<span class="anchor-target" id="css-guards-feature"></span>
+      <h1 class="docs-heading">CSS &#x5B88;&#x536B;<span class="anchor-target" id="css-guards-feature"></span>
 <a href="#css-guards-feature" name="css-guards-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -2240,10 +2269,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Loops -->
+  <!-- 循环 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Loops<span class="anchor-target" id="loops-feature"></span>
+      <h1 class="docs-heading">&#x5FAA;&#x73AF;<span class="anchor-target" id="loops-feature"></span>
 <a href="#loops-feature" name="loops-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -2318,10 +2347,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Merge -->
+  <!-- 合并 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Merge<span class="anchor-target" id="merge-feature"></span>
+      <h1 class="docs-heading">&#x5408;&#x5E76;<span class="anchor-target" id="merge-feature"></span>
 <a href="#merge-feature" name="merge-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -2394,10 +2423,10 @@ overridden:</p>
 
   </div>
 
-  <!-- Parent Selectors -->
+  <!-- 父选择器 -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Parent Selectors<span class="anchor-target" id="parent-selectors-feature"></span>
+      <h1 class="docs-heading">&#x7236;&#x9009;&#x62E9;&#x5668;<span class="anchor-target" id="parent-selectors-feature"></span>
 <a href="#parent-selectors-feature" name="parent-selectors-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
