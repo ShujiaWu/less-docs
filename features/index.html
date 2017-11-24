@@ -145,17 +145,17 @@
 <li><a href="#variables-feature-7-">7. &#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x5B57;</a></li>
 <li><a href="#variables-feature-8-lazy-evaluation-">8. &#x5EF6;&#x540E;&#x8BA1;&#x7B97;&#xFF08;Lazy Evaluation&#xFF09;</a></li>
 <li><a href="#variables-feature-8-">8. &#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</a></li></ul></li>
-<li><a href="#extend-feature">Extend</a><ul class="nav"><li><a href="#extend-feature-extend-syntax">Extend Syntax</a></li>
-<li><a href="#extend-feature-extend-attached-to-selector">Extend Attached to Selector</a></li>
-<li><a href="#extend-feature-extend-inside-ruleset">Extend Inside Ruleset</a></li>
-<li><a href="#extend-feature-extending-nested-selectors">Extending Nested Selectors</a></li>
-<li><a href="#extend-feature-exact-matching-with-extend">Exact Matching with Extend</a></li>
-<li><a href="#extend-feature-nth-expression">nth Expression</a></li>
-<li><a href="#extend-feature-extend-all-">Extend &quot;all&quot;</a></li>
-<li><a href="#extend-feature-selector-interpolation-with-extend">Selector Interpolation with Extend</a></li>
-<li><a href="#extend-feature-scoping-extend-inside-media">Scoping / Extend Inside @media</a></li>
-<li><a href="#extend-feature-duplication-detection">Duplication Detection</a></li>
-<li><a href="#extend-feature-use-cases-for-extend">Use Cases for Extend</a></li></ul></li>
+<li><a href="#extend-feature">&#x7EE7;&#x627F;&#xFF08;Extend&#xFF09;</a><ul class="nav"><li><a href="#extend-feature-1-extend-">1. &#x7EE7;&#x627F;&#xFF08;Extend&#xFF09;&#x8BED;&#x6CD5;</a></li>
+<li><a href="#extend-feature-2-">2. &#x9644;&#x52A0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x7684;&#x7EE7;&#x627F;</a></li>
+<li><a href="#extend-feature-3-">3. &#x4F4D;&#x4E8E;&#x89C4;&#x5219;&#x96C6;&#x5185;&#x90E8;&#x7684;&#x7EE7;&#x627F;</a></li>
+<li><a href="#extend-feature-4-">4. &#x7EE7;&#x627F;&#x5D4C;&#x5957;&#x7684;&#x9009;&#x62E9;&#x5668;</a></li>
+<li><a href="#extend-feature-5-">5. &#x4F7F;&#x7528;&#x7CBE;&#x786E;&#x5339;&#x914D;&#x7684;&#x7EE7;&#x627F;</a></li>
+<li><a href="#extend-feature-6-nth-">6. nth &#x8868;&#x8FBE;&#x5F0F;</a></li>
+<li><a href="#extend-feature-7-all-">7. &#x4F7F;&#x7528; &quot;all&quot; &#x7684;&#x7EE7;&#x627F;</a></li>
+<li><a href="#extend-feature-8-">8. &#x5E26;&#x63D2;&#x503C;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7EE7;&#x627F;</a></li>
+<li><a href="#extend-feature-9-">9. &#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x7EE7;&#x627F;&#x53CA;&#x4F5C;&#x7528;&#x57DF;</a></li>
+<li><a href="#extend-feature-10-">10. &#x91CD;&#x590D;&#x68C0;&#x6D4B;</a></li>
+<li><a href="#extend-feature-11-">11. &#x7EE7;&#x627F;&#x7684;&#x7528;&#x4F8B;</a></li></ul></li>
 <li><a href="#mixins-feature">&#x6DF7;&#x5408;&#xFF08;Mixins&#xFF09;</a><ul class="nav"><li><a href="#mixins-feature-not-outputting-the-mixin">Not Outputting the Mixin</a></li>
 <li><a href="#mixins-feature-selectors-in-mixins">Selectors in Mixins</a></li>
 <li><a href="#mixins-feature-namespaces">Namespaces</a></li>
@@ -702,7 +702,7 @@ style comment! */</span>
 <h3 class="docs-heading">8. &#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;<span class="anchor-target" id="variables-feature-8-"></span>
 <a href="#variables-feature-8-" name="variables-feature-8-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>We sometimes get requests for default variables - an ability to set a variable only if it is not already set. This feature is not required because you can easily override a variable by putting the definition afterwards.</p>
-<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x5F53;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x5B9A;&#x4E49;&#x5B9A;&#x4E49;&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF08;&#x5F53;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6CA1;&#x6709;&#x88AB;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x7279;&#x6027;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x6765;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
 <p>&#x4F8B;&#x5982;:</p>
 <pre><code class="lang-less"><span class="hljs-comment">// library</span>
 <span class="hljs-variable">@base-color:</span> green;
@@ -722,10 +722,10 @@ style comment! */</span>
 
   </div>
 
-  <!-- Extend -->
+  <!-- 继承（Extend） -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 class="docs-heading">Extend<span class="anchor-target" id="extend-feature"></span>
+      <h1 class="docs-heading">&#x7EE7;&#x627F;&#xFF08;Extend&#xFF09;<span class="anchor-target" id="extend-feature"></span>
 <a href="#extend-feature" name="extend-feature" class="anchor glyphicon glyphicon-link"></a></h1>
     </div>
 
@@ -747,6 +747,7 @@ style comment! */</span>
 
 <blockquote>
 <p>Extend is a Less pseudo-class which merges the selector it is put on with ones that match what it references.</p>
+<p>&#x7EE7;&#x627F;&#xFF08;Extend&#xFF09; &#x662F; Less &#x7684;&#x4F2A;&#x7C7B;&#xFF0C;&#x5B83;&#x5C06;&#x9009;&#x62E9;&#x5668;&#x4E0E;&#x5B83;&#x6240;&#x5F15;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x76F8;&#x7ED3;&#x5408;&#x3002;</p>
 </blockquote>
 <p>Released <a href="https://github.com/less/less.js/blob/master/CHANGELOG.md">v1.4.0</a></p>
 <pre><code class="lang-less"><span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> {
@@ -755,7 +756,8 @@ style comment! */</span>
 }
 </code></pre>
 <p>In the rule set above, the <code>:extend</code> selector will apply the &quot;extending selector&quot; (<code>nav ul</code>) onto the <code>.inline</code> class <em>wherever the <code>.inline</code> class appears</em>. The declaration block will be kept as-is, but without any reference to the extend (because extend isn&apos;t css).</p>
-<p>So the following:</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x6837;&#x5F0F;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#xFF0C;<code>:extend</code> &#x9009;&#x62E9;&#x5668;&#x5C06;&#x201C;&#x7EE7;&#x627F;&#x9009;&#x62E9;&#x5668;&#x201D; ( <code>nav ul</code> ) &#x6DFB;&#x52A0;&#x5230; <code>.inline</code> &#x7C7B;&#x4E0A;&#xFF08;&#x4E0D;&#x7BA1; <code>.inline</code> &#x51FA;&#x73B0;&#x5728;&#x54EA;&#x91CC;&#xFF09;&#x3002;&#x58F0;&#x660E;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x5C06;&#x4FDD;&#x6301;&#x539F;&#x6837;&#xFF0C;&#x4F46;&#x4E0D;&#x5305;&#x542B; extend &#x90A3;&#x90E8;&#x5206;&#xFF08;&#x56E0;&#x4E3A; extend&#x4E0D;&#x662F; CSS &#x8BED;&#x6CD5;&#xFF09;&#x3002;</p>
+<p>&#x4F8B;&#x5B50;:</p>
 <pre><code class="lang-less"><span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> {
   <span class="hljs-keyword">&amp;</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.inline</span>);
   <span class="hljs-attribute">background</span>: blue;
@@ -764,7 +766,7 @@ style comment! */</span>
   <span class="hljs-attribute">color</span>: red;
 }
 </code></pre>
-<p>Outputs</p>
+<p>&#x8F93;&#x51FA;</p>
 <pre><code class="lang-css"><span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> {
   <span class="hljs-attribute">background</span>: blue;
 }
@@ -774,65 +776,82 @@ style comment! */</span>
 }
 </code></pre>
 <p>Notice how the <code>nav ul:extend(.inline)</code> selector gets output as <code>nav ul</code> - the extend gets removed before output and the selector block left as-is. If no properties are put in that block then it gets removed from the output (but the extend still may affect other selectors).</p>
-<h3 class="docs-heading">Extend Syntax<span class="anchor-target" id="extend-feature-extend-syntax"></span>
-<a href="#extend-feature-extend-syntax" name="extend-feature-extend-syntax" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x6CE8;&#x610F;&#xFF1A;<code>nav ul:extend(.inline)</code> &#x9009;&#x62E9;&#x5668;&#x662F;&#x5982;&#x4F55;&#x4ECE; <code>nav ul</code> &#x83B7;&#x53D6;&#x8F93;&#x51FA;&#x6837;&#x5F0F;&#x5462;&#xFF1F; extend &#x5728;&#x8F93;&#x51FA;&#x6837;&#x5F0F;&#x4E4B;&#x524D;&#x5C06;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x539F;&#x9009;&#x62E9;&#x5668;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x5C06;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;&#x5982;&#x679C;&#x539F;&#x6765;&#x7684;&#x9009;&#x62E9;&#x5668;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#xFF0C;&#x5219;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#xFF08;&#x4F46;&#x662F; extend &#x53EF;&#x80FD;&#x5BF9;&#x5176;&#x4ED6;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#xFF09;&#x3002;</p>
+<h3 class="docs-heading">1. &#x7EE7;&#x627F;&#xFF08;Extend&#xFF09;&#x8BED;&#x6CD5;<span class="anchor-target" id="extend-feature-1-extend-"></span>
+<a href="#extend-feature-1-extend-" name="extend-feature-1-extend-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>The extend is either attached to a selector or placed into a ruleset. It looks like a pseudo-class with selector parameter optionally followed by the keyword <code>all</code>:</p>
+<p>&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x9644;&#x52A0;&#x5230;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#x3002;&#x5B83;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x4E00;&#x4E2A;&#x540E;&#x9762;&#x5E26;&#x5173;&#x952E;&#x5B57;<code>all</code>&#x53C2;&#x6570;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F2A;&#x7C7B;&#x3002;</p>
 <p>Example:</p>
 <pre><code class="lang-less"><span class="hljs-class">.a</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.b</span>) {}
 
-<span class="hljs-comment">// the above block does the same thing as the below block</span>
+<span class="hljs-comment">// &#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x548C;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x81F4;&#x7684;</span>
+
 <span class="hljs-class">.a</span> {
   <span class="hljs-keyword">&amp;</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.b</span>);
 }
 </code></pre>
 <pre><code class="lang-less"><span class="hljs-class">.c</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.d</span> <span class="hljs-keyword">all</span>) {
-  <span class="hljs-comment">// extends all instances of &quot;.d&quot; e.g. &quot;.x.d&quot; or &quot;.d.x&quot;</span>
+  <span class="hljs-comment">// &#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x6240;&#x6709;&#x5305;&#x542B; &quot;.d&quot; &#x7684;&#x9009;&#x62E9;&#x5668; &#x4F8B;&#x5982; &quot;.x.d&quot; or &quot;.d.x&quot;</span>
 }
 <span class="hljs-class">.c</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.d</span>) {
-  <span class="hljs-comment">// extends only instances where the selector will be output as just &quot;.d&quot;</span>
+  <span class="hljs-comment">// &#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x53EA;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&quot;.d&quot; &#x9009;&#x62E9;&#x5668;</span>
 }
 </code></pre>
 <p>It can contain one or more classes to extend, separated by commas.</p>
-<p>Example:</p>
+<p>&#x5B83;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;,&#x591A;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7B26;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
 <pre><code class="lang-less"><span class="hljs-class">.e</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.f</span>) {}
 <span class="hljs-class">.e</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.g</span>) {}
 
-<span class="hljs-comment">// the above an the below do the same thing</span>
+<span class="hljs-comment">// &#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x505A;&#x540C;&#x6837;&#x7684;&#x4E8B;&#x60C5;</span>
 <span class="hljs-class">.e</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.f</span>, <span class="hljs-class">.g</span>) {}
 </code></pre>
-<h3 class="docs-heading">Extend Attached to Selector<span class="anchor-target" id="extend-feature-extend-attached-to-selector"></span>
-<a href="#extend-feature-extend-attached-to-selector" name="extend-feature-extend-attached-to-selector" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">2. &#x9644;&#x52A0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x7684;&#x7EE7;&#x627F;<span class="anchor-target" id="extend-feature-2-"></span>
+<a href="#extend-feature-2-" name="extend-feature-2-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Extend attached to a selector looks like an ordinary pseudo-class with selector as a parameter. A selector can contain multiple extend clauses, but all extends must be at the end of the selector.</p>
+<p>&#x9644;&#x52A0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x7684;&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x5FC5;&#x987B;&#x5728;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7ED3;&#x5C3E;&#x3002;</p>
 <ul>
 <li>Extend after the selector: <code>pre:hover:extend(div pre)</code>.</li>
 <li>Space between selector and extend is allowed: <code>pre:hover :extend(div pre)</code>.</li>
 <li>Multiple extends are allowed: <code>pre:hover:extend(div pre):extend(.bucket tr)</code> - Note this is the same as <code>pre:hover:extend(div pre, .bucket tr)</code></li>
-<li>This is NOT allowed: <code>pre:hover:extend(div pre).nth-child(odd)</code>. Extend must be last.</li>
+<li><p>This is NOT allowed: <code>pre:hover:extend(div pre).nth-child(odd)</code>. Extend must be last.</p>
+</li>
+<li><p>Extend &#x4F4D;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;: <code>pre:hover:extend(div pre)</code>&#x3002;</p>
+</li>
+<li>&#x9009;&#x62E9;&#x5668;&#x548C; Extend &#x4E2D;&#x95F4;&#x6709;&#x7A7A;&#x683C;&#x662F;&#x5141;&#x8BB8;&#x7684;&#xFF1A; <code>pre:hover :extend(div pre)</code>&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#xFF1A;<code>pre:hover:extend(div pre):extend(.bucket tr)</code> - &#x8FD9;&#x76F8;&#x5F53;&#x4E8E; <code>pre:hover:extend(div pre, .bucket tr)</code> &#x3002;</li>
+<li>&#x8FD9;&#x662F;&#x4E0D;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x7684;&#xFF1A; <code>pre:hover:extend(div pre).nth-child(odd)</code>&#x3002;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x5FC5;&#x987B;&#x4F4D;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x7684;&#x6700;&#x540E;&#x3002;</li>
 </ul>
 <p>If a ruleset contains multiple selectors, any of them can have the extend keyword. Multiple selectors with extend in one ruleset:</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x4ED6;&#x4EEC;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x4E86;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.big-division</span>,
 <span class="hljs-class">.big-bag</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.bag</span>),
 <span class="hljs-class">.big-bucket</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.bucket</span>) {
   <span class="hljs-comment">// body</span>
 }
 </code></pre>
-<h3 class="docs-heading">Extend Inside Ruleset<span class="anchor-target" id="extend-feature-extend-inside-ruleset"></span>
-<a href="#extend-feature-extend-inside-ruleset" name="extend-feature-extend-inside-ruleset" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">3. &#x4F4D;&#x4E8E;&#x89C4;&#x5219;&#x96C6;&#x5185;&#x90E8;&#x7684;&#x7EE7;&#x627F;<span class="anchor-target" id="extend-feature-3-"></span>
+<a href="#extend-feature-3-" name="extend-feature-3-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Extend can be placed into a ruleset&apos;s body using <code>&amp;:extend(selector)</code> syntax. Placing extend into a body is a shortcut for placing it into every single selector of that ruleset.</p>
+<p>&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>&amp;:extend(selector)</code> &#x7684;&#x8BED;&#x6CD5;&#x5728;&#x89C4;&#x5219;&#x96C6;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x3002;&#x5728;&#x89C4;&#x5219;&#x96C6;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x662F;&#x5355;&#x4E2A;&#x89C4;&#x5219;&#x96C6;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7684;&#x4E00;&#x79CD;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002;</p>
 <p>Extend inside a body:</p>
+<p>&#x89C4;&#x5219;&#x96C6;&#x5185;&#x90E8;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-tag">pre</span><span class="hljs-pseudo">:hover</span>,
 <span class="hljs-class">.some-class</span> {
   <span class="hljs-keyword">&amp;</span><span class="hljs-keyword">:extend</span>(<span class="hljs-tag">div</span> <span class="hljs-tag">pre</span>);
 }
 </code></pre>
 <p>is exactly the same as adding an extend after each selector:</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6548;&#x679C;&#x8DDF;&#x4F7F;&#x7528;&#x4F4D;&#x4E8E;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-tag">pre</span><span class="hljs-pseudo">:hover</span><span class="hljs-keyword">:extend</span>(<span class="hljs-tag">div</span> <span class="hljs-tag">pre</span>),
 <span class="hljs-class">.some-class</span><span class="hljs-keyword">:extend</span>(<span class="hljs-tag">div</span> <span class="hljs-tag">pre</span>) {}
 </code></pre>
-<h3 class="docs-heading">Extending Nested Selectors<span class="anchor-target" id="extend-feature-extending-nested-selectors"></span>
-<a href="#extend-feature-extending-nested-selectors" name="extend-feature-extending-nested-selectors" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">4. &#x7EE7;&#x627F;&#x5D4C;&#x5957;&#x7684;&#x9009;&#x62E9;&#x5668;<span class="anchor-target" id="extend-feature-4-"></span>
+<a href="#extend-feature-4-" name="extend-feature-4-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Extend is able to match nested selectors. Following less:</p>
+<p>&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x5D4C;&#x5957;&#x7684;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
 <p>Example:</p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span> {
   <span class="hljs-tag">tr</span> { <span class="hljs-comment">// nested ruleset with target selector</span>
     <span class="hljs-attribute">color</span>: blue;
@@ -847,7 +866,9 @@ style comment! */</span>
 }
 </code></pre>
 <p>Essentially the extend looks at the compiled css, not the original less.</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x7EE7;&#x627F;&#x662F;&#x6839;&#x636E;&#x7F16;&#x8BD1;&#x540E;&#x7684; css &#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x539F;&#x59CB;&#x7684; less&#x3002;</p>
 <p>Example:</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span> {
   <span class="hljs-tag">tr</span> <span class="hljs-keyword">&amp;</span> { <span class="hljs-comment">// nested ruleset with target selector</span>
     <span class="hljs-attribute">color</span>: blue;
@@ -856,15 +877,17 @@ style comment! */</span>
 <span class="hljs-class">.some-class</span><span class="hljs-keyword">:extend</span>(<span class="hljs-tag">tr</span> <span class="hljs-class">.bucket</span>) {} <span class="hljs-comment">// nested ruleset is recognized</span>
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-tag">tr</span> <span class="hljs-class">.bucket</span>,
 <span class="hljs-class">.some-class</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
-<h3 class="docs-heading">Exact Matching with Extend<span class="anchor-target" id="extend-feature-exact-matching-with-extend"></span>
-<a href="#extend-feature-exact-matching-with-extend" name="extend-feature-exact-matching-with-extend" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">5. &#x4F7F;&#x7528;&#x7CBE;&#x786E;&#x5339;&#x914D;&#x7684;&#x7EE7;&#x627F;<span class="anchor-target" id="extend-feature-5-"></span>
+<a href="#extend-feature-5-" name="extend-feature-5-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Extend by default looks for exact match between selectors. It does matter whether selector uses leading star or not. It does not matter that two nth-expressions have the same meaning, they need to have to same form in order to be matched. The only exception are quotes in attribute selector, less knows they have the same meaning and matches them.</p>
-<p>Example:</p>
+<p>&#x9009;&#x62E9;&#x5668;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x9ED8;&#x8BA4;&#x662F;&#x7CBE;&#x786E;&#x5339;&#x914D;&#x7684;&#x3002;&#x5B83;&#x4E0D;&#x7BA1;&#x9009;&#x62E9;&#x5668;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x524D;&#x5BFC; * &#x53F7;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x4E5F;&#x4E0D;&#x7BA1;&#x4E24;&#x4E2A;nth-&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x5B83;&#x4EEC;&#x8981;&#x6C42;&#x683C;&#x5F0F;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x4E00;&#x76F4;&#x3002;&#x53EA;&#x6709;&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5F15;&#x53F7;&#x662F;&#x4F8B;&#x5916;&#x7684;&#xFF0C;Less &#x80FD;&#x591F;&#x8BC6;&#x522B;&#x548C;&#x5339;&#x914D;&#x4E0D;&#x540C;&#x5F15;&#x53F7;&#x3002;</p>
+<p>&#x4F8B;&#x5982;:</p>
 <pre><code class="lang-less"><span class="hljs-class">.a</span><span class="hljs-class">.class</span>,
 <span class="hljs-class">.class</span><span class="hljs-class">.a</span>,
 <span class="hljs-class">.class</span> &gt; <span class="hljs-class">.a</span> {
@@ -873,41 +896,48 @@ style comment! */</span>
 <span class="hljs-class">.test</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.class</span>) {} <span class="hljs-comment">// this will NOT match the any selectors above</span>
 </code></pre>
 <p>Leading star does matter. Selectors <code>*.class</code> and <code>.class</code> are equivalent, but extend will not match them:</p>
+<p>&#x524D;&#x5BFC; <em> &#x662F;&#x4F1A;&#x5F71;&#x54CD;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x7684;&#x3002;`</em>.class<code>&#x548C;</code>.class` &#x9009;&#x62E9;&#x5668;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x4E0D;&#x4F1A;&#x5339;&#x914D;&#x4ED6;&#x4EEC;&#xFF1A;</p>
 <pre><code class="lang-less">*<span class="hljs-class">.class</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 <span class="hljs-class">.noStar</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.class</span>) {} <span class="hljs-comment">// this will NOT match the *.class selector</span>
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css">*<span class="hljs-class">.class</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
 <p>Order of pseudo-classes does matter. Selectors <code>link:hover:visited</code> and <code>link:visited:hover</code> match the same set of elements, but extend treats them as different:</p>
+<p>&#x4F2A;&#x7C7B;&#x7684;&#x987A;&#x5E8F;&#x4E5F;&#x662F;&#x4F1A;&#x5F71;&#x54CD;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;&#x3002;<code>link:hover:visited</code> &#x548C; <code>link:visited:hover</code> &#x4F5C;&#x7528;&#x4E8E;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#x4E0A;&#xFF0C; &#x4F46;&#x662F;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x5374;&#x628A;&#x5B83;&#x4EEC;&#x5F53;&#x6210;&#x4E0D;&#x4E00;&#x6837;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-tag">link</span><span class="hljs-pseudo">:hover</span><span class="hljs-pseudo">:visited</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 <span class="hljs-class">.selector</span><span class="hljs-keyword">:extend</span>(<span class="hljs-tag">link</span><span class="hljs-pseudo">:visited</span><span class="hljs-pseudo">:hover</span>) {}
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-tag">link</span><span class="hljs-pseudo">:hover</span><span class="hljs-pseudo">:visited</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
-<h3 class="docs-heading">nth Expression<span class="anchor-target" id="extend-feature-nth-expression"></span>
-<a href="#extend-feature-nth-expression" name="extend-feature-nth-expression" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">6. nth &#x8868;&#x8FBE;&#x5F0F;<span class="anchor-target" id="extend-feature-6-nth-"></span>
+<a href="#extend-feature-6-nth-" name="extend-feature-6-nth-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Nth expression form does matter. Nth-expressions <code>1n+3</code> and <code>n+3</code> are equivalent, but extend will not match them:</p>
+<p>Nth &#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x683C;&#x5F0F;&#x4E5F;&#x662F;&#x4F1A;&#x5F71;&#x54CD;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;&#x3002;Nth &#x8868;&#x8FBE;&#x5F0F; <code>1n+3</code> &#x548C; <code>n+3</code> &#x6548;&#x679C;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x8BA4;&#x4E3A;&#x5B83;&#x4EEC;&#x4E0D;&#x5339;&#x914D;</p>
 <pre><code class="lang-less"><span class="hljs-pseudo">:nth-child</span>(<span class="hljs-number">1</span>n+<span class="hljs-number">3</span>) {
   <span class="hljs-attribute">color</span>: blue;
 }
 <span class="hljs-class">.child</span><span class="hljs-keyword">:extend</span>(<span class="hljs-pseudo">:nth-child</span>(n+<span class="hljs-number">3</span>)) {}
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-pseudo">:nth-child</span>(<span class="hljs-number">1</span>n+<span class="hljs-number">3</span>) {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
 <p>Quote type in attribute selector does not matter. All of the following are equivalent.</p>
+<p>&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x5F15;&#x53F7;&#x7C7B;&#x578B;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x6765;&#x7684;&#x60C5;&#x51B5;&#x90FD;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attr_selector">[title=identifier]</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
@@ -923,6 +953,7 @@ style comment! */</span>
 <span class="hljs-class">.doubleQuote</span><span class="hljs-keyword">:extend</span>(<span class="hljs-attr_selector">[title=&quot;identifier&quot;]</span>) {}
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-attr_selector">[title=identifier]</span>,
 <span class="hljs-class">.noQuote</span>,
 <span class="hljs-class">.singleQuote</span>,
@@ -944,10 +975,12 @@ style comment! */</span>
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
-<h3 class="docs-heading">Extend &quot;all&quot;<span class="anchor-target" id="extend-feature-extend-all-"></span>
-<a href="#extend-feature-extend-all-" name="extend-feature-extend-all-" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">7. &#x4F7F;&#x7528; &quot;all&quot; &#x7684;&#x7EE7;&#x627F;<span class="anchor-target" id="extend-feature-7-all-"></span>
+<a href="#extend-feature-7-all-" name="extend-feature-7-all-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>When you specify the all keyword last in an extend argument it tells Less to match that selector as part of another selector. The selector will be copied and the matched part of the selector only will then be replaced with the extend, making a new selector.</p>
+<p>&#x5F53;&#x4F60;&#x5728;&#x7EE7;&#x627F;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#x4F7F;&#x7528; &#x201C;all&#x201D; &#x5173;&#x952E;&#x5B57;&#xFF0C;less &#x5C06;&#x5BF9;&#x9009;&#x62E9;&#x5668;&#x8FDB;&#x884C;&#x8FDB;&#x884C;&#x90E8;&#x5206;&#x5339;&#x914D;&#x3002;&#x88AB;&#x7EE7;&#x627F;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5C06;&#x4F1A;&#x88AB;&#x590D;&#x5236;&#x5E76;&#x66FF;&#x6362;&#x88AB;&#x5339;&#x914D;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
 <p>Example:</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.a</span><span class="hljs-class">.b</span><span class="hljs-class">.test</span>,
 <span class="hljs-class">.test</span><span class="hljs-class">.c</span> {
   <span class="hljs-attribute">color</span>: orange;
@@ -973,13 +1006,17 @@ style comment! */</span>
 }
 </code></pre>
 <p><em>You can think of this mode of operation as essentially doing a non-destructive search and replace.</em></p>
-<h3 class="docs-heading">Selector Interpolation with Extend<span class="anchor-target" id="extend-feature-selector-interpolation-with-extend"></span>
-<a href="#extend-feature-selector-interpolation-with-extend" name="extend-feature-selector-interpolation-with-extend" class="anchor glyphicon glyphicon-link"></a></h3>
+<p><em>&#x4F60;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x8FD9;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E00;&#x79CD;&#x975E;&#x7834;&#x574F;&#x6027;&#x7684;&#x67E5;&#x627E;&#x548C;&#x66FF;&#x6362;&#x7684;&#x64CD;&#x4F5C;&#x6A21;&#x5F0F;&#x3002;</em></p>
+<h3 class="docs-heading">8. &#x5E26;&#x63D2;&#x503C;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7EE7;&#x627F;<span class="anchor-target" id="extend-feature-8-"></span>
+<a href="#extend-feature-8-" name="extend-feature-8-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Extend is NOT able to match selectors with variables. If selector contains variable, extend will ignore it.</p>
+<p>&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x4E0D;&#x80FD;&#x5339;&#x914D;&#x90A3;&#x4E9B;&#x5E26;&#x540D;&#x79F0;&#x4E2D;&#x53D8;&#x91CF;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x7684;&#x540D;&#x79F0;&#x4E2D;&#x5E26;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x5C06;&#x4F1A;&#x5FFD;&#x7565;&#x5B83;&#x3002;</p>
 </blockquote>
 <p>There is a pending feature request for this but it is not an easy change.  However, extend can be attached to interpolated selector.</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x88AB;&#x9644;&#x52A0;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x6613;&#x7684;&#x53D8;&#x66F4;&#x3002;&#x7136;&#x800C;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x53EF;&#x4EE5;&#x88AB;&#x9644;&#x52A0;&#x5230;&#x5E26;&#x63D2;&#x503C;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x3002;</p>
 <p>Selector with variable will not be matched:</p>
+<p>&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x5E26;&#x6709;&#x53D8;&#x91CF;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x5339;&#x914D;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@variable:</span> .bucket;
 <span class="hljs-variable">@{variable}</span> { <span class="hljs-comment">// interpolated selector</span>
   <span class="hljs-attribute">color</span>: blue;
@@ -987,6 +1024,7 @@ style comment! */</span>
 <span class="hljs-class">.some-class</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.bucket</span>) {} <span class="hljs-comment">// does nothing, no match is found</span>
 </code></pre>
 <p>and extend with variable in target selector matches nothing:</p>
+<p>&#x7EE7;&#x627F;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4E5F;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x5339;&#x914D;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
@@ -994,25 +1032,28 @@ style comment! */</span>
 <span class="hljs-variable">@variable:</span> .bucket;
 </code></pre>
 <p>Both of the above examples compile into:</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x7F16;&#x8BD1;&#x540E;&#x90FD;&#x662F;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
 <p>However, <code>:extend</code> attached to an interpolated selector works:</p>
+<p>&#x7136;&#x800C;&#xFF0C;<code>:extend</code> &#x53EF;&#x4EE5;&#x88AB;&#x9644;&#x52A0;&#x5230;&#x4E00;&#x4E2A;&#x63D2;&#x503C;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 <span class="hljs-variable">@{variable}</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.bucket</span>) {}
 <span class="hljs-variable">@variable:</span> .selector;
 </code></pre>
-<p>compiles to:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-less"><span class="hljs-class">.bucket</span>, <span class="hljs-class">.selector</span> {
   <span class="hljs-attribute">color</span>: blue;
 }
 </code></pre>
-<h3 class="docs-heading">Scoping / Extend Inside @media<span class="anchor-target" id="extend-feature-scoping-extend-inside-media"></span>
-<a href="#extend-feature-scoping-extend-inside-media" name="extend-feature-scoping-extend-inside-media" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">9. &#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x7EE7;&#x627F;&#x53CA;&#x4F5C;&#x7528;&#x57DF;<span class="anchor-target" id="extend-feature-9-"></span>
+<a href="#extend-feature-9-" name="extend-feature-9-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Extend written inside a media declaration should match only selectors inside the same media declaration:</p>
+<p>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x53EA;&#x80FD;&#x5339;&#x914D;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-at_rule">@media</span> print {
   <span class="hljs-class">.screenClass</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.selector</span>) {} <span class="hljs-comment">// extend inside media</span>
   <span class="hljs-class">.selector</span> { <span class="hljs-comment">// this will be matched - it is in the same media</span>
@@ -1028,7 +1069,7 @@ style comment! */</span>
   }
 }
 </code></pre>
-<p>compiles into:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@media</span> print {
   <span class="hljs-class">.selector</span>,
   <span class="hljs-class">.screenClass</span> { <span class="hljs-comment">/*  ruleset inside the same media was extended */</span>
@@ -1045,6 +1086,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Extend written inside a media declaration does not match selectors inside nested declaration:</p>
+<p>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x662F;&#x4E0D;&#x80FD;&#x5339;&#x914D;&#x5D4C;&#x5957;&#x7684;&#x7684;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-at_rule">@media</span> screen {
   <span class="hljs-class">.screenClass</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.selector</span>) {} <span class="hljs-comment">// extend inside media</span>
   <span class="hljs-at_rule">@media</span> (min-width: <span class="hljs-number">1023px</span>) {
@@ -1054,7 +1096,7 @@ style comment! */</span>
   }
 }
 </code></pre>
-<p>compiles into:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@media</span> screen and (min-width: <span class="hljs-number">1023px</span>) {
   <span class="hljs-class">.selector</span> { <span class="hljs-comment">/* ruleset inside another nested media was ignored */</span>
     <span class="hljs-attribute">color</span>: blue;
@@ -1062,6 +1104,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Top level extend matches everything including selectors inside nested media:</p>
+<p>&#x9876;&#x7EA7;&#x7684;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x540C;&#x7EA7;&#x4EE5;&#x53CA;&#x5D4C;&#x5957;&#x7684;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x4E2D;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-at_rule">@media</span> screen {
   <span class="hljs-class">.selector</span> {  <span class="hljs-comment">/* ruleset inside nested media - top level extend works */</span>
     <span class="hljs-attribute">color</span>: blue;
@@ -1075,7 +1118,7 @@ style comment! */</span>
 
 <span class="hljs-class">.topLevel</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.selector</span>) {} <span class="hljs-comment">/* top level extend matches everything */</span>
 </code></pre>
-<p>compiles into:</p>
+<p>&#x7F16;&#x8BD1;&#x540E;:</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@media</span> screen {
   <span class="hljs-class">.selector</span>,
   <span class="hljs-class">.topLevel</span> { <span class="hljs-comment">/* ruleset inside media was extended */</span>
@@ -1089,10 +1132,12 @@ style comment! */</span>
   }
 }
 </code></pre>
-<h3 class="docs-heading">Duplication Detection<span class="anchor-target" id="extend-feature-duplication-detection"></span>
-<a href="#extend-feature-duplication-detection" name="extend-feature-duplication-detection" class="anchor glyphicon glyphicon-link"></a></h3>
+<h3 class="docs-heading">10. &#x91CD;&#x590D;&#x68C0;&#x6D4B;<span class="anchor-target" id="extend-feature-10-"></span>
+<a href="#extend-feature-10-" name="extend-feature-10-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Currently there is no duplication detection.</p>
+<p>&#x5F53;&#x524D;&#x4E0D;&#x652F;&#x6301;&#x91CD;&#x590D;&#x68C0;&#x6D4B;&#x3002;</p>
 <p>Example:</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.alert-info</span>,
 <span class="hljs-class">.widget</span> {
   <span class="hljs-comment">/* declarations */</span>
@@ -1101,6 +1146,7 @@ style comment! */</span>
 <span class="hljs-class">.alert</span><span class="hljs-keyword">:extend</span>(<span class="hljs-class">.alert-info</span>, <span class="hljs-class">.widget</span>) {}
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-class">.alert-info</span>,
 <span class="hljs-class">.widget</span>,
 <span class="hljs-class">.alert</span>,
@@ -1108,17 +1154,19 @@ style comment! */</span>
   <span class="hljs-comment">/* declarations */</span>
 }
 </code></pre>
-<h3 class="docs-heading">Use Cases for Extend<span class="anchor-target" id="extend-feature-use-cases-for-extend"></span>
-<a href="#extend-feature-use-cases-for-extend" name="extend-feature-use-cases-for-extend" class="anchor glyphicon glyphicon-link"></a></h3>
-<h4 class="docs-heading">Classic Use Case<span class="anchor-target" id="extend-feature-classic-use-case"></span>
-<a href="#extend-feature-classic-use-case" name="extend-feature-classic-use-case" class="anchor glyphicon glyphicon-link"></a></h4>
+<h3 class="docs-heading">11. &#x7EE7;&#x627F;&#x7684;&#x7528;&#x4F8B;<span class="anchor-target" id="extend-feature-11-"></span>
+<a href="#extend-feature-11-" name="extend-feature-11-" class="anchor glyphicon glyphicon-link"></a></h3>
+<h4 class="docs-heading">11.1 &#x5178;&#x578B;&#x7528;&#x4F8B;<span class="anchor-target" id="extend-feature-11-1-"></span>
+<a href="#extend-feature-11-1-" name="extend-feature-11-1-" class="anchor glyphicon glyphicon-link"></a></h4>
 <p>The classic use case is to avoid adding a base class. For example, if you have</p>
+<p>&#x5178;&#x578B;&#x5E94;&#x7528;&#x662F;&#x907F;&#x514D;&#x6DFB;&#x52A0;&#x57FA;&#x7C7B;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8BBE;&#x4F60;&#x6709;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-class">.animal</span> {
   <span class="hljs-attribute">background-color</span>: black;
   <span class="hljs-attribute">color</span>: white;
 }
 </code></pre>
 <p>and you want to have a subtype of animal which overrides the background color then you have two options, firstly change your HTML</p>
+<p>&#x7136;&#x540E;&#x4F60;&#x60F3;&#x7528;&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x578B;&#x7684;&#x52A8;&#x7269;&#x9009;&#x62E9;&#x5668;&#x91CD;&#x5199; background-color &#x8986;&#x76D6;&#x7236;&#x7C7B;&#x578B;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4F60;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#xFF0C;&#x66F4;&#x6539;&#x4F60;&#x7684;HTML&#x4EE3;&#x7801;&#xFF1A;</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;animal bear&quot;</span>&gt;</span>Bear<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 <pre><code class="lang-css"><span class="hljs-class">.animal</span> {
@@ -1130,6 +1178,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>or have simplified html and use extend in your less. e.g.</p>
+<p>&#x6216;&#x8005;&#x662F;&#xFF0C;&#x4F7F;&#x7528;&#x7B80;&#x5355;&#x7684; HTML &#x4EE3;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x5728; Less &#x4E2D;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;bear&quot;</span>&gt;</span>Bear<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 <pre><code class="lang-less"><span class="hljs-class">.animal</span> {
@@ -1141,10 +1190,12 @@ style comment! */</span>
   <span class="hljs-attribute">background-color</span>: brown;
 }
 </code></pre>
-<h4 class="docs-heading">Reducing CSS Size<span class="anchor-target" id="extend-feature-reducing-css-size"></span>
-<a href="#extend-feature-reducing-css-size" name="extend-feature-reducing-css-size" class="anchor glyphicon glyphicon-link"></a></h4>
+<h4 class="docs-heading">11.2 &#x51CF;&#x5C11; CSS &#x7684;&#x4F53;&#x79EF;<span class="anchor-target" id="extend-feature-11-2-css-"></span>
+<a href="#extend-feature-11-2-css-" name="extend-feature-11-2-css-" class="anchor glyphicon glyphicon-link"></a></h4>
 <p>Mixins copy all of the properties into a selector, which can lead to unnecessary duplication. Therefore you can use extends instead of mixins to move the selector up to the properties you wish to use, which leads to less CSS being generated.</p>
+<p>&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x4F1A;&#x628A;&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x590D;&#x5236;&#x5230;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x6CA1;&#x5FC5;&#x8981;&#x7684;&#x91CD;&#x590D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x4EE3;&#x66FF;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#xFF0C;&#x5C06;&#x76EE;&#x6807;&#x9009;&#x62E9;&#x5668;&#x6DFB;&#x52A0;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x6837;&#x5F0F;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#xFF0C;&#x8FD9;&#x4F1A;&#x51CF;&#x5C11;less&#x751F;&#x6210;&#x7684; CSS &#x6837;&#x5F0F;&#x3002;</p>
 <p>Example - with mixin:</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.my-inline-block</span>() {
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;
@@ -1157,6 +1208,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-class">.thing1</span> {
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;
@@ -1167,6 +1219,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Example (with extends):</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.my-inline-block</span> {
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;
@@ -1179,6 +1232,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Outputs</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-class">.my-inline-block</span>,
 <span class="hljs-class">.thing1</span>,
 <span class="hljs-class">.thing2</span> {
@@ -1186,10 +1240,12 @@ style comment! */</span>
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0</span>;
 }
 </code></pre>
-<h4 class="docs-heading">Combining Styles / A More Advanced Mixin<span class="anchor-target" id="extend-feature-combining-styles-a-more-advanced-mixin"></span>
-<a href="#extend-feature-combining-styles-a-more-advanced-mixin" name="extend-feature-combining-styles-a-more-advanced-mixin" class="anchor glyphicon glyphicon-link"></a></h4>
+<h4 class="docs-heading">11.3 &#x7EC4;&#x5408;&#x4F7F;&#x7528;&#x6837;&#x5F0F; / &#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x6DF7;&#x5408;<span class="anchor-target" id="extend-feature-11-3-"></span>
+<a href="#extend-feature-11-3-" name="extend-feature-11-3-" class="anchor glyphicon glyphicon-link"></a></h4>
 <p>Another use-case is as an alternative for a mixin - because mixins can only be used with simple selectors, if you have two different blocks of html, but need to apply the same styles to both you can use extends to relate two areas.</p>
+<p>&#x8FD9;&#x662F;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x4F5C;&#x4E3A;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x7684;&#x4EE3;&#x66FF;&#x7684;&#x7528;&#x4F8B;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x5355;&#x4E00;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728; HTML &#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x4E0D;&#x540C;&#x5757;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x60F3;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x4EE3;&#x7801;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#xFF08;extend&#xFF09;&#x6765;&#x5173;&#x8054;&#x7740;&#x4E24;&#x4E2A;&#x533A;&#x57DF;&#x3002;</p>
 <p>Example:</p>
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-tag">li</span><span class="hljs-class">.list</span> &gt; <span class="hljs-tag">a</span> {
   <span class="hljs-comment">// list styles</span>
 }
