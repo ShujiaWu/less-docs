@@ -21,7 +21,7 @@ published:
     files: <%= features.base %>/variables.md
 
   extend:
-    title: Extend
+    title: 继承（Extend）
     files: <%= features.base %>/extend.md
 
   mixins:
