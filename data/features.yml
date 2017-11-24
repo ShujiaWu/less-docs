@@ -29,15 +29,15 @@ published:
     files: <%= features.base %>/mixins.md
 
   mixins-parametric:
-    title: 带参数的混合（Mixins）
+    title: 带参数的混合
     files: <%= features.base %>/mixins-parametric.md
 
   mixins-as-functions:
-    title: 作为函数使用的混合（Mixins）
+    title: 作为函数使用的混合
     files: <%= features.base %>/mixins-as-functions.md
 
   detached-rulesets:
-    title: 将规则集传递给混合（Mixins）
+    title: 将规则集传递给混合
     files: <%= features.base %>/detached-rulesets.md
 
   import-directives:
@@ -45,7 +45,7 @@ published:
     files: <%= features.base %>/import-directives.md
 
   mixin-guards:
-    title: 混合（Mixin） 守卫
+    title: 混合 守卫
     files: <%= features.base %>/mixin-guards.md
 
   css-guards:
