@@ -151,7 +151,7 @@ Private variables:
 私有变量：
 
 ````less
-@detached-ruleset: {
+@detached-ruleset: { 
     @color:blue; // this variable is private
 };
 .caller {
@@ -159,7 +159,7 @@ Private variables:
 }
 ````
 
-## 1. 作用域
+## 作用域
 A detached ruleset can use all variables and mixins accessible where it is *defined* and where it is *called*. Otherwise said, both definition and caller scopes are available to it. If both scopes contains the same variable or mixin, declaration scope value takes precedence. 
 
 分离的规则器可以使用*定义*它的作用域和调用它的作用域中的变量。换句话说就是它可以访问定义它和调用它的作用域。如果两个作用域都包含相同的变量或者混合（mixin），优先使用声明它的作用中的。

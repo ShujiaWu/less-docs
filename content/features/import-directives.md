@@ -45,12 +45,12 @@ The following options can be used to override this behavior.
 
 使用下面的选项将重写导入的默认行为。
 
-# 导入的选项（Options）
+# Import 选项
 > Less offers several extensions to the CSS `@import` CSS at-rule to provide more flexibility over what you can do with external files.
 
 > 在规则中， Less 提供一些 CSS `@import` 的扩展，以提供更多的灵活性来处理外部文件。
 
-语法: `@import (keyword) "filename";`
+d语法: `@import (keyword) "filename";`
 
 The following import directives have been implemented:
 
@@ -78,7 +78,7 @@ The following import directives have been implemented:
 
 例如: `@import (optional, reference) "foo.less";`
 
-## 1. reference
+## reference
 > Use `@import (reference)` to import external files, but without adding the imported styles to the compiled output unless referenced.
 
 > 使用 `@import (reference)` 导入外部文件，除非被引用的部分否则是不会作为编译的结果输出。
@@ -101,7 +101,7 @@ Additionally, **`reference`** produces different results depending on which meth
 * **[继承 extend](#extend-feature)**: 当一个选择器被继承，只有新的选择器会被标记为 _not referenced_，并且将会被放置在引用 `@import` 表达式的位置。
 * **[混合 mixins](#mixins-feature)**: 当一个 `reference` 样式被作为 [隐式混合（implicit mixin）](#mixins-feature)，它包含的规则会被混合（mixed-in），并被标记为 "not reference"，正常出现在被引用的地方。
 
-### 1.1 reference 例子
+### reference 例子
 This allows you to pull in only specific, targeted styles from a library such as [Bootstrap](https://github.com/twbs/bootstrap) by doing something like this:
 
 这允许你从类库中引入特定的样式，例如[Bootstrap](https://github.com/twbs/bootstrap)：
@@ -114,7 +114,7 @@ And you will pull in only `.navbar` related styles from Bootstrap.
 
 这样你可以从 Bootstrap 获取 `.navbar` 的样式。
 
-## 2. inline
+## inline
 > Use `@import (inline)` to include external files, but not process them.
 
 > 使用 `@import (inline)` 包含外部的文件，但不进行处理。
@@ -131,7 +131,7 @@ So you can use this to include the file in the output so that all CSS will be in
 
 因此，你可以使用它将文件包含在输出中，这样所有的CSS都将在一个文件中。
 
-## 3. less
+## less
 > Use `@import (less)` to treat imported files as Less, regardless of file extension.
 
 > 使用 `@import (less)` 忽略文件的扩展名，按 Less 处理导入的文件。
@@ -147,7 +147,7 @@ Example:
 ```
 
 
-## 4. css
+## css
 > Use `@import (css)` to treat imported files as regular CSS, regardless of file extension. This means the import statement will be left as it is.
 
 > 使用 `@import (css)` 忽略文件的扩展名，按 CSS 处理导入的文件。这意味着导入语句将被保留。
@@ -171,7 +171,7 @@ outputs
 ```
 
 
-## 5. once
+## once
 > The default behavior of `@import` statements. It means the file is imported only once and subsequent import statements for that file will be ignored.
 
 > 这是 `@import` 表达式的默认行为。这意味着文件只能被导入一次，随后的导入相同的文件将会被忽略。
@@ -191,7 +191,7 @@ Example:
 @import (once) "foo.less"; // this statement will be ignored
 ```
 
-## 6. multiple
+## multiple
 > Use `@import (multiple)` to allow importing of multiple files with the same name. This is the opposite behavior to once.
 
 > 使用 `@import (multiple)` 允许导入多个相同的文件，这跟 once 的行为相反。
@@ -225,7 +225,7 @@ Outputs
 }
 ```
 
-## 7. optional
+## optional
 > Use `@import (optional)` to allow importing of a file only when it exists. Without the `optional` keyword Less throws a FileError and stops compiling when importing a file that can not be found.
 
 > 使用 `@import (optional)` 允许当文件存在时进行导入。如果没有 `optional` 关键字，当导入的文件不存在时， Less 编译时会抛出 FileError 异常并停止编译。

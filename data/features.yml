@@ -41,7 +41,7 @@ published:
     files: <%= features.base %>/detached-rulesets.md
 
   import-directives:
-    title: 导入指令
+    title: Import 指令
     files: <%= features.base %>/import-directives.md
 
   mixin-guards:
