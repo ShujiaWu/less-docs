@@ -500,7 +500,7 @@ style comment! */</span>
 <h3 class="docs-heading">11. &#x5BFC;&#x5165;<span class="anchor-target" id="features-overview-feature-11-"></span>
 <a href="#features-overview-feature-11-" name="features-overview-feature-11-" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>Importing works pretty much as expected. You can import a <code>.less</code> file, and all the variables in it will be available. The extension is optionally specified for <code>.less</code> files.</p>
-<p>&#x548C;&#x4F60;&#x9884;&#x671F;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x4E00;&#x4E2A; <code>.less</code> &#x6587;&#x4EF6;&#xFF0C; &#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x5BFC;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x4EE5; <code>.less</code> &#x4E3A;&#x6269;&#x5C55;&#x540D;&#x540D;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x8BE5;&#x6269;&#x5C55;&#x540D;</p>
+<p>&#x548C;&#x4F60;&#x9884;&#x671F;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x4E00;&#x4E2A; <code>.less</code> &#x6587;&#x4EF6;&#xFF0C; &#x6B64;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53D8;&#x91CF;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x5982;&#x679C;&#x5BFC;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x4EE5; <code>.less</code> &#x4E3A;&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x8BE5;&#x6269;&#x5C55;&#x540D;</p>
 <pre><code class="lang-css"><span class="hljs-at_rule">@import</span> <span class="hljs-string">&quot;library&quot;</span>; <span class="hljs-comment">// library.less</span>
 <span class="hljs-at_rule">@import</span> <span class="hljs-string">&quot;typo.css&quot;</span>;
 </code></pre>
@@ -1313,7 +1313,7 @@ style comment! */</span>
 }
 </code></pre>
 <p>Notice that when you call the mixin, the parentheses are optional.</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x4F60;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x62EC;&#x53F7;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x4F60;&#x8C03;&#x7528;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x62EC;&#x53F7;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-comment">// these two statements do the same thing:</span>
 <span class="hljs-class">.a</span>(); 
 <span class="hljs-class">.a</span>;
@@ -1367,7 +1367,7 @@ style comment! */</span>
 <h2 class="docs-heading">3. &#x547D;&#x540D;&#x7A7A;&#x95F4;<span class="anchor-target" id="mixins-feature-3-"></span>
 <a href="#mixins-feature-3-" name="mixins-feature-3-" class="anchor glyphicon glyphicon-link"></a></h2>
 <p>If you want to mixin properties inside a more complicated selector, you can stack up multiple id&apos;s or classes.</p>
-<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5806;&#x53E0;&#x591A;&#x4E2A;id&#x6216;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x9009;&#x62E9;&#x5668;&#x4E2D;&#x7684;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5D4C;&#x5957;&#x591A;&#x4E2A;id&#x6216;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-id">#outer</span> {
   <span class="hljs-class">.inner</span> {
     <span class="hljs-attribute">color</span>: red;
@@ -2697,7 +2697,7 @@ overridden:</p>
 <p>&#x4F7F;&#x7528; <code>&amp;</code> &#x5F15;&#x7528;&#x7B26;&#x9009;&#x62E9;&#x5668;</p>
 </blockquote>
 <p>The <code>&amp;</code> operator represents the parent selectors of a <a href="#features-overview-feature-nested-rules">nested rule</a> and is most commonly used when applying a modifying class or pseudo-class to an existing selector:</p>
-<p><code>&amp;</code> &#x64CD;&#x4F5C;&#x7B26;&#x5728;<a href="#features-overview-feature-nested-rules">&#x5D4C;&#x5957;&#x7684;&#x6837;&#x5F0F;</a>&#x4E2D;&#x4EE3;&#x8868;&#x7236;&#x9009;&#x62E9;&#x5668;,&#x5B83;&#x7ECF;&#x5E38;&#x5E94;&#x7528;&#x5728;&#x5C06;&#x4FEE;&#x6539;&#x7684;&#x7C7B;&#x6216;&#x8005;&#x4F2A;&#x7C7B;&#x5E94;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x3002;</p>
+<p><code>&amp;</code> &#x64CD;&#x4F5C;&#x7B26;&#x5728;<a href="#features-overview-feature-nested-rules">&#x5D4C;&#x5957;&#x7684;&#x6837;&#x5F0F;</a>&#x4E2D;&#x4EE3;&#x8868;&#x7236;&#x9009;&#x62E9;&#x5668;,&#x5B83;&#x7ECF;&#x5E38;&#x7528;&#x4E8E;&#x5C06;&#x4FEE;&#x6539;&#x7684;&#x7C7B;&#x6216;&#x8005;&#x4F2A;&#x7C7B;&#x5E94;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-tag">a</span> {
   <span class="hljs-attribute">color</span>: blue;
   <span class="hljs-keyword">&amp;</span><span class="hljs-pseudo">:hover</span> {
@@ -2782,7 +2782,7 @@ overridden:</p>
 }
 </code></pre>
 <p>Note that <code>&amp;</code> represents all parent selectors (not just the nearest ancestor) so the following example:</p>
-<p>&#x6CE8;&#x610F;&#xFF0C;<code>&amp;</code> &#x4EE3;&#x8868;&#x7684;&#x662F;&#x591A;&#x6709;&#x7684;&#x7236;&#x9009;&#x62E9;&#x5668;&#xFF08;&#x800C;&#x4E0D;&#x53EA;&#x662F;&#x6700;&#x8FD1;&#x7684;&#x7956;&#x5148;&#xFF09;&#xFF0C;&#x770B;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>&amp;</code> &#x4EE3;&#x8868;&#x7684;&#x662F;&#x6240;&#x6709;&#x7684;&#x7236;&#x9009;&#x62E9;&#x5668;&#xFF08;&#x800C;&#x4E0D;&#x53EA;&#x662F;&#x6700;&#x8FD1;&#x7684;&#x7956;&#x5148;&#xFF09;&#xFF0C;&#x770B;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.grand</span> {
   <span class="hljs-class">.parent</span> {
     <span class="hljs-keyword">&amp;</span> &gt; <span class="hljs-keyword">&amp;</span> {
