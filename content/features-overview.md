@@ -390,7 +390,7 @@ style comment! */
 
 Importing works pretty much as expected. You can import a `.less` file, and all the variables in it will be available. The extension is optionally specified for `.less` files.
 
-和你预期的工作方式一样。你可以导入一个 `.less` 文件， 此文件中的所有变量都可以使用。如果导入的文件以 `.less` 为扩展名名，则可以省略该扩展名
+和你预期的工作方式一样。你可以导入一个 `.less` 文件， 此文件中的所有变量都可以使用。如果导入的文件以 `.less` 为扩展名，则可以省略该扩展名
 
 ```css
 @import "library"; // library.less

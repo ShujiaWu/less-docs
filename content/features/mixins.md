@@ -36,7 +36,7 @@ which results in:
 
 Notice that when you call the mixin, the parentheses are optional.
 
-注意：当你使用混合（mixin）的时候，括号是可选的。
+注意：当你调用混合（mixin）的时候，括号是可选的。
 
 ```less
 // these two statements do the same thing:
@@ -112,7 +112,7 @@ button:hover {
 
 If you want to mixin properties inside a more complicated selector, you can stack up multiple id's or classes.
 
-如果你想使用一个复杂选择器中的混合（mixin），你可以通过堆叠多个id或类选择器来实现。
+如果你想使用一个复杂选择器中的混合（mixin），你可以通过嵌套多个id或类选择器来实现。
 
 ```less
 #outer {

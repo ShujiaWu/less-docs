@@ -4,7 +4,7 @@
 
 The `&` operator represents the parent selectors of a [nested rule](#features-overview-feature-nested-rules) and is most commonly used when applying a modifying class or pseudo-class to an existing selector:
 
-`&` 操作符在[嵌套的样式](#features-overview-feature-nested-rules)中代表父选择器,它经常应用在将修改的类或者伪类应用到一个已经存在的选择器上。
+`&` 操作符在[嵌套的样式](#features-overview-feature-nested-rules)中代表父选择器,它经常用于将修改的类或者伪类应用到一个已经存在的选择器上。
 
 ```less
 a {
@@ -115,7 +115,7 @@ will output:
 
 Note that `&` represents all parent selectors (not just the nearest ancestor) so the following example:
 
-注意，`&` 代表的是多有的父选择器（而不只是最近的祖先），看一下下面的例子：
+注意，`&` 代表的是所有的父选择器（而不只是最近的祖先），看一下下面的例子：
 
 ```less
 .grand {
