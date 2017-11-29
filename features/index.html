@@ -1425,7 +1425,7 @@ style comment! */</span>
 <h2 class="docs-heading">5. <code>!important</code> &#x5173;&#x952E;&#x5B57;<span class="anchor-target" id="mixins-feature-5-important-"></span>
 <a href="#mixins-feature-5-important-" name="mixins-feature-5-important-" class="anchor glyphicon glyphicon-link"></a></h2>
 <p>Use the <code>!important</code> keyword after mixin call to mark all properties inherited by it as <code>!important</code>:</p>
-<p>&#x5728;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x540E;&#x9762;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>!important</code> &#xFF0C; &#x6DF7;&#x5408;&#x540E;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x5C06;&#x88AB;&#x6807;&#x8BB0;&#x4E3A; <code>!important</code>&#xFF1A;</p>
+<p>&#x5728;&#x6DF7;&#x5408;&#xFF08;mixin&#xFF09;&#x540E;&#x9762;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>!important</code> &#xFF0C; &#x6DF7;&#x5408;&#x8C03;&#x7528;&#x540E;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x5C06;&#x88AB;&#x6807;&#x8BB0;&#x4E3A; <code>!important</code>&#xFF1A;</p>
 <p>Example:</p>
 <p>&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-class">.foo</span> (<span class="hljs-variable">@bg</span>: <span class="hljs-hexcolor">#f5f5f5</span>, <span class="hljs-variable">@color</span>: <span class="hljs-hexcolor">#900</span>) {
@@ -1521,7 +1521,7 @@ style comment! */</span>
 <p>And it will include a 5px border-radius.</p>
 <p>&#x4E0A;&#x9762;&#x7684;&#x89C4;&#x5219;&#x4E2D;&#x5C06;&#x5305;&#x542B; 5px &#x7684; border-radius&#x3002;</p>
 <p>You can also use parametric mixins which don&apos;t take parameters. This is useful if you want to hide the ruleset from the CSS output, but want to include its properties in other rulesets:</p>
-<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6A21;&#x5F0F;&#x7684;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x4F60;&#x60F3;&#x628A;&#x5176;&#x4ED6;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x6DF7;&#x5408;&#x5230;&#x6837;&#x5F0F;&#x4E2D;&#xFF0C;&#x53C8;&#x4E0D;&#x60F3;&#x5728;&#x8F93;&#x51FA;&#x7684; CSS &#x5305;&#x542B;&#x6539;&#x6837;&#x5F0F;&#x96C6;&#x7279;&#x522B;&#x6709;&#x7528;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x5E26;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6A21;&#x5F0F;&#x7684;&#x6DF7;&#x5408;&#xFF08;mixins&#xFF09;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x4F60;&#x60F3;&#x628A;&#x5176;&#x4ED6;&#x89C4;&#x5219;&#x96C6;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x6DF7;&#x5408;&#x5230;&#x6837;&#x5F0F;&#x4E2D;&#xFF0C;&#x53C8;&#x4E0D;&#x60F3;&#x5728;&#x8F93;&#x51FA;&#x7684; CSS &#x5305;&#x542B;&#x8BE5;&#x6837;&#x5F0F;&#x96C6;&#x7279;&#x522B;&#x6709;&#x7528;&#x3002;</p>
 <pre><code class="lang-less"><span class="hljs-class">.wrap</span>() {
   <span class="hljs-attribute">text-wrap</span>: wrap;
   <span class="hljs-attribute">white-space</span>: -moz-pre-wrap;
@@ -2694,7 +2694,7 @@ overridden:</p>
 
 <blockquote>
 <p>Referencing parent selectors with <code>&amp;</code></p>
-<p>&#x4F7F;&#x7528; <code>&amp;</code> &#x5F15;&#x7528;&#x7B26;&#x9009;&#x62E9;&#x5668;</p>
+<p>&#x4F7F;&#x7528; <code>&amp;</code> &#x5F15;&#x7528;&#x7236;&#x9009;&#x62E9;&#x5668;</p>
 </blockquote>
 <p>The <code>&amp;</code> operator represents the parent selectors of a <a href="#features-overview-feature-nested-rules">nested rule</a> and is most commonly used when applying a modifying class or pseudo-class to an existing selector:</p>
 <p><code>&amp;</code> &#x64CD;&#x4F5C;&#x7B26;&#x5728;<a href="#features-overview-feature-nested-rules">&#x5D4C;&#x5957;&#x7684;&#x6837;&#x5F0F;</a>&#x4E2D;&#x4EE3;&#x8868;&#x7236;&#x9009;&#x62E9;&#x5668;,&#x5B83;&#x7ECF;&#x5E38;&#x7528;&#x4E8E;&#x5C06;&#x4FEE;&#x6539;&#x7684;&#x7C7B;&#x6216;&#x8005;&#x4F2A;&#x7C7B;&#x5E94;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4E0A;&#x3002;</p>
