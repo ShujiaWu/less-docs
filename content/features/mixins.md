@@ -192,7 +192,7 @@ The `default` function is assumed to have the same value for all nested namespac
 
 Use the `!important` keyword after mixin call to mark all properties inherited by it as `!important`:
 
-在混合（mixin）后面使用关键字 `!important` ， 混合后的属性都将被标记为 `!important`：
+在混合（mixin）后面使用关键字 `!important` ， 混合调用后的属性都将被标记为 `!important`：
 
 Example:
 
