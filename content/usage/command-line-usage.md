@@ -502,4 +502,4 @@ once installed (npm install less-plugin-clean-css), use either with
 specify options afterwards e.g. --plugin=less-plugin-clean-css="advanced"
 or --clean-css="advanced"
 
-使用 --plugin 加载插件。如果插件以 less-plugin 开头，你可以省略 --plugin= 。例如：clean css 插件名称为 less-plugin-clean-css。安装后（npm install less-plugin-clean-css）无论是使用 --plugin=less-plugin-clean-css 还是只使用 --clean-css 指定之后的选项。例如 --plugin=less-plugin-clean-css="advanced" or --clean-css="advanced"
+使用 --plugin 加载插件。如果插件以 less-plugin 开头，你可以省略 --plugin= 。例如：clean css 插件名称为 less-plugin-clean-css。安装后（npm install less-plugin-clean-css）即可以使用 --plugin=less-plugin-clean-css 也可以只使用 --clean-css 指定之后的选项。例如 --plugin=less-plugin-clean-css="advanced" or --clean-css="advanced"
