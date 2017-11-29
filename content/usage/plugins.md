@@ -6,7 +6,7 @@ title: 插件
 
 > 如何使用插件？
 
-在命令行中使用
+1. 在命令行中使用
 --------------------------------------
 
 If you are using lessc, the first thing you need to do is install that plugin. We recommend the plugin starts with "less-plugin" though that isn't required. For the clean-css plugin you would install with
@@ -33,7 +33,7 @@ Will use the plugin you just installed. You can also be more direct, for example
 lessc --plugin=path_to_plugin=options
 ```
 
-在代码中使用插件
+2. 在代码中使用插件
 ----------------------
 
 In Node, require the plugin and pass it to `less` in an array as an option plugins. E.g.
@@ -49,7 +49,7 @@ less.render(myCSS, { plugins: [myPlugin] })
     });
 ```
 
-在浏览器中使用
+3. 在浏览器中使用
 -------------------
 
 Plugin authors should provide a javascript file, just include that in the page *before* the less.js script.
@@ -66,7 +66,7 @@ less = {
 <script src="less.min.js"></script>
 ```
 
-Less 插件列表
+4. Less 插件列表
 --------------------
 
 > Available Less plugins. Find more at [GitHib](https://github.com/search?q=topic%3Aless-plugin&type=Repositories) and [NPM Registry](https://www.npmjs.com/search?q=%22less-plugin%22) 
@@ -123,7 +123,7 @@ Less 插件列表
 | [Lesshat](https://github.com/bassjobsen/less-plugin-lesshat/) | Lesshat
 | [Skeleton](https://github.com/bassjobsen/less-plugin-skeleton) | Skeleton
 
-致插件开发者
+5. 致插件开发者
 --------------------------
 
 Less supports some entry points that allow an author to integrate with it. We may add some more in the future.
