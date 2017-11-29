@@ -1,32 +1,44 @@
 ---
-title: Plugins
+title: 插件
 ---
 
->How do I use a plugin? 
+>How do I use a plugin?
 
-Command Line
+> 如何使用插件？
+
+在命令行中使用
 --------------------------------------
 
 If you are using lessc, the first thing you need to do is install that plugin. We recommend the plugin starts with "less-plugin" though that isn't required. For the clean-css plugin you would install with
+
+如果你使用 lessc，你需要做的第一件事情就是安装插件。我们推荐插件的以"less-plugin"开头，但这不是必要的。如果想使用 clean-css 插件，你应该这样子安装：
+
 ```
 npm install less-plugin-clean-css
 ```
 
 To use the plugin, if you specify a unrecognised option, we attempt to load that, for example
+
+在使用插件过程中，如果指定了一个非默认的选项，我们将尝试加载它，例如：
+
 ```
 lessc --clean-css="advanced"
 ```
 
 Will use the plugin you just installed. You can also be more direct, for example
 
+我们将使用你已经安装的插件。你也可以更直接地指定插件，例如：
+
 ```
 lessc --plugin=path_to_plugin=options
 ```
 
-Using a Plugin in Code
+在代码中使用插件
 ----------------------
 
 In Node, require the plugin and pass it to `less` in an array as an option plugins. E.g.
+
+在 Node 中，插件通过数组的形式传递给 `less` ，例如：
 
 ```js
 var myPlugin = require("my-plugin");
@@ -37,10 +49,12 @@ less.render(myCSS, { plugins: [myPlugin] })
     });
 ```
 
-In the Browser
+在浏览器中使用
 -------------------
 
 Plugin authors should provide a javascript file, just include that in the page *before* the less.js script.
+
+插件的作者应该提供一个 javascript 文件，并且必须在 less.js 脚本**之前**引入。
 
 ```html
 <script src="plugin.js"></script>
@@ -52,10 +66,12 @@ less = {
 <script src="less.min.js"></script>
 ```
 
-List of Less Plugins
+Less 插件列表
 --------------------
 
 > Available Less plugins. Find more at [GitHib](https://github.com/search?q=topic%3Aless-plugin&type=Repositories) and [NPM Registry](https://www.npmjs.com/search?q=%22less-plugin%22) 
+
+> 可用的 Less 插件列表。可以在 [GitHib](https://github.com/search?q=topic%3Aless-plugin&type=Repositories) 和 [NPM Registry](https://www.npmjs.com/search?q=%22less-plugin%22) 上找到更多插件。
 
 #### Postprocessor/Feature Plugins
 | | |
@@ -107,12 +123,17 @@ List of Less Plugins
 | [Lesshat](https://github.com/bassjobsen/less-plugin-lesshat/) | Lesshat
 | [Skeleton](https://github.com/bassjobsen/less-plugin-skeleton) | Skeleton
 
-For Plugin Authors
+致插件开发者
 --------------------------
 
 Less supports some entry points that allow an author to integrate with it. We may add some more in the future.
 
+Less 为集成插件的开发者提供了一些入口。我们将在未来添加更多的入口。
+
 The plugin itself has a very simple signature, like this
+
+插件本身有一个简单的签名，例如：
+
 ```js
 {
     install: function(less, pluginManager) {
@@ -122,7 +143,11 @@ The plugin itself has a very simple signature, like this
 ```
 So, the plugin gets the `less` object, which in v2 has more classes on it (making it easy to extend), a plugin manager which provides some hooks to add visitors, file managers and post processors.
 
+因此，插件能够获取到 `less` 对象，在 V2 中有不同的类型，（这将让它更好地被扩展）。插件管理将提供一些钩子函数、访问对象、文件管理器和后处理器。
+
 If your plugin supports `lessc`, there are a few more details and the signature looks like this
+
+如果你的插件支持 `lessc`，它的细节和签名类似这样：
 
 ```js
 {
@@ -137,9 +162,15 @@ If your plugin supports `lessc`, there are a few more details and the signature 
 ```
 The additions are the `setOptions` function which passes the string the user enters when specifying your plugin and also the `printUsage` function which you should use to explain your options and how the plugin works.
 
+添加的 `setOptions` 函数，它接收的是用户调用插件时传递进来的输入字符串。同时，你需要在 `printUsage` 中解释你的选项的意义，并告诉插件如何工作。
+
 Here are some example repos showing the different plugin types:
+
+下面是一些参考的不同类型插件的仓库：
  - post-processor: https://github.com/less/less-plugin-clean-css
  - visitor: https://github.com/less/less-plugin-inline-urls
  - file-manager: https://github.com/less/less-plugin-npm-import
 
 Note: Plugins are different from creating a version of less for a different environment but they do have similarities, for example node provides 2 file managers by default and browser provides one and that is the main step in getting less to run within a specific environment. The plugin allows you to add file managers.
+
+注意：创建相同版本的 less 不同的运行环境的插件的是不一样的，但是他们是相似的。例如，运行于 node 环境的会默认提供两个文件管理器，而运行于浏览器的只提供一个。不同的部分就是 Less 在特定环境下运行的主要步骤。这个插件允许你添加文件管理器。
