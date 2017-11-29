@@ -1,6 +1,6 @@
 > Referencing parent selectors with `&`
 
-> 使用 `&` 引用符选择器
+> 使用 `&` 引用父选择器
 
 The `&` operator represents the parent selectors of a [nested rule](#features-overview-feature-nested-rules) and is most commonly used when applying a modifying class or pseudo-class to an existing selector:
 

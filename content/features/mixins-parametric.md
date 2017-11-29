@@ -59,7 +59,7 @@ And it will include a 5px border-radius.
 
 You can also use parametric mixins which don't take parameters. This is useful if you want to hide the ruleset from the CSS output, but want to include its properties in other rulesets:
 
-你也可以使用不带任何参数的参数模式的混合（mixins）。这对于你想把其他规则集中的属性混合到样式中，又不想在输出的 CSS 包含改样式集特别有用。
+你也可以使用不带任何参数的参数模式的混合（mixins）。这对于你想把其他规则集中的属性混合到样式中，又不想在输出的 CSS 包含该样式集特别有用。
 
 ```less
 .wrap() {
