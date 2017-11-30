@@ -16,6 +16,7 @@
 
 目前的安排是先将文档全部翻译完成，然后再进行校对。
 
+2017-11-30：最近又有新的项目开工了，翻译只能有空抽时间来做了，可能会更新得比较慢...
 ## Quickstart
 
 Assemble and Grunt are used to build the docs. To get started:
