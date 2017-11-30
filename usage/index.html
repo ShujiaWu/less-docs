@@ -148,7 +148,7 @@
 <li><a href="#plugins-3-">3. &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F7F;&#x7528;</a></li>
 <li><a href="#plugins-4-less-">4. Less &#x63D2;&#x4EF6;&#x5217;&#x8868;</a></li>
 <li><a href="#plugins-5-">5. &#x81F4;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x8005;</a></li></ul></li>
-<li><a href="#programmatic-usage">&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x8BF4;&#x660E;</a><ul class="nav"><li><a href="#programmatic-usage-getting-access-to-the-log">Getting Access to the Log</a></li></ul></li>
+<li><a href="#programmatic-usage">&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x8BF4;&#x660E;</a><ul class="nav"><li><a href="#programmatic-usage--">&#x83B7;&#x53D6;&#x65E5;&#x5FD7;</a></li></ul></li>
 <li><a href="#online-less-compilers">&#x5728;&#x7EBF; Less &#x7F16;&#x8BD1;&#x5668;</a><ul class="nav"><li><a href="#online-less-compilers--less2css-org-http-less2css-org-">less2css.org</a></li>
 <li><a href="#online-less-compilers--winless-org-online-less-compiler-http-winless-org-online-less-compiler-">winless.org/online-less-compiler</a></li>
 <li><a href="#online-less-compilers--lesstester-com-http-lesstester-com-">lesstester.com</a></li>
@@ -159,7 +159,7 @@
 <li><a href="#online-less-compilers--estfiddle-http-ecomfe-github-io-est-fiddle-">estFiddle</a></li>
 <li><a href="#online-less-compilers--iless-http-demo-iless-rhcloud-com-">ILess</a></li>
 <li><a href="#online-less-compilers--beautifytools-less-compiler-http-beautifytools-com-less-compiler-php-">BeautifyTools Less Compiler</a></li>
-<li><a href="#online-less-compilers-online-web-ides-playgrounds-with-less-support">Online Web IDEs/Playgrounds with Less support</a></li>
+<li><a href="#online-less-compilers--less-web-ide-">&#x652F;&#x6301; Less &#x7684;&#x5728;&#x7EBF; Web IDE &#x548C;&#x73AF;&#x5883;</a></li>
 <li><a href="#online-less-compilers--cssdeck-labs-http-cssdeck-com-labs-">CSSDeck Labs</a></li>
 <li><a href="#online-less-compilers--codepen-http-codepen-io-">CodePen</a></li>
 <li><a href="#online-less-compilers--fiddle-salad-http-fiddlesalad-com-less-">Fiddle Salad</a></li>
@@ -1239,6 +1239,7 @@ less = {
 
 
 <p>The main entry point into <code>less</code> is the <code>less.render</code> function. This takes the following format</p>
+<p><code>less</code> &#x7684;&#x5165;&#x53E3;&#x51FD;&#x6570;&#x4E3A; <code>less.render</code>&#x3002;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
 <pre><code class="lang-js">less.render(lessInput, options)
     .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">output</span>) </span>{
         <span class="hljs-comment">// output.css = string of css</span>
@@ -1254,8 +1255,11 @@ less.render(css, options, <span class="hljs-function"><span class="hljs-keyword"
 </code></pre>
 <p>The options argument is optional. If you specify a callback then a promise will not be returned, where as if you do not specify a callback a promise will be given.
 Under the hood, the callback version is used so that less can be used synchronously.</p>
+<p>&#x9009;&#x9879;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6307;&#x5B9A;&#x4E86;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; promise &#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4EEC;&#x6709;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; promise &#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x94A9;&#x5B50;&#x7684;&#x4F5C;&#x7528;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x5F02;&#x6B65;&#x4F7F;&#x7528; less&#x3002;</p>
 <p>If you wanted to render a file, you would first read it into a string (to pass to less.render) and then set the filename field on options to be the filename of the main file. less will handle all the processing of the imports.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x5C06;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x8BFB;&#x53D6;&#x5230;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x7136;&#x540E;&#x4F20;&#x9012;&#x7ED9; less.render&#xFF09;&#x5E76;&#x4E14;&#x5728;&#x9009;&#x9879;&#x4E2D;&#x8BBE;&#x7F6E;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x6BB5;&#x4F5C;&#x4E3A;&#x4E3B;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x3002;less &#x4F1A;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x5BFC;&#x5165;&#x3002;</p>
 <p>The <code>sourceMap</code> option is an object which enables you to set sub sourcemap options. Available sub options are: <code>sourceMapURL</code>,<code>sourceMapBasepath</code>,<code>sourceMapRootpath</code>,<code>outputSourceFiles</code> and <code>sourceMapFileInline</code>. Notice that the <code>sourceMap</code> option is not available for the less.js in browser compiler now.</p>
+<p><code>sourceMap</code> &#x9009;&#x9879;&#x5141;&#x8BB8;&#x4F60;&#x8BBE;&#x7F6E;&#x5B50; sourcemap &#x9009;&#x9879;&#x3002;&#x53EF;&#x7528;&#x7684;&#x5B50;&#x9009;&#x9879;&#x6709;&#xFF1A; <code>sourceMapURL</code>,<code>sourceMapBasepath</code>,<code>sourceMapRootpath</code>,<code>outputSourceFiles</code> &#x548C; <code>sourceMapFileInline</code>&#x3002;&#x6CE8;&#x610F;&#xFF1A;<code>sourceMap</code> &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7F16;&#x8BD1;&#x65F6;&#x662F;&#x4E0D;&#x53EF;&#x7528;&#x7684;</p>
 <pre><code class="lang-js">less.render(lessInput)
     .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">output</span>) </span>{
         <span class="hljs-comment">// output.css = string of css</span>
@@ -1275,10 +1279,13 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 }
 </code></pre>
 <p>Previously we also recommended creating a less.Parser and then calling toCSS on the result. However this had 2 serious drawbacks - it meant that our parser was in fact tied to all of less and 2nd it meant that the toCSS call had to be synchronous.</p>
+<p>&#x5728;&#x4EE5;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x5EFA;&#x8BAE;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; less.Parser &#x5E76;&#x5728;&#x7ED3;&#x679C;&#x8C03;&#x7528; toCSS &#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x6709;&#x4E24;&#x4E2A;&#x7F3A;&#x9677; &#x2014;&#x2014; &#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E8B;&#x5B9E;&#x4E0A;&#x6211;&#x4EEC;&#x7684;&#x8F6C;&#x6362;&#x5668;&#x4F9D;&#x8D56;&#x6240;&#x6709;&#x7684; less&#xFF0C;&#x7B2C;&#x4E8C;&#x662F;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x4EE5;&#x540C;&#x6B65;&#x7684;&#x65B9;&#x5F0F;&#x8C03;&#x7528; toCSS &#x3002;</p>
 <p>You can still get the less parse tree, but it requires more steps. You can see how this is done <a href="https://github.com/less/less.js/blob/master/lib/less/render.js">in the render function</a> but we <em>do not</em> support using less in this way and may change this function in a minor release version bump (we will not break it in a patch release).</p>
-<h3 class="docs-heading">Getting Access to the Log<span class="anchor-target" id="programmatic-usage-getting-access-to-the-log"></span>
-<a href="#programmatic-usage-getting-access-to-the-log" name="programmatic-usage-getting-access-to-the-log" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; less &#x7684;&#x8F6C;&#x6362;&#x6811;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x9700;&#x8981;&#x66F4;&#x591A;&#x7684;&#x6B65;&#x9AA4;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/less/less.js/blob/master/lib/less/render.js">in the render function</a> &#x4E2D;&#x67E5;&#x770B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x5EFA;&#x8BAE;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528; less &#xFF0C;&#x6216;&#x8BB8;&#x4F1A;&#x5728;&#x4E00;&#x4E2A;&#x5C0F;&#x7248;&#x672C;&#x4E2D;&#x6539;&#x53D8;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x3002;&#xFF08;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5728;&#x4E00;&#x4E2A;&#x8865;&#x4E01;&#x7248;&#x672C;&#x4E2D;&#x505A;&#x51FA;&#x6539;&#x53D8;&#xFF09;</p>
+<h3 class="docs-heading">&#x83B7;&#x53D6;&#x65E5;&#x5FD7;<span class="anchor-target" id="programmatic-usage--"></span>
+<a href="#programmatic-usage--" name="programmatic-usage--" class="anchor glyphicon glyphicon-link"></a></h3>
 <p>You can add a log listener with the following code</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x6309;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x65E5;&#x5FD7;&#x76D1;&#x542C;&#x5668;&#xFF1A;</p>
 <pre><code class="lang-js">less.logger.addListener({
     <span class="hljs-attr">debug</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
     },
@@ -1291,6 +1298,7 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 });
 </code></pre>
 <p>Note: all functions are optional. An error will not be logged, but instead is passed back to the callback or promise in less.render</p>
+<p>&#x6240;&#x6709;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;&#x9519;&#x8BEF;&#x5C06;&#x4E0D;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x56DE;&#x8C03;&#x884C;&#x6570;&#x6216;&#x8005;&#x662F; less.render &#x4E2D;&#x7684; promise &#x3002;</p>
 
 
       <br>
@@ -1326,78 +1334,91 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 <a href="#online-less-compilers--less2css-org-http-less2css-org-" name="online-less-compilers--less2css-org-http-less2css-org-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Online Integrated Development Environment (IDE) that is hosted in a browser allowing users to edit and compile Less to CSS in real-time.</p>
+<p>&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5728;&#x7EBF;&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;(IDE)&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5B9E;&#x65F6;&#x7F16;&#x8F91;&#x548C;&#x7F16;&#x8BD1;CSS&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://winless.org/online-less-compiler">winless.org/online-less-compiler</a><span class="anchor-target" id="online-less-compilers--winless-org-online-less-compiler-http-winless-org-online-less-compiler-"></span>
 <a href="#online-less-compilers--winless-org-online-less-compiler-http-winless-org-online-less-compiler-" name="online-less-compilers--winless-org-online-less-compiler-http-winless-org-online-less-compiler-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>This Online Less Compiler can help you to learn Less. You can go through the examples below or try your own Less code.</p>
+<p>&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x4F60;&#x5B66;&#x4E60;&#x7684;&#x5728;&#x7EBF; Less &#x7F16;&#x8BD1;&#x5668;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x6216;&#x8005;&#x5C1D;&#x8BD5;&#x7F16;&#x5199;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://lesstester.com/">lesstester.com</a><span class="anchor-target" id="online-less-compilers--lesstester-com-http-lesstester-com-"></span>
 <a href="#online-less-compilers--lesstester-com-http-lesstester-com-" name="online-less-compilers--lesstester-com-http-lesstester-com-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Online compiler for Less CSS.</p>
+<p>&#x5728;&#x7EBF; Less &#x7F16;&#x8BD1;&#x5668;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://www.dopefly.com/less-converter/less-converter.html">dopefly.com/less-converter</a><span class="anchor-target" id="online-less-compilers--dopefly-com-less-converter-http-www-dopefly-com-less-converter-less-converter-html-"></span>
 <a href="#online-less-compilers--dopefly-com-less-converter-http-www-dopefly-com-less-converter-less-converter-html-" name="online-less-compilers--dopefly-com-less-converter-http-www-dopefly-com-less-converter-less-converter-html-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>A simple Less CSS file converter using the Less JS project.</p>
+<p>&#x4E00;&#x4E2A;&#x4F7F;&#x7528; Less &#x8F6C;&#x6362; CSS &#x6587;&#x4EF6;&#x7684;&#x7B80;&#x5355; JS &#x9879;&#x76EE;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://lessphp.gpeasy.com/demo">lessphp.gpeasy.com/demo</a><span class="anchor-target" id="online-less-compilers--lessphp-gpeasy-com-demo-http-lessphp-gpeasy-com-demo-"></span>
 <a href="#online-less-compilers--lessphp-gpeasy-com-demo-http-lessphp-gpeasy-com-demo-" name="online-less-compilers--lessphp-gpeasy-com-demo-http-lessphp-gpeasy-com-demo-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
-<p><a href="http://lessphp.gpeasy.com/">less.php</a> live demo.</p>
+<p><a href="http://lessphp.gpeasy.com/">less.php</a> &#x5B9E;&#x65F6; demo.</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://leafo.net/lessphp/editor.html">leafo.net/lessphp/editor</a><span class="anchor-target" id="online-less-compilers--leafo-net-lessphp-editor-http-leafo-net-lessphp-editor-html-"></span>
 <a href="#online-less-compilers--leafo-net-lessphp-editor-http-leafo-net-lessphp-editor-html-" name="online-less-compilers--leafo-net-lessphp-editor-http-leafo-net-lessphp-editor-html-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
-<p><a href="http://leafo.net/lessphp/">lessphp</a> live demo.</p>
+<p><a href="http://leafo.net/lessphp/">lessphp</a> &#x5B9E;&#x65F6; demo.</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://precess.co/">precess</a><span class="anchor-target" id="online-less-compilers--precess-http-precess-co-"></span>
 <a href="#online-less-compilers--precess-http-precess-co-" name="online-less-compilers--precess-http-precess-co-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
-<p>A real time preprocesser compiler. </p>
+<p>A real time preprocesser compiler.</p>
+<p>&#x4E00;&#x4E2A;&#x5B9E;&#x65F6;&#x7684;&#x5DF2;&#x5904;&#x7406;&#x7F16;&#x8BD1;&#x5668;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://ecomfe.github.io/est/fiddle/">estFiddle</a><span class="anchor-target" id="online-less-compilers--estfiddle-http-ecomfe-github-io-est-fiddle-"></span>
 <a href="#online-less-compilers--estfiddle-http-ecomfe-github-io-est-fiddle-" name="online-less-compilers--estfiddle-http-ecomfe-github-io-est-fiddle-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Online Less compiler providing live demo for Less and <a href="http://ecomfe.github.io/est/">est</a>. Allowing users to switch among all versions of Less after <code>1.4.0</code> with optional est/Autoprefixer functionalities.</p>
+<p>&#x4E3A; Less &#x548C; <a href="http://ecomfe.github.io/est/">est</a> &#x63D0;&#x4F9B;&#x5B9E;&#x65F6; demo &#x7684;&#x5728;&#x7EBF; Less &#x7F16;&#x8BD1;&#x5668;&#x3002;&#x5141;&#x8BB8;&#x5207;&#x6362; <code>1.4.0</code> &#x4EE5;&#x540E;&#x7684;&#x5E26; est/Autoprefixer &#x529F;&#x80FD;&#x7684;&#x4EFB;&#x610F; Less &#x7248;&#x672C;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://demo-iless.rhcloud.com/">ILess</a><span class="anchor-target" id="online-less-compilers--iless-http-demo-iless-rhcloud-com-"></span>
 <a href="#online-less-compilers--iless-http-demo-iless-rhcloud-com-" name="online-less-compilers--iless-http-demo-iless-rhcloud-com-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Live demo of  <a href="https://github.com/mishal/iless">ILess</a> PHP compiler</p>
+<p><a href="https://github.com/mishal/iless">ILess</a> PHP &#x7F16;&#x8BD1;&#x5668;&#x7684;&#x5B9E;&#x65F6; demo&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://beautifytools.com/less-compiler.php">BeautifyTools Less Compiler</a><span class="anchor-target" id="online-less-compilers--beautifytools-less-compiler-http-beautifytools-com-less-compiler-php-"></span>
 <a href="#online-less-compilers--beautifytools-less-compiler-http-beautifytools-com-less-compiler-php-" name="online-less-compilers--beautifytools-less-compiler-http-beautifytools-com-less-compiler-php-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Online Less compiler with optional formatting and minification at <a href="http://beautifytools.com">BeautifyTools</a></p>
+<p><a href="http://beautifytools.com">BeautifyTools</a> &#x63D0;&#x4F9B;&#x53EF;&#x9009;&#x7684; &#x683C;&#x5F0F;&#x5316;&#x6216;&#x6700;&#x5C0F;&#x5316;&#x529F;&#x80FD;&#x7684;&#x5728;&#x7EBF; Less &#x7F16;&#x8BD1;&#x5668;&#x3002;</p>
 </blockquote>
-<h2 class="docs-heading">Online Web IDEs/Playgrounds with Less support<span class="anchor-target" id="online-less-compilers-online-web-ides-playgrounds-with-less-support"></span>
-<a href="#online-less-compilers-online-web-ides-playgrounds-with-less-support" name="online-less-compilers-online-web-ides-playgrounds-with-less-support" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">&#x652F;&#x6301; Less &#x7684;&#x5728;&#x7EBF; Web IDE &#x548C;&#x73AF;&#x5883;<span class="anchor-target" id="online-less-compilers--less-web-ide-"></span>
+<a href="#online-less-compilers--less-web-ide-" name="online-less-compilers--less-web-ide-" class="anchor glyphicon glyphicon-link"></a></h2>
 <h3 class="docs-heading"><a href="http://cssdeck.com/labs">CSSDeck Labs</a><span class="anchor-target" id="online-less-compilers--cssdeck-labs-http-cssdeck-com-labs-"></span>
 <a href="#online-less-compilers--cssdeck-labs-http-cssdeck-com-labs-" name="online-less-compilers--cssdeck-labs-http-cssdeck-com-labs-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>CSSDeck Labs is a place where you can quickly create some experiments (or testcases) that involves HTML, CSS, JS code.</p>
+<p>&#x5728; CSSDeck Labs &#x4E0A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x521B;&#x5EFA;&#x5305;&#x542B; HTML, CSS, JS &#x4EE3;&#x7801;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x6216;&#x8005;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#xFF09;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://codepen.io">CodePen</a><span class="anchor-target" id="online-less-compilers--codepen-http-codepen-io-"></span>
 <a href="#online-less-compilers--codepen-http-codepen-io-" name="online-less-compilers--codepen-http-codepen-io-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>CodePen is a playground for the front end side of the web.</p>
+<p>CodePen &#x662F;&#x4E00;&#x4E2A; Web &#x524D;&#x7AEF;&#x7684;&#x73AF;&#x5883;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://fiddlesalad.com/less/">Fiddle Salad</a><span class="anchor-target" id="online-less-compilers--fiddle-salad-http-fiddlesalad-com-less-"></span>
 <a href="#online-less-compilers--fiddle-salad-http-fiddlesalad-com-less-" name="online-less-compilers--fiddle-salad-http-fiddlesalad-com-less-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>An online playground with an instantly ready coding environment.</p>
+<p>&#x4E00;&#x4E2A;&#x5B9E;&#x65F6;&#x7684;&#x4EE3;&#x7801;&#x73AF;&#x5883;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://jsbin.com">JS Bin</a><span class="anchor-target" id="online-less-compilers--js-bin-http-jsbin-com-"></span>
 <a href="#online-less-compilers--js-bin-http-jsbin-com-" name="online-less-compilers--js-bin-http-jsbin-com-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>JS Bin is a webapp specifically designed to help JavaScript and CSS folk test snippets of code.</p>
+<p>JS Bin&#x662F;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x8BBE;&#x8BA1;&#x7528;&#x6765;&#x5E2E;&#x52A9;JavaScript&#x548C;CSS&#x7684;&#x5F00;&#x53D1;&#x8005;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x7684; webapp&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading"><a href="http://jsfiddle.net/hb2rsm2x">jsFiddle</a><span class="anchor-target" id="online-less-compilers--jsfiddle-http-jsfiddle-net-hb2rsm2x-"></span>
 <a href="#online-less-compilers--jsfiddle-http-jsfiddle-net-hb2rsm2x-" name="online-less-compilers--jsfiddle-http-jsfiddle-net-hb2rsm2x-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Online Web Editor</p>
+<p>&#x5728;&#x7EBF; Web &#x7F16;&#x8F91;&#x5668;</p>
 </blockquote>
 
 
