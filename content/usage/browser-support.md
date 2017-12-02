@@ -12,7 +12,7 @@ Note that PhantomJS does not currently implement `Function.prototype.bind` so yo
 
 There are reasons to use client-side script in production, such as if you want to allow users to tweak variables which will affect the theme and you want to show it to them in real-time - in this instance a user is not worried about waiting for a style to update before seeing it.
 
-在生产环境中使用客户端 less 是有理由的，如果你希望允许用户对影响主题的变量进行调整，并且实时地展示变化。在这个例子中，用户不用当心等待样式的变更。
+在生产环境中使用客户端 less 是有理由的，如果你希望允许用户对影响主题的变量进行调整，并且实时地展示变化。在这个例子中，用户不用担心等待样式的变更。
 
 If you need to run less.js in an older browser, please use an [es-5 shim](https://github.com/kriskowal/es5-shim) which will add the javascript features that less.js requires.
 
