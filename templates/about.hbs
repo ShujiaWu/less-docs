@@ -1,14 +1,14 @@
 ---
-title: About
+title: 关于
 slug: about
-lead: "Learn about the history of Less, meet the core team, and check out the ever-growing community resources."
+lead: "了解 Less 的历史、核心开发团队和不断壮大的社区资源。"
 ---
 
 {{!-- History
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="history">History</h1>
+    <h1 id="history">历史</h1>
   </div>
   {{md 'history'}}
 </div>
@@ -18,9 +18,10 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="team">Core team</h1>
+    <h1 id="team">核心团队</h1>
   </div>
   <p class="lead">Less is maintained by a group of invaluable core contributors, with the massive support and involvement of our community. No one person is in charge and everyone has their own areas and donates the time they can afford. In alphabetical order:</p>
+  <p class="lead">Less 由一群无私的核心贡献者维护,并且拥有大量社区的支持和参与。这并不是由哪个人全力负责，每一个人都都在自己擅长的领域为项目贡献时间和精力. 以下按字母顺序排列:</p>
   <div class="list-group less-team">
 
     {{! Generated from data/team.yml }}
@@ -36,7 +37,9 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 
   </div>
   <p>Get involved with Less development by <a href="{{less.bugs.url}}/new">opening an issue</a> or submitting a pull request (if it's a feature request, please open an issue first). </p>
+  <p>通过 <a href="{{less.bugs.url}}/new">提交 issue</a> 或者提交一个 pull request 参与到Less 的开发中来(如果是添加一个新的特性，请先提交一个 issue)。</p>
   <p>Read our <a href="{{ less.master.url }}CONTRIBUTING.md">contributing guidelines</a> and the <a href="{{rel 'usage'}}/#developing-less">developing section</a> of our usage page.</p>
+  <p>阅读 <a href="{{ less.master.url }}CONTRIBUTING.md">贡献指南</a> 和使用说明中的 <a href="{{rel 'usage'}}/#developing-less">开发章节</a>。</p>
 </div>
 
 
@@ -44,14 +47,17 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="community">Community</h1>
+    <h1 id="community">社区</h1>
   </div>
   <p class="lead">Stay up to date on the development of Less and reach out to the community with these helpful resources.</p>
+  <p class="lead">紧跟 Less 的开发进展， 在社区中获取有用的资源。</p>
   <ul>
     <!--li>Read and subscribe to <a href="">The Official Less Blog</a>.</li -->
     <li>Have a feature request or bug report? <a href="{{ less.bugs.url }}">Let us know on our GitHub Issues</a>.</li>
+    <li>如果有新的特性需求或者汇报 bug，请通过 <a href="{{ less.bugs.url }}">GitHub Issues</a>告诉我们。</li>
   </ul>
   <p>Have a question about less language or need a help with tricky use case? Here are some links worth visiting:</p>
+  <p>如果有关于 less 语言的问题或者需要复杂用例的帮助，这里有一些值得访问的链接：</p>
   <ul>
     <li><a href="http://webchat.freenode.net/?randomnick=1&channels=%23%23lesscss">##lesscss</a> channel on Freenode.</li>
     <li>Less Q&A at <a href="http://stackoverflow.com/questions/tagged/less">Stack Overflow</a>.</li>
@@ -62,7 +68,7 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="learn-more">Learn More</h1>
+    <h1 id="learn-more">了解更多</h1>
   </div>
   {{md 'learn-more'}}
 </div>
@@ -71,9 +77,10 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="ports">Ports of Less</h1>
+    <h1 id="ports">Less 的移植版</h1>
   </div>
   <p class="lead">Less has been ported to several other programming languages.</p>
+  <p class="lead">Less 已经被移植许多其他编程语言。</p>
 
   {{md 'ports'}}
 </div>
@@ -83,13 +90,15 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
 ================================================== --}}
 <div class="docs-section">
   <div class="page-header">
-    <h1 id="translations">Translations</h1>
+    <h1 id="translations">翻译</h1>
   </div>
-  <p class="lead">Community members have translated Less documentation into various languages.</p>
+  <p class="lead">社区成员已经将 Less.js 文档翻译为多种语言。</p>
 
   <div class="callout callout-warning">
     <h4>Community submitted.</h4>
+    <h4>社区贡献。</h4>
     <p>None of the translations are officially supported and <strong>may not always be up to date</strong>.</p>
+    <p>注意，这些翻译不受官方支持，<strong>可能不是最新的版本</strong>。</p>
   </div>
 
   {{! Generated from data/translations.yml }}
@@ -99,5 +108,5 @@ lead: "Learn about the history of Less, meet the core team, and check out the ev
   {{/each}}
   </ul>
 
-  <p>Have another language to add, or perhaps a different or better translation? Let us know by <a href="{{less.bugs.url}}/new">opening an issue</a>.</p>
+  <p>如果你知道其他语言版本，或者不同，或者更好的翻译版本，请告诉我们。<a href="{{less.bugs.url}}/new">opening an issue</a>.</p>
 </div>
