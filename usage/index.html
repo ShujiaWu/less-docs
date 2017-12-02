@@ -165,11 +165,11 @@
 <li><a href="#online-less-compilers--fiddle-salad-http-fiddlesalad-com-less-">Fiddle Salad</a></li>
 <li><a href="#online-less-compilers--js-bin-http-jsbin-com-">JS Bin</a></li>
 <li><a href="#online-less-compilers--jsfiddle-http-jsfiddle-net-hb2rsm2x-">jsFiddle</a></li></ul></li>
-<li><a href="#guis-for-less">&#x56FE;&#x5F62;&#x5316; Less &#x7F16;&#x8BD1;&#x5668;</a><ul class="nav"><li><a href="#guis-for-less-cross-platform">Cross platform</a></li>
+<li><a href="#guis-for-less">&#x56FE;&#x5F62;&#x5316; Less &#x7F16;&#x8BD1;&#x5668;</a><ul class="nav"><li><a href="#guis-for-less-1-">1. &#x8DE8;&#x5E73;&#x53F0;</a></li>
 <li><a href="#guis-for-less--crunch-2-http-getcrunch-co-">Crunch 2!</a></li>
 <li><a href="#guis-for-less--simpless-http-wearekiss-com-simpless-">SimpLESS</a></li>
 <li><a href="#guis-for-less--koala-http-koala-app-com-">Koala</a></li>
-<li><a href="#guis-for-less-specific-platforms">Specific platforms</a></li>
+<li><a href="#guis-for-less-2-">2. &#x7279;&#x5B9A;&#x5E73;&#x53F0;</a></li>
 <li><a href="#guis-for-less-windows">Windows</a></li>
 <li><a href="#guis-for-less-os-x">OS X</a></li>
 <li><a href="#guis-for-less-linux">Linux</a></li></ul></li>
@@ -181,15 +181,15 @@
 <li><a href="#editors-and-plugins--dreamweaver-http-www-adobe-com-products-dreamweaver-html-">Dreamweaver</a></li>
 <li><a href="#editors-and-plugins--notepad-6-x-npp-">Notepad++ 6.x</a></li>
 <li><a href="#editors-and-plugins-browser-extensions">Browser extensions</a></li></ul></li>
-<li><a href="#third-party-compilers">&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5668;</a><ul class="nav"><li><a href="#third-party-compilers-node-js-compilers">Node.js Compilers</a></li>
-<li><a href="#third-party-compilers-other-technologies">Other Technologies</a></li></ul></li>
+<li><a href="#third-party-compilers">&#x7B2C;&#x4E09;&#x65B9;&#x7F16;&#x8BD1;&#x5668;</a><ul class="nav"><li><a href="#third-party-compilers-node-js-">Node.js &#x7F16;&#x8BD1;&#x5668;</a></li>
+<li><a href="#third-party-compilers--">&#x5176;&#x4ED6;&#x6280;&#x672F;</a></li></ul></li>
 <li><a href="#frameworks-using-less">&#x4F7F;&#x7528; Less &#x7684;&#x6846;&#x67B6;</a><ul class="nav"><li><a href="#frameworks-using-less-ui-theme-frameworks-and-components">UI/Theme Frameworks and Components</a></li>
 <li><a href="#frameworks-using-less-grid-systems">Grid Systems</a></li>
 <li><a href="#frameworks-using-less-mixin-libraries">Mixin Libraries</a></li></ul></li>
-<li><a href="#developing-less">&#x5F00;&#x53D1; Less</a><ul class="nav"><li><a href="#developing-less-install-these-tools">Install These Tools</a></li>
-<li><a href="#developing-less-usage">Usage</a></li>
-<li><a href="#developing-less-how-to-run-less-in-other-environments">How to Run Less in Other Environments</a></li>
-<li><a href="#developing-less-guide">Guide</a></li></ul></li></ul></div>
+<li><a href="#developing-less">&#x5F00;&#x53D1; Less</a><ul class="nav"><li><a href="#developing-less-1-">1. &#x5B89;&#x88C5;&#x4E00;&#x4E0B;&#x5DE5;&#x5177;</a></li>
+<li><a href="#developing-less-2-">2. &#x4F7F;&#x7528;</a></li>
+<li><a href="#developing-less-3-less">3. &#x5982;&#x4F55;&#x5728;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x8FD0;&#x884C; Less</a></li>
+<li><a href="#developing-less-4-">4. &#x5411;&#x5BFC;</a></li></ul></li></ul></div>
           </div>
         </div>
         <div class="col-md-9" role="main">
@@ -910,7 +910,7 @@ If you use the watcher or call refresh with reload set to true, then the cache w
 <p>Note that PhantomJS does not currently implement <code>Function.prototype.bind</code> so you will require a es-5 shim for this function to run under PhantomJS (We use PhantomJS for tests and we append an es5-shim to make it work).</p>
 <p>&#x6CE8;&#x610F;&#xFF1A;PhantomJS &#x76EE;&#x524D;&#x8FD8;&#x6CA1;&#x6709;&#x5B9E;&#x73B0; <code>Function.prototype.bind</code> &#xFF0C;&#x6240;&#x4EE5;&#x5728; PhantomJS &#x4E0B;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F60;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E00;&#x4E2A; es-5 &#x7684; shim &#x3002;&#xFF08;&#x6211;&#x4EEC;&#x4F7F;&#x7528; PhantomJS &#x4F5C;&#x4E3A;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x7ED9;&#x5B83;&#x9644;&#x52A0; es5-shim &#x4F7F;&#x5B83;&#x80FD;&#x591F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;&#xFF09;</p>
 <p>There are reasons to use client-side script in production, such as if you want to allow users to tweak variables which will affect the theme and you want to show it to them in real-time - in this instance a user is not worried about waiting for a style to update before seeing it.</p>
-<p>&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF; less &#x662F;&#x6709;&#x7406;&#x7531;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5BF9;&#x5F71;&#x54CD;&#x4E3B;&#x9898;&#x7684;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x5E76;&#x4E14;&#x5B9E;&#x65F6;&#x5730;&#x5C55;&#x793A;&#x53D8;&#x5316;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x4E0D;&#x7528;&#x5F53;&#x5FC3;&#x7B49;&#x5F85;&#x6837;&#x5F0F;&#x7684;&#x53D8;&#x66F4;&#x3002;</p>
+<p>&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF; less &#x662F;&#x6709;&#x7406;&#x7531;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5BF9;&#x5F71;&#x54CD;&#x4E3B;&#x9898;&#x7684;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x5E76;&#x4E14;&#x5B9E;&#x65F6;&#x5730;&#x5C55;&#x793A;&#x53D8;&#x5316;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x7B49;&#x5F85;&#x6837;&#x5F0F;&#x7684;&#x53D8;&#x66F4;&#x3002;</p>
 <p>If you need to run less.js in an older browser, please use an <a href="https://github.com/kriskowal/es5-shim">es-5 shim</a> which will add the javascript features that less.js requires.</p>
 <p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x4E00;&#x4E2A;&#x8F83;&#x8001;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x4F7F;&#x7528; less.js ,&#x8BF7;&#x4F7F;&#x7528; <a href="https://github.com/kriskowal/es5-shim">es-5 shim</a> &#x6DFB;&#x52A0; less.js &#x9700;&#x8981;&#x7684; javascript &#x7279;&#x6027;&#x3002;</p>
 <p>In addition, if you use options as attributes on the script or link tags, you will require browser support for <code>JSON.parse</code> or an appropriate polyfill.</p>
@@ -1451,41 +1451,51 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
        
 
 
-<p><span class="warning"><strong>Tip</strong>: try out the different Less tools available for your platform to see which one meets your needs.</span></p>
+<p><span class="warning"><strong>Tip</strong>: try out the different Less tools available for your platform to see which one meets your needs.</span>
+<span class="warning"><strong>&#x63D0;&#x793A;</strong>: &#x5C1D;&#x8BD5;&#x4F60;&#x5E73;&#x53F0;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x7528;&#x7684; Less &#x5DE5;&#x5177;&#xFF0C;&#x5E76;&#x627E;&#x51FA;&#x9002;&#x5408;&#x4F60;&#x7684;&#x3002;</span></p>
 <p><em>This page focuses on GUI compilers. For command line usage and tools see <a href="#command-line-usage">Command Line Usage</a>.</em></p>
-<h2 class="docs-heading">Cross platform<span class="anchor-target" id="guis-for-less-cross-platform"></span>
-<a href="#guis-for-less-cross-platform" name="guis-for-less-cross-platform" class="anchor glyphicon glyphicon-link"></a></h2>
+<p><em>&#x672C;&#x7AE0;&#x91CD;&#x70B9;&#x4ECB;&#x7ECD;&#x56FE;&#x5F62;&#x5316;&#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x7684;&#x4F7F;&#x7528;&#x548C;&#x5DE5;&#x5177;&#x8BF7;&#x67E5;&#x9605; <a href="#command-line-usage">&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x4F7F;&#x7528;&#x540C;&#x8BF4;&#x660E;</a></em></p>
+<h2 class="docs-heading">1. &#x8DE8;&#x5E73;&#x53F0;<span class="anchor-target" id="guis-for-less-1-"></span>
+<a href="#guis-for-less-1-" name="guis-for-less-1-" class="anchor glyphicon glyphicon-link"></a></h2>
 <h3 class="docs-heading"><a href="http://getcrunch.co/">Crunch 2!</a><span class="anchor-target" id="guis-for-less--crunch-2-http-getcrunch-co-"></span>
 <a href="#guis-for-less--crunch-2-http-getcrunch-co-" name="guis-for-less--crunch-2-http-getcrunch-co-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>The editor and compiler for awesome people.</p>
+<p>&#x6781;&#x5BA2;&#x4E13;&#x7528;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x548C;&#x7F16;&#x8BD1;&#x5668;</p>
 </blockquote>
 <p>Crunch 2 is a cross-platform (Windows, Mac, and Linux) editor with integrated compiling. If you work with large Less projects, you should definitely try it out, as you only need the free version for Less files. Available at: <a href="http://getcrunch.co/">https://getcrunch.co/</a>.</p>
+<p>Crunch 2 &#x662F;&#x4E00;&#x4E2A;&#x6574;&#x5408;&#x7684;&#x7F16;&#x8BD1;&#x5668;&#x7684;&#x8DE8;&#x5E73;&#x53F0; (Windows, Mac, &#x548C; Linux) &#x7684;&#x7F16;&#x8BD1;&#x5668;&#x3002;&#x5982;&#x679C;&#x5728;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x5F88;&#x5927;&#x7684; Less &#x9879;&#x76EE;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x5B83;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x514D;&#x8D39;&#x7684; Less &#x7248;&#x672C;&#x3002;&#x89C1;  <a href="http://getcrunch.co/">https://getcrunch.co/</a>&#x3002;</p>
 <p><img src="http://getcrunch.co/wp-content/uploads/2015/10/crunch_retina2.jpg" alt="Crunch screenshot"></p>
 <h3 class="docs-heading"><a href="http://wearekiss.com/simpless">SimpLESS</a><span class="anchor-target" id="guis-for-less--simpless-http-wearekiss-com-simpless-"></span>
 <a href="#guis-for-less--simpless-http-wearekiss-com-simpless-" name="guis-for-less--simpless-http-wearekiss-com-simpless-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>SimpLESS is a minimalistic Less compiler. Just drag, drop and compile.</p>
+<p>SimpLESS &#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; Less &#x7F16;&#x8BD1;&#x5668;&#x3002;&#x5B9E;&#x73B0;&#x62D6;&#x62FD;&#x7F16;&#x8BD1;&#x3002;</p>
 </blockquote>
 <p>One of the unique features of SimpLESS is that it supports &apos;prefixing&apos; your CSS by using <a href="http://prefixr.com">http://prefixr.com.</a>. SimpLESS is built on the Titanium platform. Get more info: <a href="http://wearekiss.com/simpless">http://wearekiss.com/simpless</a></p>
+<p>SimpLESS &#x72EC;&#x7279;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x4ED6;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x4F7F;&#x7528;  <a href="http://prefixr.com">http://prefixr.com.</a> &#x6765;&#x652F;&#x6301; &apos;prefixing&apos; &#x3002;SimpLESS &#x662F;&#x4F7F;&#x7528; Titanium &#x5E73;&#x53F0;&#x7F16;&#x8BD1;&#x7684;&#x3002;&#x8BE6;&#x89C1; <a href="http://wearekiss.com/simpless">http://wearekiss.com/simpless</a>&#x3002;</p>
 <p><img src="http://wearekiss.com/lib/img/simpless/app-windows.png?1" alt="SimpLESS screenshot"></p>
 <h3 class="docs-heading"><a href="http://koala-app.com/">Koala</a><span class="anchor-target" id="guis-for-less--koala-http-koala-app-com-"></span>
 <a href="#guis-for-less--koala-http-koala-app-com-" name="guis-for-less--koala-http-koala-app-com-" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Koala is a cross-platform GUI application for compiling less, sass and coffeescript.</p>
+<p>Koala &#x662F; less, sass &#x548C; coffeescript &#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x56FE;&#x5F62;&#x5316;&#x7F16;&#x8BD1;&#x5668;&#x3002;</p>
 </blockquote>
 <p>Features: cross platform, compile error notification supports and compile options supports.</p>
+<p>&#x7279;&#x6027;&#xFF1A;&#x8DE8;&#x5E73;&#x53F0;&#xFF0C;&#x652F;&#x6301;&#x8F93;&#x51FA;&#x7F16;&#x8BD1;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x652F;&#x6301;&#x7F16;&#x8BD1;&#x9009;&#x9879;</p>
 <p>Get more info: <a href="http://koala-app.com/">http://koala-app.com/</a></p>
+<p>&#x67E5;&#x770B; <a href="http://koala-app.com/">http://koala-app.com/</a> &#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;</p>
 <p><img src="http://koala-app.com/img/screenshot.png" alt="koala screenshot"></p>
 <h4 class="docs-heading"><a href="https://prepros.io/">Prepros</a><span class="anchor-target" id="guis-for-less--prepros-https-prepros-io-"></span>
 <a href="#guis-for-less--prepros-https-prepros-io-" name="guis-for-less--prepros-https-prepros-io-" class="anchor glyphicon glyphicon-link"></a></h4>
 <blockquote>
 <p>Prepros is a tool to compile Less, Sass, Compass, Stylus, Jade and much more.</p>
+<p>Prepros &#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x7F16;&#x8BD1;Less, Sass, Compass, Stylus, Jade &#x7B49;&#x6587;&#x4EF6;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
 </blockquote>
 <p>Get more info at <a href="https://prepros.io/">https://prepros.io/</a></p>
 <p><img src="https://prepros.io/img/shot-shadow.png" alt="Prepros screenshot"></p>
-<h2 class="docs-heading">Specific platforms<span class="anchor-target" id="guis-for-less-specific-platforms"></span>
-<a href="#guis-for-less-specific-platforms" name="guis-for-less-specific-platforms" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">2. &#x7279;&#x5B9A;&#x5E73;&#x53F0;<span class="anchor-target" id="guis-for-less-2-"></span>
+<a href="#guis-for-less-2-" name="guis-for-less-2-" class="anchor glyphicon glyphicon-link"></a></h2>
 <h3 class="docs-heading">Windows<span class="anchor-target" id="guis-for-less-windows"></span>
 <a href="#guis-for-less-windows" name="guis-for-less-windows" class="anchor glyphicon glyphicon-link"></a></h3>
 <h4 class="docs-heading"><a href="http://winless.org">WinLess</a><span class="anchor-target" id="guis-for-less--winless-http-winless-org-"></span>
@@ -1493,7 +1503,9 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 <blockquote>
 <p>WinLess started out as a clone of Less.app, it takes a more feature-complete approach and has several settings. It also supports starting with command line arguments.</p>
 </blockquote>
+<p>WinLess &#x662F; Less.app &#x7684;&#x4E00;&#x4E2A;&#x590D;&#x5236;, &#x5B83;&#x62E5;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x529F;&#x80FD;&#x7279;&#x6027;&#x548C;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x7F6E;&#x3002;&#x5B83;&#x540C;&#x6837;&#x652F;&#x6301;&#x4ECE;&#x547D;&#x4EE4;&#x884C;&#x8695;&#x98DF;&#x542F;&#x52A8;</p>
 <p>Get more info: <a href="http://winless.org">http://winless.org</a></p>
+<p>&#x4ECE; <a href="http://winless.org">http://winless.org</a> &#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x3002;</p>
 <p><img src="http://winless.org/style/images/WinLess_Screenshot.png" alt="WinLess screenshot"></p>
 <h3 class="docs-heading">OS X<span class="anchor-target" id="guis-for-less-os-x"></span>
 <a href="#guis-for-less-os-x" name="guis-for-less-os-x" class="anchor glyphicon glyphicon-link"></a></h3>
@@ -1501,15 +1513,19 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 <a href="#guis-for-less--codekit-http-incident57-com-codekit-" name="guis-for-less--codekit-http-incident57-com-codekit-" class="anchor glyphicon glyphicon-link"></a></h4>
 <blockquote>
 <p>CodeKit is the successor to LESS.app, and supports Less among many other preprocessing languages, such as SASS, Jade, Markdown, and many more.</p>
+<p>CodeKit &#x7EE7;&#x627F;&#x81EA; LESS.app&#xFF0C;&#x652F;&#x6301; Less &#x7B49;&#x5927;&#x591A;&#x6570;&#x9884;&#x5904;&#x7406;&#x8BED;&#x8A00;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A; SASS, Jade, Markdown &#x7B49;&#x3002;</p>
 </blockquote>
 <p>Get more info: <a href="http://incident57.com/codekit">http://incident57.com/codekit</a></p>
+<p>&#x4ECE; <a href="http://incident57.com/codekit">http://incident57.com/codekit</a> &#x83B7;&#x53D6;&#x66F4;&#x591A;&#x4FE1;&#x606F;</p>
 <p><img src="http://incident57.com/codekit/images/screenshot-images.jpg" alt="CodeKit screenshot"></p>
 <h4 class="docs-heading"><a href="http://livereload.com">LiveReload</a><span class="anchor-target" id="guis-for-less--livereload-http-livereload-com-"></span>
 <a href="#guis-for-less--livereload-http-livereload-com-" name="guis-for-less--livereload-http-livereload-com-" class="anchor glyphicon glyphicon-link"></a></h4>
 <blockquote>
 <p>CSS edits and image changes apply live. CoffeeScript, SASS, Less and others just work.</p>
+<p>CSS &#x7F16;&#x8F91;&#x5668;&#x548C;&#x52A8;&#x6001;&#x56FE;&#x7247;&#x66FF;&#x6362;&#xFF0C;&#x652F;&#x6301; CoffeeScript, SASS, Less &#x7B49;&#x3002;</p>
 </blockquote>
 <p>Get more info: <a href="http://livereload.com">http://livereload.com</a></p>
+<p>&#x4ECE; <a href="http://livereload.com">http://livereload.com</a> &#x83B7;&#x53D6;&#x66F4;&#x591A;&#x3002;</p>
 <p><img src="http://assets.livereload.com/embedded-images/LiveReload-LESS-screenshot-on-white.png" alt="LiveReload screenshot"></p>
 <h3 class="docs-heading">Linux<span class="anchor-target" id="guis-for-less-linux"></span>
 <a href="#guis-for-less-linux" name="guis-for-less-linux" class="anchor glyphicon glyphicon-link"></a></h3>
@@ -1517,9 +1533,11 @@ less.render(lessInput, {<span class="hljs-attr">sourceMap</span>: {<span class="
 <a href="#guis-for-less--plessc-https-github-com-mte90-plessc-" name="guis-for-less--plessc-https-github-com-mte90-plessc-" class="anchor glyphicon glyphicon-link"></a></h4>
 <blockquote>
 <p>Plessc is a gui fronted made with PyQT.</p>
+<p>Plessc &#x662F;&#x4F7F;&#x7528; PyQT &#x7F16;&#x5199;&#x7684;&#x56FE;&#x50CF;&#x5316;&#x5DE5;&#x5177;&#x3002;</p>
 </blockquote>
 <p>Auto compile, log viewer, open the less file with the editor chosen, settings for compile the file.
 Get more info: <a href="https://github.com/Mte90/Plessc">https://github.com/Mte90/Plessc</a></p>
+<p>&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#xFF0C;&#x65E5;&#x5FD7;&#x67E5;&#x770B;&#xFF0C;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00; Less &#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;&#x7684;&#x8BBE;&#x7F6E;&#x3002;</p>
 <p><img src="https://github.com/Mte90/Plessc/raw/master/screenshot.png" alt="Plessc screenshot"></p>
 
 
@@ -1646,28 +1664,33 @@ Get more info: <a href="https://github.com/Mte90/Plessc">https://github.com/Mte9
        
 
 
-<h2 class="docs-heading">Node.js Compilers<span class="anchor-target" id="third-party-compilers-node-js-compilers"></span>
-<a href="#third-party-compilers-node-js-compilers" name="third-party-compilers-node-js-compilers" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">Node.js &#x7F16;&#x8BD1;&#x5668;<span class="anchor-target" id="third-party-compilers-node-js-"></span>
+<a href="#third-party-compilers-node-js-" name="third-party-compilers-node-js-" class="anchor glyphicon glyphicon-link"></a></h2>
 <ul>
 <li><strong><a href="https://github.com/gruntjs/grunt-contrib-less">grunt-contrib-less</a></strong></li>
-<li><strong><a href="https://github.com/assemble/assemble-less">assemble-less</a></strong>: Full-featured Grunt.js plugin for compiling Less files to CSS, with additional options for maintaining libraries of Less components and themes. For advanced users, this plugin allows you to define and manage Less &quot;packages&quot; or &quot;bundles&quot; using JSON, <a href="https://github.com/bestiejs/lodash">Lo-dash</a>(underscore) templates (e.g. <code>&lt;%= bootstrap.less %&gt;</code>), and <a href="https://github.com/isaacs/node-glob">node-glob</a> / <a href="https://github.com/isaacs/minimatch">minimatch</a> (e.g. <code>&apos;../src/**/*.less&quot;</code>). <em>assemble-less</em> also has a number of options including minifying CSS</li>
-<li><strong><a href="https://github.com/plus3network/gulp-less">gulp-less</a></strong>: Please note that this plugin discards <code>source-map</code> options, opting to instead using the <a href="https://github.com/floridoo/gulp-sourcemaps">gulp-sourcemaps</a> library.</li>
-<li><strong><a href="https://github.com/jgonera/autoless">autoless</a></strong>: A Less files watcher, with dependency tracking (changes to imported files cause other files to be updated too) and growl notifications.</li>
-<li><strong><a href="https://github.com/emberfeather/less.js-middleware">Connect Middleware for Less</a></strong>: Connect Middleware for Less compiling</li>
+<li><p><strong><a href="https://github.com/assemble/assemble-less">assemble-less</a></strong>: Full-featured Grunt.js plugin for compiling Less files to CSS, with additional options for maintaining libraries of Less components and themes. For advanced users, this plugin allows you to define and manage Less &quot;packages&quot; or &quot;bundles&quot; using JSON, <a href="https://github.com/bestiejs/lodash">Lo-dash</a>(underscore) templates (e.g. <code>&lt;%= bootstrap.less %&gt;</code>), and <a href="https://github.com/isaacs/node-glob">node-glob</a> / <a href="https://github.com/isaacs/minimatch">minimatch</a> (e.g. <code>&apos;../src/**/*.less&quot;</code>). <em>assemble-less</em> also has a number of options including minifying CSS.&#x5168;&#x7279;&#x6027;&#x7684;&#x5C06; Less &#x7F16;&#x8BD1;&#x6210; CSS &#x7684; Grunt.js &#x63D2;&#x4EF6;&#xFF0C;&#x4E3A;&#x7EF4;&#x62A4; Less &#x7EC4;&#x4EF6;&#x548C;&#x4E3B;&#x9898;&#x63D0;&#x4F9B;&#x9644;&#x52A0;&#x9009;&#x9879;&#x3002;&#x5BF9;&#x4E8E;&#x9AD8;&#x7EA7;&#x7528;&#x6237;&#xFF0C;&#x6539;&#x63D2;&#x4EF6;&#x5141;&#x8BB8;&#x4F60;&#x5B9A;&#x4E49;&#x548C;&#x7BA1;&#x7406; Less &#x7684; &quot;packages&quot; &#x6216; &quot;bundles&quot; &#x901A;&#x8FC7;&#x4F7F;&#x7528; JSON&#xFF0C; <a href="https://github.com/bestiejs/lodash">Lo-dash</a>(underscore) &#x6A21;&#x677F;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;<code>&lt;%= bootstrap.less %&gt;</code>&#xFF09;&#x6216;&#x8005;<a href="https://github.com/isaacs/node-glob">node-glob</a> / <a href="https://github.com/isaacs/minimatch">minimatch</a>&#xFF08;&#x4F8B;&#x5982;&#xFF1A;<code>&apos;../src/**/*.less&quot;</code>&#xFF09;&#x3002;<em>assemble-less</em>&#x540C;&#x6837;&#x62E5;&#x6709;&#x4E0E;&#x4E00;&#x7CFB;&#x5217;&#x5305;&#x62EC;&#x538B;&#x7F29; CSS &#x7B49;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+</li>
+<li><p><strong><a href="https://github.com/plus3network/gulp-less">gulp-less</a></strong>: Please note that this plugin discards <code>source-map</code> options, opting to instead using the <a href="https://github.com/floridoo/gulp-sourcemaps">gulp-sourcemaps</a> library.&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x5E9F;&#x5F03; <code>source-map</code> &#x9009;&#x9879;&#xFF0C;&#x4F7F;&#x7528; <a href="https://github.com/floridoo/gulp-sourcemaps">gulp-sourcemaps</a> &#x4EE3;&#x66FF;&#x3002;</p>
+</li>
+<li><strong><a href="https://github.com/jgonera/autoless">autoless</a></strong>: A Less files watcher, with dependency tracking (changes to imported files cause other files to be updated too) and growl notifications. Less &#x6587;&#x4EF6;&#x76D1;&#x89C6;&#x5668;&#xFF0C;&#x4F9D;&#x8D56;&#x8DDF;&#x8E2A;&#xFF08;&#x5BF9;&#x5BFC;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x66F4;&#x6539;&#x5BFC;&#x81F4;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x7684;&#x66F4;&#x6539;&#x4E5F;&#x88AB;&#x66F4;&#x65B0;&#xFF09;&#x548C;&#x6D88;&#x606F;&#x901A;&#x77E5;&#x3002;</li>
+<li><strong><a href="https://github.com/emberfeather/less.js-middleware">Connect Middleware for Less</a></strong>: Connect Middleware for Less compiling&#x3002;Less &#x7F16;&#x8BD1;&#x7684;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</li>
 </ul>
-<h2 class="docs-heading">Other Technologies<span class="anchor-target" id="third-party-compilers-other-technologies"></span>
-<a href="#third-party-compilers-other-technologies" name="third-party-compilers-other-technologies" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">&#x5176;&#x4ED6;&#x6280;&#x672F;<span class="anchor-target" id="third-party-compilers--"></span>
+<a href="#third-party-compilers--" name="third-party-compilers--" class="anchor glyphicon glyphicon-link"></a></h2>
 <p><strong>Wro4j Runner CLI</strong>
 Download the <a href="http://wro4j.googlecode.com/files/wro4j-runner-1.4.1-jar-with-dependencies.jar">wro4j-runner.jar</a> file and run the following command:</p>
+<p>&#x4E0B;&#x8F7D; <a href="http://wro4j.googlecode.com/files/wro4j-runner-1.4.1-jar-with-dependencies.jar">wro4j-runner.jar</a> &#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#xFF1A;</p>
 <pre><code class="lang-bash">java -jar wro4j-runner-1.5.0-jar-with-dependencies.jar --preProcessors lessCss
 </code></pre>
 <p>More details can be found here: <a href="http://code.google.com/p/wro4j/wiki/wro4jRunner">Wro4j Runner CLI</a></p>
+<p>&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x67E5;&#x770B;&#xFF1A;<a href="http://code.google.com/p/wro4j/wiki/wro4jRunner">Wro4j Runner CLI</a></p>
 <p><strong>CSS::LESSp</strong></p>
 <p><a href="http://search.cpan.org/~drinchev/CSS-LESSp/">http://search.cpan.org/~drinchev/CSS-LESSp/</a></p>
 <pre><code class="lang-bash">lessp.pl styles.less &gt; styles.css
 </code></pre>
 <p><strong>Windows Script Host</strong></p>
 <p>Note - the official Less node runs on windows, so we are not sure why you would use this.</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x662F;&#x8FD0;&#x884C;&#x5728;windows node&#x4E0A;&#x7684;&#x5B98;&#x65B9; Less &#x7F16;&#x8BD1;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x4E0D;&#x786E;&#x5B9A;&#x4F60;&#x662F;&#x5426;&#x4F1A;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x3002;</p>
 <p><a href="https://github.com/duncansmart/less.js-windows">Less.js for Windows</a> with this usage:</p>
 <pre><code class="lang-bash">cscript //nologo lessc.wsf input.less [output.css] [-compress]
 </code></pre>
@@ -1676,9 +1699,10 @@ Download the <a href="http://wro4j.googlecode.com/files/wro4j-runner-1.4.1-jar-w
 </code></pre>
 <p><strong>dotless</strong></p>
 <p><a href="http://www.dotlesscss.org/">dotless for Windows</a> can be run like this:</p>
+<p><a href="http://www.dotlesscss.org/">dotless for Windows</a> &#x50CF;&#x4E0B;&#x9762;&#x4E00;&#x6837;&#x8FD0;&#x884C;:</p>
 <pre><code class="lang-bash">dotless.Compiler.exe [-switches] &lt;inputfile&gt; [outputfile]
 </code></pre>
-<p><strong>Also see:</strong> </p>
+<p><strong>&#x53E6;&#x89C1;:</strong></p>
 <ul>
 <li><a href="/about/#ports">Ports of Less</a></li>
 </ul>
@@ -1996,46 +2020,67 @@ Download the <a href="http://wro4j.googlecode.com/files/wro4j-runner-1.4.1-jar-w
 
 
 <p>Thanks for thinking about contributing. Please read the <a href="https://github.com/less/less.js/blob/master/CONTRIBUTING.md">contributing instructions</a> carefully to avoid wasted work.</p>
-<h2 class="docs-heading">Install These Tools<span class="anchor-target" id="developing-less-install-these-tools"></span>
-<a href="#developing-less-install-these-tools" name="developing-less-install-these-tools" class="anchor glyphicon glyphicon-link"></a></h2>
+<p>&#x5F88;&#x611F;&#x8C22;&#x4F60;&#x53C2;&#x4E0E;&#x8D21;&#x732E;. &#x8BF7;&#x4ED4;&#x7EC6;&#x9605;&#x8BFB; <a href="https://github.com/less/less.js/blob/master/CONTRIBUTING.md">&#x8D21;&#x732E;&#x6307;&#x5357;</a> &#x4EE5;&#x514D;&#x6D6A;&#x8D39;&#x5DE5;&#x4F5C;.</p>
+<h2 class="docs-heading">1. &#x5B89;&#x88C5;&#x4E00;&#x4E0B;&#x5DE5;&#x5177;<span class="anchor-target" id="developing-less-1-"></span>
+<a href="#developing-less-1-" name="developing-less-1-" class="anchor glyphicon glyphicon-link"></a></h2>
 <ul>
 <li><strong>node</strong> - <a href="http://nodejs.org/">http://nodejs.org/</a></li>
 <li><strong>phantomjs</strong> - <a href="http://phantomjs.org/download.html">http://phantomjs.org/download.html</a></li>
 </ul>
 <p>make sure the paths are setup. If you start your favourite command line and type <code>node -v</code> you should see the node compiler. If you run <code>phantomjs -v</code> you should see the phantomjs version number.</p>
+<p>&#x786E;&#x8BA4;&#x4F60;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x597D; paths &#x8DEF;&#x5F84;&#x3002;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x8F93;&#x5165; <code>node -v</code> &#x4F60;&#x5C06;&#x770B;&#x5230; node &#x7F16;&#x8BD1;&#x5668;&#x7684;&#x7248;&#x672C;&#xFF0C; &#x8FD0;&#x884C; <code>phantomjs -v</code> &#x5C06;&#x770B;&#x5230; phantomjs &#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;</p>
 <ul>
 <li>clone your less.js repository locally</li>
 <li>navigate to your local less.js repository and run <code>npm install</code> this installs less&apos; npm dependencies.</li>
-<li>If you haven&apos;t used grunt before, run <code>npm install grunt-cli -g</code> - this allows you to use the &quot;grunt&quot; command anywhere</li>
+<li><p>If you haven&apos;t used grunt before, run <code>npm install grunt-cli -g</code> - this allows you to use the &quot;grunt&quot; command anywhere</p>
+</li>
+<li><p>&#x5728;&#x672C;&#x5730; clone &#x4F60;&#x7684; less.js &#x9879;&#x76EE;&#x3002;</p>
+</li>
+<li>&#x5B9A;&#x4F4D;&#x5230;&#x672C;&#x5730; less.js &#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD0;&#x884C; <code>npm install</code> &#x5B89;&#x88C5; less &#x7684; npm &#x4F9D;&#x8D56;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x8FC7;&#xFF0C;&#x8FD0;&#x884C; <code>npm install grunt-cli -g</code> &#xFF0C;&#x8FD9;&#x5C06;&#x5141;&#x8BB8;&#x4F60;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x4F7F;&#x7528; &quot;grunt&quot; &#x547D;&#x4EE4;&#x3002;</li>
 </ul>
-<h2 class="docs-heading">Usage<span class="anchor-target" id="developing-less-usage"></span>
-<a href="#developing-less-usage" name="developing-less-usage" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">2. &#x4F7F;&#x7528;<span class="anchor-target" id="developing-less-2-"></span>
+<a href="#developing-less-2-" name="developing-less-2-" class="anchor glyphicon glyphicon-link"></a></h2>
 <p>If you go to the root of the Less repository you should be able to do <code>grunt test</code> - this should run all the tests. For the browser specific only, run <code>grunt browsertest</code> If you want to try out the current version of less against a file, from here do <code>node bin/lessc path/to/file.less</code></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x8FDB;&#x5165; Less &#x4ED3;&#x5E93;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8FD0;&#x884C; <code>grunt test</code> &#x6267;&#x884C;&#x6240;&#x6709;&#x7684;&#x6D4B;&#x8BD5;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x53EA;&#x6307;&#x5B9A;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8FD0;&#x884C;<code>grunt browsertest</code>&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6D4B;&#x8BD5;&#x5F53;&#x524D;&#x7248;&#x672C;&#x7684; Less,&#x6267;&#x884C; <code>node bin/lessc path/to/file.less</code></p>
 <p>To debug the browser tests, run <code>grunt browsertest-server</code> then go to <a href="http://localhost:8088/tmp/browser/">http://localhost:8088/tmp/browser/</a> to see the test runner pages.</p>
+<p>&#x8C03;&#x8BD5;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;&#xFF0C;&#x8FD0;&#x884C; <code>grunt browsertest-server</code>&#xFF0C;&#x63A5;&#x7740;&#x6253;&#x5F00; <a href="http://localhost:8088/tmp/browser/">http://localhost:8088/tmp/browser/</a> &#x67E5;&#x770B;&#x6D4B;&#x8BD5;&#x8FD0;&#x884C;&#x9875;&#x9762;&#x3002;</p>
 <p>Optional: To get the current version of the Less compiler do <code>npm -g install less</code> - npm is the node package manager and &quot;-g&quot; installs it to be available globally.</p>
+<p>&#x53EF;&#x9009;&#x7684;&#xFF1A;&#x901A;&#x8FC7;&#x8FD0;&#x884C; <code>npm -g install less</code> &#x83B7;&#x53D6;&#x5F53;&#x524D; Less &#x7F16;&#x8BD1;&#x5668;&#x7684;&#x7248;&#x672C;&#x3002;npm &#x662F;node &#x5305;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x901A;&#x8FC7; &#x201C;-g&#x201D; &#x8FDB;&#x884C;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x3002;</p>
 <p>You should now be able to do <code>lessc file.less</code> and if there is an appropriate <code>file.less</code> then it will be compiled and output to the stdout. You can then compare it to running locally (<code>node bin/lessc file.less</code>).</p>
+<p>&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x6267;&#x884C; <code>lessc file.less</code>&#xFF0C;&#x5982;&#x679C; <code>file.less</code> &#x662F;&#x6070;&#x5F53;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C06;&#x4F1A;&#x88AB;&#x7F16;&#x8BD1;&#x5E76;&#x4E14;&#x8F93;&#x51FA;&#x5230; stdout&#x3002;&#x63A5;&#x7740;&#x4F60;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x672C;&#x5730;&#x7684;&#x7248;&#x672C;(<code>node bin/lessc file.less</code>)&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
 <p>Other grunt commands</p>
+<p>&#x5176;&#x4ED6; grunt &#x547D;&#x4EE4;&#xFF1A;</p>
 <ul>
 <li><code>grunt benchmark</code> - run our benchmark tests to get some numbers on performance</li>
 <li><code>grunt stable</code> to create a new release</li>
-<li><code>grunt readme</code> to generate a new readme.md in the root directory (after each release)</li>
+<li><p><code>grunt readme</code> to generate a new readme.md in the root directory (after each release)</p>
+</li>
+<li><p><code>grunt benchmark</code> - &#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x4EE5;&#x83B7;&#x5F97;&#x4E00;&#x4E9B;&#x6027;&#x80FD;&#x4E0A;&#x7684;&#x6570;&#x636E;</p>
+</li>
+<li><code>grunt stable</code> &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53D1;&#x5E03;&#x7248;</li>
+<li><code>grunt readme</code> (&#x5728;&#x751F;&#x6210;&#x53D1;&#x5E03;&#x7248;&#x672C;&#x4E4B;&#x540E;)&#x5728;&#x6839;&#x76EE;&#x5F55;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684; readme.md &#x6587;&#x4EF6;</li>
 </ul>
-<h2 class="docs-heading">How to Run Less in Other Environments<span class="anchor-target" id="developing-less-how-to-run-less-in-other-environments"></span>
-<a href="#developing-less-how-to-run-less-in-other-environments" name="developing-less-how-to-run-less-in-other-environments" class="anchor glyphicon glyphicon-link"></a></h2>
+<h2 class="docs-heading">3. &#x5982;&#x4F55;&#x5728;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x8FD0;&#x884C; Less<span class="anchor-target" id="developing-less-3-less"></span>
+<a href="#developing-less-3-less" name="developing-less-3-less" class="anchor glyphicon glyphicon-link"></a></h2>
 <p>If you look in the libs folder you will see <code>less</code>, <code>less-node</code>, <code>less-browser</code>. The <code>less</code> folder is pure javascript with no environment
 specifics. if you require <code>less/libs/less</code>, you get a function that takes an environment object and an array of file managers. The file
 managers are the same file managers that can also be written as a plugin.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x67E5;&#x770B; libs &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x770B;&#x5230; <code>less</code>, <code>less-node</code>, <code>less-browser</code>&#x3002;<code>less</code> &#x6587;&#x4EF6;&#x5939;&#x662F;&#x7EAF;&#x7CB9;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x73AF;&#x5883; javascript&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528; require <code>less/libs/less</code>&#xFF0C;&#x4F60;&#x5C06;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x5E26;&#x73AF;&#x5883;&#x5BF9;&#x8C61;&#x548C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x6570;&#x7EC4;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x8DDF;&#x7F16;&#x5199;&#x63D2;&#x4EF6;&#x65F6;&#x5019;&#x7684;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> createLess = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;less/libs/less&quot;</span>),
     myLess = createLess(environment, [myFileManager]);
 </code></pre>
 <p>The environment api is specified in <a href="https://github.com/less/less.js/blob/master/lib/less/environment/environment-api.js">less/libs/less/environment/environment-api.js</a>
 and the file manager api is specified in <a href="https://github.com/less/less.js/blob/master/lib/less/environment/file-manager-api.js">less/libs/less/environment/file-manager-api.js</a>.</p>
+<p><a href="https://github.com/less/less.js/blob/master/lib/less/environment/environment-api.js">less/libs/less/environment/environment-api.js</a>&#x6709;&#x8BE6;&#x7EC6;&#x7684;&#x73AF;&#x5883; api &#x8BF4;&#x660E;&#x3002;<a href="https://github.com/less/less.js/blob/master/lib/less/environment/file-manager-api.js">less/libs/less/environment/file-manager-api.js</a>&#x6709;&#x8BE6;&#x7EC6;&#x7684;&#x6587;&#x4EF6;&#x7BA1;&#x7406;api&#x8BF4;&#x660E;&#x3002;</p>
 <p>For file managers we highly recommend setting the prototype as a new AbstractFileManager - this allows you to override what is needed and allows us
 to implement new functions without breaking existing file managers. For an example of file managers, see the 2 node implementations, the browser implementation or
 the npm import plugin implementation.</p>
-<h2 class="docs-heading">Guide<span class="anchor-target" id="developing-less-guide"></span>
-<a href="#developing-less-guide" name="developing-less-guide" class="anchor glyphicon glyphicon-link"></a></h2>
+<p>&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x5C06;&#x539F;&#x578B;&#x8BBE;&#x7F6E;&#x4E3A;&#x65B0;&#x7684;AbstractFileManager&#xFF0C;&#x8FD9;&#x5C06;&#x5141;&#x8BB8;&#x5728;&#x4E0D;&#x7834;&#x574F;&#x539F;&#x5148;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x51FD;&#x6570;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x91CD;&#x5199;&#x4F60;&#x9700;&#x8981;&#x7684;&#x51FD;&#x6570;&#x3002;&#x5BF9;&#x4E8E;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;2&#x79CD; node &#x5B9E;&#x73B0;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x5B9E;&#x73B0;&#x6216; npm &#x5BFC;&#x5165;&#x63D2;&#x4EF6;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 class="docs-heading">4. &#x5411;&#x5BFC;<span class="anchor-target" id="developing-less-4-"></span>
+<a href="#developing-less-4-" name="developing-less-4-" class="anchor glyphicon glyphicon-link"></a></h2>
 <p>If you look at <a href="http://www.gliffy.com/go/publish/4784259">http://www.gliffy.com/go/publish/4784259</a>,  This is an overview diagram of how less works. Warning! It needs updating with v2 changes.</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x67E5;&#x770B;<a href="http://www.gliffy.com/go/publish/4784259">http://www.gliffy.com/go/publish/4784259</a>&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x4E2A;&#x5173;&#x4E8E; Less &#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#x8BE5;&#x84DD;&#x56FE;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x4ED6;&#x9700;&#x8981;&#x6839;&#x636E; V2 &#x8FDB;&#x884C;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x3002;</p>
 
 
       <br>
