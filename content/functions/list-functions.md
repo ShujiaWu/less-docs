@@ -2,20 +2,24 @@
 
 > Returns the number of elements in a value list.
 
-Parameters: `list` - a comma or space separated list of values.
-Returns: an integer number of elements in a list
+> 返回列表中元素的个数。
 
-Example: `length(1px solid #0080ff);`
-Output: `3`
+参数： `list` - 由逗号或空格分隔的值列表.
 
-Example:
+返回： 列表中元素的数量
+
+例子： `length(1px solid #0080ff);`
+
+输出： `3`
+
+例子：
 
 ```less
 @list: "banana", "tomato", "potato", "peach";
 n: length(@list);
 ```
 
-Output:
+输出：
 
 ```
 n: 4;
@@ -25,22 +29,24 @@ n: 4;
 
 > Returns the value at a specified position in a list.
 
-Parameters:
-`list` - a comma or space separated list of values.
-`index` - an integer that specifies a position of a list element to return.
-Returns: a value at the specified position in a list.
+> 返回列表中指定位置的值。
 
-Example: `extract(8px dotted red, 2);`
-Output: `dotted`
+参数：
+`list` - 由逗号或空格分隔的值列表。
+`index` - 一个整数，用于指定元素列表中需要返回的元素的位置。
+返回： 列表中指定位置的元素。
 
-Example:
+例子： `extract(8px dotted red, 2);`
+输出： `dotted`
+
+例子：
 
 ```less
 @list: apple, pear, coconut, orange;
 value: extract(@list, 3);
 ```
 
-Output:
+输出：
 
 ```
 value: coconut;
