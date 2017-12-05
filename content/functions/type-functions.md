@@ -2,11 +2,13 @@
 
 > Returns `true` if a value is a number, `false` otherwise.
 
-Parameters: `value` - a value or variable being evaluated.
+> 如果一个值是数字则返回 `true`，否则则返回 `false`。
 
-Returns: `true` if value is a number, `false` otherwise.
+参数： `value` - 待验证的值或变量。
 
-Example:
+返回： 如果值是数字则返回 `true` 否则返回 `false`。
+
+例子：
 
 ```less
 isnumber(#ff0);     // false
@@ -24,11 +26,13 @@ isnumber(url(...)); // false
 
 > Returns `true` if a value is a string, `false` otherwise.
 
-Parameters: `value` - a value or variable being evaluated.
+> 如果一个值是字符串则返回 `true`，否则则返回 `false`。
 
-Returns: `true` if value is a string, `false` otherwise.
+参数： `value` - 待验证的值或变量。
 
-Example:
+返回： 如果值是字符串则返回 `true`, 否则则返回 `false`。
+
+例子：
 
 ```less
 isstring(#ff0);     // false
@@ -44,13 +48,13 @@ isstring(url(...)); // false
 
 ### iscolor
 
-> Returns `true` if a value is a color, `false` otherwise.
+> 如果一个值是颜色则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is a color, `false` otherwise.
+返回： 如果值是颜色则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 iscolor(#ff0);     // true
@@ -66,13 +70,13 @@ iscolor(url(...)); // false
 
 ### iskeyword
 
-> Returns `true` if a value is a keyword, `false` otherwise.
+> 如果一个值是关键字则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is a keyword, `false` otherwise.
+返回： 如果值是关键字串则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 iskeyword(#ff0);     // false
@@ -88,13 +92,13 @@ iskeyword(url(...)); // false
 
 ### isurl
 
-> Returns `true` if a value is a url, `false` otherwise.
+> 如果一个值是 url 地址则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is a url, `false` otherwise.
+返回： 如果值是 url 地址则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 isurl(#ff0);     // false
@@ -110,13 +114,13 @@ isurl(url(...)); // true
 
 ### ispixel
 
-> Returns `true` if a value is a number in pixels, `false` otherwise.
+> 如果一个值是带像素单位的数字则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is a pixel, `false` otherwise.
+返回： 如果值带像素单位则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 ispixel(#ff0);     // false
@@ -132,13 +136,13 @@ ispixel(url(...)); // false
 
 ### isem
 
-> Returns `true` if a value is an em value, `false` otherwise.
+> 如果一个值是带 em 单位的数字则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is an em value, `false` otherwise.
+返回： 如果值是的单位是 em 则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 isem(#ff0);     // false
@@ -154,13 +158,13 @@ isem(url(...)); // false
 
 ### ispercentage
 
-> Returns `true` if a value is a percentage value, `false` otherwise.
+> 如果一个值是百分数则返回 `true` 否则则返回 `false` 。
 
-Parameters: `value` - a value or variable being evaluated.
+参数： `value` - 待验证的值或变量。
 
-Returns: `true` if value is a percentage value, `false` otherwise.
+返回： 如果值是百分数则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 ispercentage(#ff0);     // false
@@ -176,15 +180,15 @@ ispercentage(url(...)); // false
 
 ### isunit
 
-> Returns `true` if a value is a number in specified units, `false` otherwise.
+> 如果一个值是指定单位的数字则返回 `true` 否则则返回 `false` 。
 
-Parameters:
-* `value` - a value or variable being evaluated.
-* `unit` - a unit identifier (optionally quoted) to test for.
+参数：
+* `value` - 待验证的值或变量。
+* `unit` - 单位标示符 (可加引号) 。
 
-Returns: `true` if value is a number in specified units, `false` otherwise.
+返回： 如果值包含指定的单位则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 isunit(11px, px);  // true
@@ -201,14 +205,14 @@ isunit("mm", mm);  // false
 
 ### isruleset
 
-> Returns `true` if a value is a ruleset, `false` otherwise.
+> 如果一个值是样式集则返回 `true` 否则则返回 `false` 。
 
-Parameters:
-* `value` - a variable being evaluated.
+参数：
+* `value` - 待验证的值或变量。
 
-Returns: `true` if value is a ruleset, `false` otherwise.
+返回： 如果值是样式集则返回 `true`, 否则则返回 `false`。
 
-Example:
+例子：
 
 ```less
 @rules: {
