@@ -1623,131 +1623,144 @@ NaN%
 
 
 <p>Color operations generally take parameters in the same units as the values they are changing, and percentages are handled as absolutes, so increasing a 10% value by 10% results in 20%. Set the option method parameter to relative for relative percentages. When using relative percentages increasing a 10% value by 10% results in 11%. Values are clamped to their allowed ranges; they do not wrap around. Where return values are shown, we&apos;ve used formats that make it clear what each function has done, in addition to the hex versions that you will usually be be working with.</p>
+<p>&#x989C;&#x8272;&#x64CD;&#x4F5C;&#x901A;&#x5E38;&#x4F1A;&#x5C06;&#x53C2;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x76F8;&#x540C;&#x7684;&#x5355;&#x4F4D;&#xFF0C;&#x767E;&#x5206;&#x6BD4;&#x4F1A;&#x88AB;&#x5F53;&#x6210;&#x6210;&#x7EDD;&#x5BF9;&#x7684;&#x6570;&#x503C;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x6240;&#x4EE5; 10% &#x589E;&#x52A0; 10% &#x7684;&#x503C;&#x662F;20%&#x3002;&#x5C06;&#x53EF;&#x9009;&#x7684;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;&#x76F8;&#x5BF9;&#x4E8E;&#x767E;&#x5206;&#x6BD4;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x767E;&#x5206;&#x6BD4;&#x65F6;&#xFF0C;10% &#x589E;&#x52A0; 10% &#x7684;&#x7ED3;&#x679C;&#x662F; 11%&#x3002;&#x503C;&#x88AB;&#x9650;&#x5B9A;&#x5728;&#x4ED6;&#x4EEC;&#x5141;&#x8BB8;&#x7684;&#x8303;&#x56F4;&#xFF0C;&#x5B83;&#x4EEC;&#x4E0D;&#x4F1A;&#x7F20;&#x7ED5;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x5728;&#x8FD4;&#x56DE;&#x503C;&#x663E;&#x793A;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E9B;&#x683C;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E9B;&#x683C;&#x5F0F;&#x6E05;&#x695A;&#x5730;&#x8BF4;&#x660E;&#x4E86;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x9664;&#x4E86;&#x60A8;&#x901A;&#x5E38;&#x8981;&#x5904;&#x7406;&#x7684;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7248;&#x672C;&#x3002;</p>
 <h3 class="docs-heading">saturate<span class="anchor-target" id="color-operations-saturate"></span>
 <a href="#color-operations-saturate" name="color-operations-saturate" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Increase the saturation of a color in the HSL color space by an absolute amount.</p>
+<p>&#x589E;&#x52A0; HSL &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x7684;&#x7EDD;&#x5BF9;&#x6570;&#x91CF;&#x9971;&#x548C;&#x5EA6;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100%&#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>saturate(hsl(90, 80%, 50%), 20%)</code></p>
-<p>Output: <code>#80ff00 // hsl(90, 100%, 50%)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>saturate(hsl(90, 80%, 50%), 20%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#80ff00 // hsl(90, 100%, 50%)</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80e619:#000000/text:80e619"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#80ff00:#000000/text:80ff00"></p>
 <h3 class="docs-heading">desaturate<span class="anchor-target" id="color-operations-desaturate"></span>
 <a href="#color-operations-desaturate" name="color-operations-desaturate" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Decrease the saturation of a color in the HSL color space by an absolute amount.</p>
+<p>&#x51CF;&#x5C11; HSL &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x7684;&#x7EDD;&#x5BF9;&#x6570;&#x91CF;&#x9971;&#x548C;&#x5EA6;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>desaturate(hsl(90, 80%, 50%), 20%)</code></p>
-<p>Output: <code>#80cc33 // hsl(90, 60%, 50%)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>desaturate(hsl(90, 80%, 50%), 20%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#80cc33 // hsl(90, 60%, 50%)</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80e619:#000000/text:80e619"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#80cc33:#000000/text:80cc33"></p>
 <h3 class="docs-heading">lighten<span class="anchor-target" id="color-operations-lighten"></span>
 <a href="#color-operations-lighten" name="color-operations-lighten" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Increase the lightness of a color in the HSL color space by an absolute amount.</p>
+<p>&#x589E;&#x52A0; HSL &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x7684;&#x7EDD;&#x5BF9;&#x6570;&#x91CF;&#x4EAE;&#x5EA6;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>lighten(hsl(90, 80%, 50%), 20%)</code></p>
-<p>Output: <code>#b3f075 // hsl(90, 80%, 70%)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>lighten(hsl(90, 80%, 50%), 20%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#b3f075 // hsl(90, 80%, 70%)</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80e619:#000000/text:80e619"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#b3f075:#000000/text:b3f075"></p>
 <h3 class="docs-heading">darken<span class="anchor-target" id="color-operations-darken"></span>
 <a href="#color-operations-darken" name="color-operations-darken" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Decrease the lightness of a color in the HSL color space by an absolute amount.</p>
+<p>&#x964D;&#x4F4E; HSL &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x7684;&#x7EDD;&#x5BF9;&#x6570;&#x91CF;&#x4EAE;&#x5EA6;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>darken(hsl(90, 80%, 50%), 20%)</code></p>
-<p>Output: <code>#4d8a0f // hsl(90, 80%, 30%)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>darken(hsl(90, 80%, 50%), 20%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#4d8a0f // hsl(90, 80%, 30%)</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80e619:#000000/text:80e619"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#4d8a0f:#000000/text:4d8a0f"></p>
 <h3 class="docs-heading">fadein<span class="anchor-target" id="color-operations-fadein"></span>
 <a href="#color-operations-fadein" name="color-operations-fadein" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Decrease the transparency (or increase the opacity) of a color, making it more opaque.</p>
+<p>&#x964D;&#x4F4E;&#x989C;&#x8272;&#x7684;&#x900F;&#x660E;&#x5EA6;&#xFF08;&#x6216;&#x8005;&#x589E;&#x52A0;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#xFF09;&#xFF0C;&#x8BA9;&#x5B83;&#x66F4;&#x52A0;&#x4E0D;&#x900F;&#x660E;&#x3002;</p>
 </blockquote>
 <p>Has no effect on opaque colors. To fade in the other direction use <code>fadeout</code>.</p>
-<p>Parameters:</p>
+<p>&#x5728;&#x4E0D;&#x900F;&#x660E;&#x7684;&#x989C;&#x8272;&#x4E0A;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x6DE1;&#x51FA;&#x4F7F;&#x7528; <code>fadeout</code>&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>fadein(hsla(90, 90%, 50%, 0.5), 10%)</code></p>
-<p>Output: <code>rgba(128, 242, 13, 0.6) // hsla(90, 90%, 50%, 0.6)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>fadein(hsla(90, 90%, 50%, 0.5), 10%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>rgba(128, 242, 13, 0.6) // hsla(90, 90%, 50%, 0.6)</code></p>
 <h3 class="docs-heading">fadeout<span class="anchor-target" id="color-operations-fadeout"></span>
 <a href="#color-operations-fadeout" name="color-operations-fadeout" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Increase the transparency (or decrease the opacity) of a color, making it less opaque. To fade in the other direction use <code>fadein</code>.</p>
+<p>&#x589E;&#x52A0;&#x989C;&#x8272;&#x7684;&#x900F;&#x660E;&#x5EA6;&#xFF08;&#x6216;&#x8005;&#x51CF;&#x5C11;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#xFF09;&#xFF0C;&#x8BA9;&#x5B83;&#x66F4;&#x52A0;&#x900F;&#x660E;&#x3002;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x6DE1;&#x51FA;&#x4F7F;&#x7528; <code>fadein</code>&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
-<li><code>method</code>: Optional, set to <code>relative</code> for the adjustment to be relative to the current value.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
+<li><code>method</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E; <code>relative</code> &#x4F5C;&#x4E3A;&#x8C03;&#x6574;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5F53;&#x524D;&#x7684;&#x503C;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>fadeout(hsla(90, 90%, 50%, 0.5), 10%)</code></p>
-<p>Output: <code>rgba(128, 242, 13, 0.4) // hsla(90, 90%, 50%, 0.4)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>fadeout(hsla(90, 90%, 50%, 0.5), 10%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>rgba(128, 242, 13, 0.4) // hsla(90, 90%, 50%, 0.4)</code></p>
 <h3 class="docs-heading">fade<span class="anchor-target" id="color-operations-fade"></span>
 <a href="#color-operations-fade" name="color-operations-fade" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Set the absolute opacity of a color. Can be applied to colors whether they already have an opacity value or not.</p>
+<p>&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x7EDD;&#x5BF9;&#x900F;&#x660E;&#x5EA6;&#x3002;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x5728;&#x4E00;&#x4E2A;&#x4E0D;&#x7BA1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x6709;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#x503C;&#x7684;&#x989C;&#x8272;&#x4E0A;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>amount</code>: A percentage 0-100%.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>amount</code>: 0-100% &#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>fade(hsl(90, 90%, 50%), 10%)</code></p>
-<p>Output: <code>rgba(128, 242, 13, 0.1) //hsla(90, 90%, 50%, 0.1)</code></p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>fade(hsl(90, 90%, 50%), 10%)</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>rgba(128, 242, 13, 0.1) //hsla(90, 90%, 50%, 0.1)</code></p>
 <h3 class="docs-heading">spin<span class="anchor-target" id="color-operations-spin"></span>
 <a href="#color-operations-spin" name="color-operations-spin" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Rotate the hue angle of a color in either direction.</p>
+<p>&#x65CB;&#x8F6C;&#x989C;&#x8272;&#x5728;&#x4EFB;&#x610F;&#x65B9;&#x5411;&#x4E0A;&#x8272;&#x8C03;&#x7684;&#x89D2;&#x5EA6;&#x3002;</p>
 </blockquote>
 <p>While the angle range is 0-360, it applies a mod 360 operation, so you can pass in much larger (or negative) values and they will wrap around e.g. angles of 360 and 720 will produce the same result. Note that colors are passed through an RGB conversion, which doesn&apos;t retain hue value for greys (because hue has no meaning when there is no saturation), so make sure you apply functions in a way that preserves hue, for example don&apos;t do this:</p>
+<p>&#x5F53;&#x89D2;&#x5EA6;&#x7684;&#x503C;&#x662F;&#x5728;0-360&#x4E4B;&#x95F4;&#xFF0C;&#x5B83;&#x5C06;&#x5E94;&#x7528;&#x6A21;360&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x503C;&#xFF08;&#x6216;&#x8005;&#x9644;&#x5C5E;&#xFF09;&#xFF0C;&#x4ED6;&#x4EEC;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x3002;&#x4F8B;&#x5982;&#xFF0C;360&#x548C;720&#x5C06;&#x4EA7;&#x751F;&#x76F8;&#x540C;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x989C;&#x8272;&#x662F;&#x901A;&#x8FC7;RGB&#x8F6C;&#x6362;&#x6765;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x5B83;&#x4E0D;&#x4F1A;&#x4FDD;&#x7559;&#x7070;&#x8272;&#x7684;&#x8272;&#x8C03;&#x503C;(&#x56E0;&#x4E3A;&#x5F53;&#x6CA1;&#x6709;&#x9971;&#x548C;&#x5EA6;&#x65F6;&#xFF0C;&#x8272;&#x76F8;&#x6CA1;&#x6709;&#x610F;&#x4E49;)&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x786E;&#x4FDD;&#x4F60;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4FDD;&#x6301;&#x8272;&#x76F8;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x4E0D;&#x8981;&#x8FD9;&#x4E48;&#x505A;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@c:</span> <span class="hljs-function">saturate</span>(<span class="hljs-function">spin</span>(<span class="hljs-hexcolor">#aaaaaa</span>, <span class="hljs-number">10</span>), <span class="hljs-number">10%</span>);
 </code></pre>
 <p>Do this instead:</p>
+<p>&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x66FF;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@c:</span> <span class="hljs-function">spin</span>(<span class="hljs-function">saturate</span>(<span class="hljs-hexcolor">#aaaaaa</span>, <span class="hljs-number">10%</span>), <span class="hljs-number">10</span>);
 </code></pre>
 <p>Colors are always returned as RGB values, so applying <code>spin</code> to a grey value will do nothing.</p>
-<p>Parameters:</p>
+<p>&#x7ED3;&#x679C;&#x59CB;&#x7EC8;&#x4EE5; RGB &#x503C;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#xFF0C;&#x6240;&#x4EE5;&#x5C06; <code>spin</code> &#x5E94;&#x7528;&#x5728;&#x4E00;&#x4E2A;&#x7070;&#x8272;&#x7684;&#x503C;&#x4E0A;&#x9762;&#x8BB2;&#x4E0D;&#x4F1A;&#x505A;&#x4EFB;&#x4F55;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>angle</code>: A number of degrees to rotate (+ or -).</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>angle</code>: &#x65CB;&#x8F6C;&#x89D2;&#x5EA6;&#x7684;&#x6570;&#x5B57; (+ &#x6216;&#x8005; -)&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">spin</span>(<span class="hljs-function">hsl</span>(<span class="hljs-number">10</span>, <span class="hljs-number">90%</span>, <span class="hljs-number">50%</span>), <span class="hljs-number">30</span>)
 <span class="hljs-function">spin</span>(<span class="hljs-function">hsl</span>(<span class="hljs-number">10</span>, <span class="hljs-number">90%</span>, <span class="hljs-number">50%</span>), -<span class="hljs-number">30</span>)
 </code></pre>
-<p>Output:</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-id">#f2a60d</span> <span class="hljs-comment">// hsl(40, 90%, 50%)</span>
 <span class="hljs-id">#f20d59</span> <span class="hljs-comment">// hsl(340, 90%, 50%)</span>
 </code></pre>
@@ -1757,19 +1770,20 @@ NaN%
 <a href="#color-operations-mix" name="color-operations-mix" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Mix two colors together in variable proportion. Opacity is included in the calculations.</p>
+<p>&#x5C06;&#x4E24;&#x79CD;&#x989C;&#x8272;&#x6309;&#x53EF;&#x53D8;&#x6BD4;&#x4F8B;&#x6DF7;&#x5408;&#x3002;&#x8BA1;&#x7B97;&#x4E2D;&#x5305;&#x542B;&#x4E0D;&#x900F;&#x660E;&#x5EA6;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object.</li>
-<li><code>color2</code>: A color object.</li>
-<li><code>weight</code>: Optional, a percentage balance point between the two colors, defaults to 50%.</li>
+<li><code>color1</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>weight</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x4E24;&#x79CD;&#x989C;&#x8272;&#x767E;&#x5206;&#x6BD4;&#x7684;&#x5E73;&#x8861;&#x70B9;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;50%&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">mix</span>(<span class="hljs-hexcolor">#ff0000</span>, <span class="hljs-hexcolor">#0000ff</span>, <span class="hljs-number">50%</span>)
 <span class="hljs-function">mix</span>(<span class="hljs-function">rgba</span>(<span class="hljs-number">100</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">1.0</span>), <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.5</span>), <span class="hljs-number">50%</span>)
 </code></pre>
-<p>Output:</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-id">#800080</span>
 <span class="hljs-tag">rgba</span>(<span class="hljs-number">75</span>, <span class="hljs-number">25</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.75</span>)
 </code></pre>
@@ -1778,18 +1792,19 @@ NaN%
 <a href="#color-operations-tint" name="color-operations-tint" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Mix color with white in variable proportion. It is the same as calling <code>mix(#ffffff, @color, @weight)</code></p>
+<p>&#x5C06;&#x989C;&#x8272;&#x548C;&#x767D;&#x8272;&#x6309;&#x53EF;&#x53D8;&#x6BD4;&#x4F8B;&#x6DF7;&#x5408;&#x3002;&#x5B83;&#x4F5C;&#x7528;&#x5982;&#x540C;&#x8C03;&#x7528; <code>mix(#ffffff, @color, @weight)</code>&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>weight</code>: Optional, a percentage balance point between color and white, defaults to 50%.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>weight</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x989C;&#x8272;&#x548C;&#x767D;&#x8272;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x5E73;&#x8861;&#x70B9;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;50%&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">no-alpha</span>: <span class="hljs-function">tint</span>(<span class="hljs-hexcolor">#007fff</span>, <span class="hljs-number">50%</span>); 
 <span class="hljs-attribute">with-alpha</span>: <span class="hljs-function">tint</span>(<span class="hljs-function">rgba</span>(<span class="hljs-number">00</span>,<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0.5</span>), <span class="hljs-number">50%</span>);
 </code></pre>
-<p>Output:</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-attribute">no-alpha</span>: <span class="hljs-hexcolor">#80bfff</span>;
 <span class="hljs-attribute">with-alpha</span>: <span class="hljs-function">rgba</span>(<span class="hljs-number">191</span>, <span class="hljs-number">191</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.75</span>);
 </code></pre>
@@ -1798,18 +1813,19 @@ NaN%
 <a href="#color-operations-shade" name="color-operations-shade" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Mix color with black in variable proportion. It is the same as calling <code>mix(#000000, @color, @weight)</code></p>
+<p>&#x5C06;&#x989C;&#x8272;&#x548C;&#x9ED1;&#x8272;&#x6309;&#x53EF;&#x53D8;&#x6BD4;&#x4F8B;&#x6DF7;&#x5408;&#x3002;&#x5B83;&#x4F5C;&#x7528;&#x5982;&#x540C;&#x8C03;&#x7528; <code>mix(#000000, @color, @weight)</code>&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object.</li>
-<li><code>weight</code>: Optional, a percentage balance point between color and black, defaults to 50%.</li>
+<li><code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>weight</code>: &#x53EF;&#x9009;&#x7684;&#xFF0C;&#x989C;&#x8272;&#x548C;&#x9ED1;&#x8272;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x5E73;&#x8861;&#x70B9;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;50%&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">no-alpha</span>: <span class="hljs-function">shade</span>(<span class="hljs-hexcolor">#007fff</span>, <span class="hljs-number">50%</span>); 
 <span class="hljs-attribute">with-alpha</span>: <span class="hljs-function">shade</span>(<span class="hljs-function">rgba</span>(<span class="hljs-number">00</span>,<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0.5</span>), <span class="hljs-number">50%</span>);
 </code></pre>
-<p>Output:</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-attribute">no-alpha</span>: <span class="hljs-hexcolor">#004080</span>;
 <span class="hljs-attribute">with-alpha</span>: <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">64</span>, <span class="hljs-number">0.75</span>);
 </code></pre>
@@ -1818,37 +1834,45 @@ NaN%
 <a href="#color-operations-greyscale" name="color-operations-greyscale" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Remove all saturation from a color in the HSL color space; the same as calling <code>desaturate(@color, 100%)</code>.</p>
+<p>&#x79FB;&#x9664; HSL &#x989C;&#x8272;&#x7A7A;&#x95F4;&#x989C;&#x8272;&#x7684;&#x6240;&#x6709;&#x9971;&#x548C;&#x5EA6;&#xFF0C;&#x548C;&#x8C03;&#x7528; <code>desaturate(@color, 100%)</code> &#x4E00;&#x6837;&#x3002;</p>
 </blockquote>
 <p>Because the saturation is not affected by hue, the resulting color mapping may be somewhat dull or muddy; <a href="#color-channel-luma"><code>luma</code></a> may provide a better result as it extracts perceptual rather than linear brightness, for example <code>greyscale(&apos;#0000ff&apos;)</code> will return the same value as <code>greyscale(&apos;#00ff00&apos;)</code>, though they appear quite different in brightness to the human eye.</p>
-<p>Parameters: <code>color</code>: A color object.</p>
-<p>Returns: <code>color</code></p>
-<p>Example: <code>greyscale(hsl(90, 90%, 50%))</code></p>
-<p>Output: <code>#808080 // hsl(90, 0%, 50%)</code></p>
+<p>&#x56E0;&#x4E3A;&#x9971;&#x548C;&#x5EA6;&#x4E0D;&#x4F1A;&#x53D7;&#x8272;&#x76F8;&#x5F71;&#x54CD;&#x3002;&#x6240;&#x4EE5;&#x4EA7;&#x751F;&#x7684;&#x989C;&#x8272;&#x6620;&#x5C04;&#x53EF;&#x80FD;&#x6709;&#x4E9B;&#x5355;&#x8C03;&#x6216;&#x8005;&#x6A21;&#x7CCA;&#x3002; <a href="#color-channel-luma"><code>luma</code></a>&#x53EF;&#x80FD;&#x4F1A;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x7ED3;&#x679C;&#xFF0C; &#x56E0;&#x4E3A;&#x5B83;&#x63D0;&#x53D6;&#x611F;&#x77E5;&#x7684;&#x800C;&#x4E0D;&#x662F;&#x7EBF;&#x6027;&#x7684;&#x4EAE;&#x5EA6;&#xFF0C;&#x4F8B;&#x5982; <code>greyscale(&apos;#0000ff&apos;)</code>&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E0E; <code>greyscale(&apos;#00ff00&apos;)</code> &#x4E00;&#x6837;&#x7684;&#x503C;&#x3002;&#x867D;&#x7136;&#x5B83;&#x4EEC;&#x5728;&#x4EBA;&#x773C;&#x4EBA;&#x773C;&#x4E2D;&#x5728;&#x4EAE;&#x5EA6;&#x4E0A;&#x6709;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A; <code>color</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A; <code>greyscale(hsl(90, 90%, 50%))</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#808080 // hsl(90, 0%, 50%)</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80f20d:#000000/text:80f20d"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#808080:#000000/text:808080"></p>
 <p>Notice that the generated grey looks darker than the original green, even though its lightness value is the same.</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x7070;&#x8272;&#x770B;&#x8D77;&#x6765;&#x6BD4;&#x539F;&#x6765;&#x7684;&#x7EFF;&#x8272;&#x66F4;&#x6697;&#xFF0C;&#x5373;&#x4F7F;&#x5B83;&#x7684;&#x4EAE;&#x5EA6;&#x503C;&#x76F8;&#x540C;&#x3002;</p>
 <p>Compare with using <code>luma</code> (usage is different because <code>luma</code> returns a single value, not a color):</p>
+<p>&#x4E0E;&#x4F7F;&#x7528; <code>luma</code> &#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF08;&#x7528;&#x6CD5;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x56E0;&#x4E3A; <code>luma</code> &#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x503C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x3002;&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-variable">@c:</span> <span class="hljs-function">luma</span>(<span class="hljs-function">hsl</span>(<span class="hljs-number">90</span>, <span class="hljs-number">90%</span>, <span class="hljs-number">50%</span>));
 <span class="hljs-attribute">color</span>: <span class="hljs-function">rgb</span>(<span class="hljs-variable">@c</span>, <span class="hljs-variable">@c</span>, <span class="hljs-variable">@c</span>);
 </code></pre>
-<p>Output: <code>#cacaca</code></p>
+<p>&#x8F93;&#x51FA;&#xFF1A; <code>#cacaca</code></p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#80f20d:#000000/text:80f20d"> &#x279C; <img alt="Color 2" data-src="holder.js/100x40/#cacaca:#000000/text:cacaca"></p>
 <p>This time the grey&apos;s lightness looks about the same as the green, though its value is actually higher.</p>
+<p>&#x8FD9;&#x4E00;&#x6B21;&#xFF0C;&#x7070;&#x8272;&#x7684;&#x4EAE;&#x5EA6;&#x548C;&#x7EFF;&#x8272;&#x4E00;&#x6837;&#xFF0C;&#x5C3D;&#x7BA1;&#x5B83;&#x7684;&#x503C;&#x5B9E;&#x9645;&#x4E0A;&#x66F4;&#x9AD8;&#x3002;</p>
 <h3 class="docs-heading">contrast<span class="anchor-target" id="color-operations-contrast"></span>
 <a href="#color-operations-contrast" name="color-operations-contrast" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Choose which of two colors provides the greatest contrast with another.</p>
+<p>&#x9009;&#x62E9;&#x4E24;&#x79CD;&#x989C;&#x8272;&#x91CD;&#x5BF9;&#x6BD4;&#x5EA6;&#x6700;&#x5927;&#x7684;&#x3002;</p>
 </blockquote>
 <p>This is useful for ensuring that a color is readable against a background, which is also useful for accessibility compliance. This function works the same way as the <a href="http://compass-style.org/reference/compass/utilities/color/contrast/">contrast function in Compass for SASS</a>. In accordance with <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">WCAG 2.0</a>, colors are compared using their gamma-corrected <a href="#color-channel-luma">luma</a> value, not their lightness.</p>
+<p>&#x8FD9;&#x5BF9;&#x4E8E;&#x786E;&#x4FDD;&#x989C;&#x8272;&#x5728;&#x80CC;&#x666F;&#x4E0B;&#x53EF;&#x8BFB;&#x662F;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;&#x9075;&#x4ECE;&#x53EF;&#x8BBF;&#x95EE;&#x6027;&#x4E5F;&#x662F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8DDF; <a href="http://compass-style.org/reference/compass/utilities/color/contrast/">contrast function in Compass for SASS</a> &#x7684;&#x4F5C;&#x7528;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x8DDF; <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef">WCAG 2.0</a> &#x4E00;&#x6837;&#xFF0C;&#x989C;&#x8272;&#x662F;&#x7528;&#x4ED6;&#x4EEC;&#x7684;&#x4F3D;&#x739B;&#x6821;&#x6B63;<a href="#color-channel-luma">luma</a>&#x503C;&#x6765;&#x6BD4;&#x8F83;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x4EAE;&#x5EA6;&#x3002;</p>
 <p>The light and dark parameters can be supplied in either order - the function will calculate their luma values and assign light and dark automatically, which means you can&apos;t use this function to select the <em>least</em> contrasting color by reversing the order.</p>
-<p>Parameters:</p>
+<p>&#x4EAE;&#x548C;&#x6697;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6309;&#x4EFB;&#x610F;&#x7684;&#x987A;&#x5E8F;&#x63D0;&#x4F9B; -- &#x51FD;&#x6570;&#x5C06;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;luma&#x503C;&#xFF0C;&#x5E76;&#x81EA;&#x52A8;&#x5206;&#x914D;&#x4EAE;&#x548C;&#x6697;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4F60;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x901A;&#x8FC7;&#x53CD;&#x8F6C;&#x987A;&#x5E8F;&#x6765;&#x9009;&#x62E9;&#x5BF9;&#x6BD4;&#x5EA6;<em>&#x6700;&#x5C0F;</em>&#x7684;&#x989C;&#x8272;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color</code>: A color object to compare against.</li>
-<li><code>dark</code>: optional - A designated dark color (defaults to black).</li>
-<li><code>light</code>: optional - A designated light color (defaults to white).</li>
-<li><code>threshold</code>: optional - A percentage 0-100% specifying where the transition from &quot;dark&quot; to &quot;light&quot; is (defaults to 43%, matching SASS). This is used to bias the contrast one way or another, for example to allow you to decide whether a 50% grey background should result in black or white text. You would generally set this lower for &apos;lighter&apos; palettes, higher for &apos;darker&apos; ones.</li>
+<li><code>color</code>: &#x7528;&#x4E8E;&#x5BF9;&#x6BD4;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>dark</code>: &#x53EF;&#x9009; - &#x6307;&#x5B9A;&#x6697;&#x7684;&#x989C;&#x8272;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;&#x9ED1;&#x8272;&#xFF09;&#x3002;</li>
+<li><code>light</code>: &#x53EF;&#x9009; - &#x6307;&#x5B9A;&#x4EAE;&#x7684;&#x989C;&#x8272;&#xFF08;&#x9ED8;&#x8BA4;&#x662F;&#x767D;&#x8272;&#xFF09;&#x3002;</li>
+<li><code>threshold</code>: &#x53EF;&#x9009; - 0-100%&#x7684;&#x767E;&#x5206;&#x6BD4;&#x6307;&#x5B9A;&#x4ECE; &#x201C;&#x6697;&#x201D; &#x5230; &#x201C;&#x4EAE;&#x201D; &#x7684;&#x8FC7;&#x6E21;(&#x9ED8;&#x8BA4;&#x4E3A; 43% &#xFF0C;&#x5339;&#x914D;SASS)&#x3002;&#x8FD9;&#x662F;&#x7528;&#x6765;&#x5BF9;&#x5BF9;&#x6BD4;&#x7684;&#x4E00;&#x79CD;&#x6216;&#x53E6;&#x4E00;&#x79CD;&#x989C;&#x8272;&#x4EA7;&#x751F;&#x504F;&#x79FB;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5141;&#x8BB8;&#x4F60;&#x51B3;&#x5B9A;50%&#x7684;&#x7070;&#x8272;&#x80CC;&#x666F;&#x5E94;&#x8BE5;&#x4EA7;&#x751F;&#x9ED1;&#x8272;&#x8FD8;&#x662F;&#x767D;&#x8272;&#x7684;&#x6587;&#x672C;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x4F60;&#x4F1A;&#x628A;&#x201C;&#x8F83;&#x6D45;&#x201D;&#x7684;&#x8C03;&#x8272;&#x677F;&#x8BBE;&#x7F6E;&#x4E3A;&#x66F4;&#x4F4E;&#xFF0C;&#x628A;&#x201C;&#x6DF1;&#x8272;&#x201D;&#x8C03;&#x8272;&#x677F;&#x8BBE;&#x7F6E;&#x5F97;&#x66F4;&#x9AD8;&#x4E00;&#x4E9B;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-tag">p</span> {
     <span class="hljs-attribute">a</span>: <span class="hljs-function">contrast</span>(<span class="hljs-hexcolor">#bbbbbb</span>);
     <span class="hljs-attribute">b</span>: <span class="hljs-function">contrast</span>(<span class="hljs-hexcolor">#222222</span>, <span class="hljs-hexcolor">#101010</span>);
@@ -1857,7 +1881,7 @@ NaN%
     <span class="hljs-attribute">e</span>: <span class="hljs-function">contrast</span>(<span class="hljs-function">hsl</span>(<span class="hljs-number">90</span>, <span class="hljs-number">100%</span>, <span class="hljs-number">50%</span>), <span class="hljs-hexcolor">#000000</span>, <span class="hljs-hexcolor">#ffffff</span>, <span class="hljs-number">80%</span>);
 }
 </code></pre>
-<p>Output:</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code class="lang-css"><span class="hljs-tag">p</span> {
     <span class="hljs-attribute">a</span>: <span class="hljs-hexcolor">#000000</span> <span class="hljs-comment">// black</span>
     b: <span class="hljs-hexcolor">#ffffff</span> <span class="hljs-comment">// white</span>
@@ -1867,6 +1891,7 @@ NaN%
 }
 </code></pre>
 <p>These examples use the above calculated colors for background and foreground; you can see that you never end up with white-on-white, nor black-on-black, though it&apos;s possible to use the threshold to permit lower-contrast outcomes, as in the last example:</p>
+<p>&#x8FD9;&#x4E9B;&#x4F8B;&#x5B50;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x8BA1;&#x7B97;&#x7684;&#x989C;&#x8272;&#x7528;&#x4E8E;&#x80CC;&#x666F;&#x548C;&#x524D;&#x666F;;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4F60;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x5F97;&#x5230;&#x767D;&#x8272;-&#x767D;&#x8272;&#x6216;&#x9ED1;&#x8272;-&#x9ED1;&#x8272;&#xFF0C;&#x867D;&#x7136;&#x6709;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x9608;&#x503C;&#x6765;&#x5141;&#x8BB8;&#x8F83;&#x4F4E;&#x5BF9;&#x6BD4;&#x5EA6;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x4E0A;&#x9762;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <p><img alt="Color 1" data-src="holder.js/100x40/#bbbbbb:#000000/text:000000">
 <img alt="Color 1" data-src="holder.js/100x40/#222222:#ffffff/text:ffffff">
 <img alt="Color 1" data-src="holder.js/100x40/#222222:#dddddd/text:dddddd">
