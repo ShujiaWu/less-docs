@@ -1930,19 +1930,21 @@ NaN%
 
 <blockquote>
 <p>These operations are <em>similar</em> (though not necessarily identical) to the blend modes found in image editors like Photoshop, Fireworks, or GIMP, so you can use them to make your CSS colors match your images.</p>
+<p>&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x548C;&#x56FE;&#x7247;&#x7F16;&#x8F91;&#x5668;&#xFF08;&#x4F8B;&#x5982; Photoshop&#x3001;Fireworks &#x6216; GIMP&#xFF09;&#x4E2D;&#x7684;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#x5F88;&#x7C7B;&#x4F3C;&#xFF08;&#x867D;&#x7136;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x8BA9; CSS &#x4E2D;&#x7684;&#x989C;&#x8272;&#x4E0E;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x989C;&#x8272;&#x76F8;&#x5339;&#x914D;&#x3002;</p>
 </blockquote>
 <h3 class="docs-heading">multiply<span class="anchor-target" id="color-blending-multiply"></span>
 <a href="#color-blending-multiply" name="color-blending-multiply" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Multiply two colors. Corresponding RGB channels from each of the two colors are multiplied together then divided by 255. The result is a darker color.</p>
+<p>&#x5C06;&#x4E24;&#x4E2A;&#x989C;&#x8272;&#x76F8;&#x4E58;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; RGB &#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x901A;&#x9053;&#x7684;&#x989C;&#x8272;&#x503C;&#x76F8;&#x4E58;&#x7136;&#x540E;&#x9664;&#x4EE5; 255. &#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x6697;&#x7684;&#x989C;&#x8272;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object.</li>
-<li><code>color2</code>: A color object.</li>
+<li><code>color1</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p><strong>Examples</strong>:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p><strong>&#x4F8B;&#x5B50;</strong>:</p>
 <pre><code class="lang-less"><span class="hljs-attribute">multiply</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -1992,14 +1994,15 @@ NaN%
 <a href="#color-blending-screen" name="color-blending-screen" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Do the opposite of <code>multiply</code>. The result is a brighter color.</p>
+<p>&#x4E0E; <code>multiply</code> &#x76F8;&#x53CD;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x4EAE;&#x7684;&#x989C;&#x8272;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object.</li>
-<li><code>color2</code>: A color object.</li>
+<li><code>color1</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">screen</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2049,14 +2052,15 @@ NaN%
 <a href="#color-blending-overlay" name="color-blending-overlay" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Combines the effects of both <code>multiply</code> and <code>screen</code>. Conditionally make light channels lighter and dark channels darker. <strong>Note</strong>: The results of the conditions are determined by the first color parameter.</p>
+<p>&#x7ED3;&#x5408; <code>multiply</code> &#x4E0E; <code>screen</code> &#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x4EE4;&#x6D45;&#x7684;&#x989C;&#x8272;&#x53D8;&#x5F97;&#x66F4;&#x6D45;&#xFF0C;&#x6DF1;&#x7684;&#x989C;&#x8272;&#x53D8;&#x5F97;&#x66F4;&#x6DF1;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7531;&#x7B2C;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x53C2;&#x6570;&#x51B3;&#x5B9A;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A base color object. Also the determinant color to make the result lighter or darker.</li>
-<li><code>color2</code>: A color object to <em>overlay</em>.</li>
+<li><code>color1</code>: &#x57FA;&#x51C6;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x7528;&#x4EE5;&#x786E;&#x5B9A;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x662F;&#x6D45;&#x4E9B;&#x8FD8;&#x662F;&#x6DF1;&#x4E9B;&#x7684;&#x53C2;&#x8003;&#x8272;&#x3002;</li>
+<li><code>color2</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">overlay</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2106,14 +2110,15 @@ NaN%
 <a href="#color-blending-softlight" name="color-blending-softlight" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Similar to <code>overlay</code> but avoids pure black resulting in pure black, and pure white resulting in pure white.</p>
+<p>&#x4E0E; <code>overlay</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x7EAF;&#x9ED1;&#x8272;&#x6216;&#x7EAF;&#x767D;&#x8272;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x65F6;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E0D;&#x4F1A;&#x662F;&#x7EAF;&#x9ED1;&#x8272;&#x6216;&#x7EAF;&#x767D;&#x8272;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object to <em>soft light</em> another.</li>
-<li><code>color2</code>: A color object to be <em>soft lighten</em>.</li>
+<li><code>color1</code>: &#x7528;&#x4E8E;&#x67D4;&#x5149;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x88AB;&#x67D4;&#x5149;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">softlight</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2163,14 +2168,15 @@ NaN%
 <a href="#color-blending-hardlight" name="color-blending-hardlight" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>The same as <code>overlay</code> but with the color roles reversed.</p>
+<p>&#x548C; <code>overlay</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x4F5C;&#x7528;&#x76F8;&#x53CD;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object to <em>overlay</em>.</li>
-<li><code>color2</code>: A base color object. Also the determinant color to make the result lighter or darker.</li>
+<li><code>color1</code>: &#x5149;&#x6E90;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x57FA;&#x51C6;&#x8272;&#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x51B3;&#x5B9A;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x662F;&#x4EAE;&#x4E9B;&#x8FD8;&#x662F;&#x6697;&#x4E9B;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">hardlight</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2221,13 +2227,14 @@ NaN%
 <blockquote>
 <p>Subtracts the second color from the first color on a channel-by-channel basis. Negative values are inverted. Subtracting black results in no change; subtracting white results in color inversion.</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x989C;&#x8272;&#x51CF;&#x53BB;&#x7B2C;&#x4E8C;&#x4E2A;&#x989C;&#x8272;&#xFF08;&#x57FA;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x901A;&#x9053;&#x7684;&#x503C;&#xFF09;&#x3002;&#x8D1F;&#x503C;&#x5C06;&#x4F1A;&#x88AB;&#x53CD;&#x8F6C;&#x3002;&#x51CF;&#x53BB;&#x9ED1;&#x8272;&#x7ED3;&#x679C;&#x4E0D;&#x53D8;&#xFF0C;&#x51CF;&#x53BB;&#x767D;&#x8272;&#x7ED3;&#x679C;&#x53CD;&#x8F6C;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object to act as the minuend.</li>
-<li><code>color2</code>: A color object to act as the subtrahend.</li>
+<li><code>color1</code>: &#x88AB;&#x51CF;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x51CF;&#x53BB;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">difference</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2277,14 +2284,15 @@ NaN%
 <a href="#color-blending-exclusion" name="color-blending-exclusion" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>A similar effect to <code>difference</code> with lower contrast.</p>
+<p>&#x4E0E; <code>difference</code> &#x6548;&#x679C;&#x7C7B;&#x4F3C;&#xFF0C;&#x53EA;&#x662F;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5BF9;&#x6BD4;&#x5EA6;&#x66F4;&#x5C0F;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object to act as the minuend.</li>
-<li><code>color2</code>: A color object to act as the subtrahend.</li>
+<li><code>color1</code>: &#x88AB;&#x51CF;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x51CF;&#x53BB;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">exclusion</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2334,14 +2342,15 @@ NaN%
 <a href="#color-blending-average" name="color-blending-average" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Compute the average of two colors on a per-channel (RGB) basis.</p>
+<p>&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x989C;&#x8272;&#x57FA;&#x4E8E; &#xFF08;RGB&#xFF09; &#x6BCF;&#x4E2A;&#x901A;&#x9053;&#x7684;&#x5E73;&#x5747;&#x503C;&#x3002;</p>
 </blockquote>
-<p>Parameters:</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object.</li>
-<li><code>color2</code>: A color object.</li>
+<li><code>color1</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">average</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
@@ -2391,15 +2400,17 @@ NaN%
 <a href="#color-blending-negation" name="color-blending-negation" class="anchor glyphicon glyphicon-link"></a></h3>
 <blockquote>
 <p>Do the opposite effect to <code>difference</code>.</p>
+<p>&#x4E0E; <code>difference</code> &#x7684;&#x6548;&#x679C;&#x76F8;&#x53CD;&#x3002;</p>
 </blockquote>
 <p>The result is a brighter color. <strong>Note</strong>: The <em>opposite</em> effect doesn&apos;t mean the <em>inverted</em> effect as resulting from an <em>addition</em> operation.</p>
-<p>Parameters:</p>
+<p>&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x66F4;&#x4EAE;&#x7684;&#x989C;&#x8272;&#x3002;<strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x76F8;&#x53CD;&#x7684;&#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x505A;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#xFF1A;</p>
 <ul>
-<li><code>color1</code>: A color object to act as the minuend.</li>
-<li><code>color2</code>: A color object to act as the subtrahend.</li>
+<li><code>color1</code>: &#x88AB;&#x51CF;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><code>color2</code>: &#x51CF;&#x53BB;&#x7684;&#x989C;&#x8272;&#x5BF9;&#x8C61;&#x3002;</li>
 </ul>
-<p>Returns: <code>color</code></p>
-<p>Example:</p>
+<p>&#x8FD4;&#x56DE;&#xFF1A; <code>color</code></p>
+<p>&#x4F8B;&#x5B50;&#xFF1A;</p>
 <pre><code class="lang-less"><span class="hljs-attribute">negation</span>(<span class="hljs-hexcolor">#ff6600</span>, <span class="hljs-hexcolor">#000000</span>);
 </code></pre>
 <p><img alt="Color 1" data-src="holder.js/100x40/#ff6600:#ffffff/text:ff6600">
