@@ -1,17 +1,21 @@
 > These operations are _similar_ (though not necessarily identical) to the blend modes found in image editors like Photoshop, Fireworks, or GIMP, so you can use them to make your CSS colors match your images.
 
+> 这些操作和图片编辑器（例如 Photoshop、Fireworks 或 GIMP）中的混合模式很类似（虽然不是完全一致），因此，你可以通过这些函数让 CSS 中的颜色与图片中的颜色相匹配。
+
 ### multiply
 
 > Multiply two colors. Corresponding RGB channels from each of the two colors are multiplied together then divided by 255. The result is a darker color.
 
-Parameters:
+> 将两个颜色相乘，相当于 RGB 的每一个通道的颜色值相乘然后除以 255. 结果是一个更暗的颜色。
 
-* `color1`: A color object.
-* `color2`: A color object.
+参数：
 
-Returns: `color`
+* `color1`: 颜色对象。
+* `color2`: 颜色对象。
 
-**Examples**:
+返回： `color`
+
+**例子**:
 
 ```less
 multiply(#ff6600, #000000);
@@ -89,14 +93,16 @@ multiply(#ff6600, #0000ff);
 
 > Do the opposite of `multiply`. The result is a brighter color.
 
-Parameters:
+> 与 `multiply` 相反，结果是一个更亮的颜色。
 
-* `color1`: A color object.
-* `color2`: A color object.
+参数：
 
-Returns: `color`
+* `color1`: 颜色对象。
+* `color2`: 颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 screen(#ff6600, #000000);
@@ -175,14 +181,16 @@ screen(#ff6600, #0000ff);
 
 > Combines the effects of both `multiply` and `screen`. Conditionally make light channels lighter and dark channels darker. **Note**: The results of the conditions are determined by the first color parameter.
 
-Parameters:
+> 结合 `multiply` 与 `screen` 两个函数的效果，令浅的颜色变得更浅，深的颜色变得更深。注意：输出结果由第一个颜色参数决定。
 
-* `color1`: A base color object. Also the determinant color to make the result lighter or darker.
-* `color2`: A color object to _overlay_.
+参数：
 
-Returns: `color`
+* `color1`: 基准颜色对象。也就是用以确定最终结果是浅些还是深些的参考色。
+* `color2`: 颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 overlay(#ff6600, #000000);
@@ -261,14 +269,16 @@ overlay(#ff6600, #0000ff);
 
 > Similar to `overlay` but avoids pure black resulting in pure black, and pure white resulting in pure white.
 
-Parameters:
+> 与 `overlay` 类似，但是当纯黑色或纯白色作为参数时输出结果不会是纯黑色或纯白色。
 
-* `color1`: A color object to _soft light_ another.
-* `color2`: A color object to be _soft lighten_.
+参数：
 
-Returns: `color`
+* `color1`: 用于柔光另外一个颜色的颜色对象。
+* `color2`: 被柔光的颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 softlight(#ff6600, #000000);
@@ -347,14 +357,16 @@ softlight(#ff6600, #0000ff);
 
 > The same as `overlay` but with the color roles reversed.
 
-Parameters:
+> 和 `overlay` 类似，但是作用相反。
 
-* `color1`: A color object to _overlay_.
-* `color2`: A base color object. Also the determinant color to make the result lighter or darker.
+参数：
 
-Returns: `color`
+* `color1`: 光源颜色对象。
+* `color2`: 基准色对象。它决定最终结果是亮些还是暗些。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 hardlight(#ff6600, #000000);
@@ -433,14 +445,16 @@ hardlight(#ff6600, #0000ff);
 
 > Subtracts the second color from the first color on a channel-by-channel basis. Negative values are inverted. Subtracting black results in no change; subtracting white results in color inversion.
 
-Parameters:
+第一个颜色减去第二个颜色（基于每一个通道的值）。负值将会被反转。减去黑色结果不变，减去白色结果反转。
 
-* `color1`: A color object to act as the minuend.
-* `color2`: A color object to act as the subtrahend.
+参数：
 
-Returns: `color`
+* `color1`: 被减的颜色对象。
+* `color2`: 减去的颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 difference(#ff6600, #000000);
@@ -519,14 +533,16 @@ difference(#ff6600, #0000ff);
 
 > A similar effect to `difference` with lower contrast.
 
-Parameters:
+> 与 `difference` 效果类似，只是输出结果对比度更小。
 
-* `color1`: A color object to act as the minuend.
-* `color2`: A color object to act as the subtrahend.
+参数：
 
-Returns: `color`
+* `color1`: 被减的颜色对象。
+* `color2`: 减去的颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 exclusion(#ff6600, #000000);
@@ -605,14 +621,16 @@ exclusion(#ff6600, #0000ff);
 
 > Compute the average of two colors on a per-channel (RGB) basis.
 
-Parameters:
+> 计算两个颜色基于 （RGB） 每个通道的平均值。
 
-* `color1`: A color object.
-* `color2`: A color object.
+参数：
 
-Returns: `color`
+* `color1`: 颜色对象。
+* `color2`: 颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 average(#ff6600, #000000);
@@ -690,16 +708,20 @@ average(#ff6600, #0000ff);
 
 > Do the opposite effect to `difference`.
 
+> 与 `difference` 的效果相反。
+
 The result is a brighter color. **Note**: The _opposite_ effect doesn't mean the _inverted_ effect as resulting from an _addition_ operation.
 
-Parameters:
+操作的结果是更亮的颜色。**注意**：相反的结果并不意味着做加法运算。
 
-* `color1`: A color object to act as the minuend.
-* `color2`: A color object to act as the subtrahend.
+参数：
 
-Returns: `color`
+* `color1`: 被减的颜色对象。
+* `color2`: 减去的颜色对象。
 
-Example:
+返回： `color`
+
+例子：
 
 ```less
 negation(#ff6600, #000000);
